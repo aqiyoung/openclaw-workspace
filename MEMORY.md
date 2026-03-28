@@ -103,27 +103,37 @@
 - **daily-weather** — 每天 6:00，西安两地天气播报，推微信
 - **weather-alert** — 每 3 小时（6:00-22:00），异常天气告警，推微信
 
-## 公众号排版规范
+## 公众号排版规范（核心规则，所有文章通用）
 
-- 段落间距：24px，代码块下方 32px，章节标题上方 52px
-- **代码块样式（GitHub 暗色风格，已验证可用）：**
-  ```html
-  <pre style="background:#1e1e1e;color:#d4d4d4;padding:14px 18px;border-radius:8px;font-family:Menlo,Consolas,monospace;font-size:14px;line-height:1.6;overflow-x:auto;margin:10px 0">代码内容</pre>
-  ```
-  - 用户长按可选中复制代码
-  - 不要加 `<section>` 包裹，直接用 `<pre>` + 内联样式
-  - 不要把代码做成截图（2026-03-29 确认：老板要的是可复制的代码块，不是截图）
-- 总结部分：无圆点序号，纯文字排列，行间距 6px
-- 列表不要用 `<ul><li>`（有圆点序号），用 `<p>` 段落替代
-- 关注引导模板：灰色圆角卡片，绿色"关注"高亮
-- 封面图：需用永久素材上传（/cgi-bin/material/add_material），不是临时素材。尺寸 **2400×1350**（高清，避免发布后模糊）
-- wechat-mp-publisher 的 thumb 类型 bug 已修复（返回 thumb_media_id）
-- **文章末尾模板（每篇都要加）：**
-  1. 关注引导（灰色圆角卡片）：
-     ```html
-     <p style="text-align:center;margin-top:40px;padding:20px;background:#f0f0f0;border-radius:10px;color:#666">📌 <strong>三页札记</strong>，专注信创运维实战<br>每天分享银河麒麟/UOS 踩坑经验<br><span style="color:#3bba4a">👆 点击上方「三页札记」关注，不错过更新</span></p>
-     ```
-  2. 往期推荐（列出已发文章标题，不用链接——微信 API 会拦截外部链接导致报错）
+- 封面图：2400×1350 高清（永久素材上传），用 `el.screenshot()` 截元素
+- 代码块：`<pre style="background:#1e1e1e;color:#d4d4d4;padding:14px 18px;border-radius:8px;font-family:Menlo,Consolas,monospace;font-size:14px;line-height:1.6;overflow-x:auto;margin:10px 0">`（用户长按可复制）
+- 终端截图：用 `el.screenshot()` 截元素，不要整页截（避免黑色边框），`device_scale_factor=2` 保证高清
+- 文章末尾：关注引导卡片 + 往期推荐（不加链接，微信 API 拦截外部 URL）
+
+## 公众号文章类型模板（根据内容灵活选择）
+
+### 1. 实战教程类（步骤操作、命令行教学）
+- 标题用 `<h3>`，列表用 `<p>` 不用 `<ul><li>`
+- 代码块用深色 `<pre>` 样式
+- 每步配终端截图（`el.screenshot()` 截终端元素）
+- 结尾加"避坑提醒"和"总结"
+- 例：磁盘清理技巧、软件源配置
+
+### 2. 踩坑经验类（问题→排查→解决）
+- 开头抛出真实场景
+- 按"问题→原因→解决"结构展开
+- 代码块 + 检查清单
+- 例：打印机共享踩坑、系统升级翻车
+
+### 3. 工具推荐/速查类
+- 简洁为主，少截图，多代码块
+- 可用表格对比
+- 例：常用命令速查、运维工具箱
+
+### 4. 新闻资讯/观点类
+- 纯图文，不需要代码块
+- 配图用高清图片
+- 例：信创政策解读、行业动态
 
 ## 飞书 MCP
 
