@@ -4,6 +4,7 @@
 
 - **名称：** Young，喜欢被叫"老板"
 - **技术背景：** 运维工程师，熟悉 Linux、飞牛NAS、信创系统（麒麟/UOS）、nginx、docker、mihomo 代理
+- **飞牛NAS：** 系统自带防火墙，安全审计不要检查 iptables/ufw（会误报）
 - **沟通风格：** 直接、不废话、偏好技术交流
 - **工作内容：** 信创电脑运维、多通道 AI 助手搭建
 
@@ -25,9 +26,9 @@
 ## 模型配置
 
 - **主模型：** openrouter/xiaomi/mimo-v2-pro（小米免费体验中）
-- **备用：** openrouter/xiaomi/mimo-v2-pro、openrouter/nvidia/nemotron-3-super-120b-a12b:free
-- **新增：** zai/glm-4-flash（免费，别名 GLM-Flash）、moonshot/kimi-k2.5（直连，别名 Kimi）
-- **已移除：** 龙猫 LongCat（美团，无法使用）、腾讯元宝混元
+- **备用：** openrouter/xiaomi/mimo-v2-pro、openrouter/nvidia/nemotron-3-super-120b-a12b:free、stepfun/step-3.5-flash:free
+- **新增：** openrouter/qwen/qwen3-coder:free（别名 Qwen3-Coder）、openrouter/openai/gpt-oss-120b:free（别名 GPT-OSS）
+- **其他：** zai/glm-4-flash（免费，别名 GLM-Flash）、moonshot/kimi-k2.5（直连，别名 Kimi）
 - **代理：** Mihomo 127.0.0.1:7890（Telegram API 需要代理）
 - ⚠️ **切换规则：** 小米 MiMo 免费体验结束后，自动切换到千问3（qwen/qwen3-next-80b-a3b-instruct:free）
 
