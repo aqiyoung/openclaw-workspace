@@ -1,5 +1,5 @@
 #!/bin/bash
-# GitHub 热点项目每日同步脚本 - 修复版本
+# GitHub 热点项目每日同步脚本
 # 功能：搜索 GitHub 热点项目并写入 IMA 知识库
 # 依赖：gh CLI（已认证）、jq、python3
 
@@ -130,6 +130,14 @@ write_to_knowledge_base() {
     local title="GitHub 热点项目日报 - $(date '+%Y-%m-%d')"
 
     # Step 1: Create note
+    cat > "$TEMP_DIR/note_payload.json" << EOF
+{
+    "content_format": 1,
+    "title": "$title",
+    "content": "$(cat "$TEMP_DIR/summary.md" | sed 's/"/\\"/g' | tr '\n' '\\' | sed 's/\\/\\n/g')"
+}
+EOF
+
     local note_response
     note_response=$(curl -s --max-time 30 -X POST \
         "https://ima.qq.com/openapi/note/v1/import_doc" \
@@ -137,12 +145,7 @@ write_to_knowledge_base() {
         -H "ima-openapi-clientid: $client_id" \
         -H "ima-openapi-apikey: $api_key" \
         -H "ima-openapi-ctx: skill_version=1.0" \
-        -d "$(python3 -c "
-import json,sys
-title = sys.argv[1]
-content = open(sys.argv[2]).read()
-print(json.dumps({'kb_id': sys.argv[3], 'title': title, 'content': content, 'content_format': 1}))
-" "$title" "$TEMP_DIR/summary.md" "$KB_ID")" 2>/dev/null)
+        --data-binary @"$TEMP_DIR/note_payload.json" 2>/dev/null)
 
     local note_id
     note_id=$(echo "$note_response" | python3 -c "import sys,json; print(json.load(sys.stdin).get('data',{}).get('note_id',''))" 2>/dev/null)
@@ -154,6 +157,15 @@ print(json.dumps({'kb_id': sys.argv[3], 'title': title, 'content': content, 'con
     log "笔记创建成功: $note_id"
 
     # Step 2: Add to knowledge base
+    cat > "$TEMP_DIR/kb_payload.json" << EOF
+{
+    "media_type": 11,
+    "title": "$title",
+    "knowledge_base_id": "$KB_ID",
+    "note_info": {"content_id": "$note_id"}
+}
+EOF
+
     local kb_response
     kb_response=$(curl -s --max-time 30 -X POST \
         "https://ima.qq.com/openapi/wiki/v1/add_knowledge" \
@@ -161,15 +173,7 @@ print(json.dumps({'kb_id': sys.argv[3], 'title': title, 'content': content, 'con
         -H "ima-openapi-clientid: $client_id" \
         -H "ima-openapi-apikey: $api_key" \
         -H "ima-openapi-ctx: skill_version=1.0" \
-        -d "$(python3 -c "
-import json
-print(json.dumps({
-    'media_type': 11,
-    'title': '$title',
-    'knowledge_base_id': '$KB_ID',
-    'note_info': {'content_id': '$note_id'}
-}))
-" 2>/dev/null)" 2>/dev/null)
+        --data-binary @"$TEMP_DIR/kb_payload.json" 2>/dev/null)
 
     if echo "$kb_response" | python3 -c "import sys,json; d=json.load(sys.stdin); exit(0 if d.get('code')==0 else 1)" 2>/dev/null; then
         log "成功写入 IMA 知识库"
