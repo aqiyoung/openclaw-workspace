@@ -1,0 +1,6 @@
+
+# TG proxy (local only, not synced)
+scripts/tg-proxy.py
+scripts/tg-proxy.service
+scripts/tg-proxy-install.sh
+scripts/.totp_secret
