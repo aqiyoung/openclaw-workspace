@@ -43,6 +43,29 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .provider-badge.timeout{background:#fef3e0;color:#e67e00}
 .provider-latency{font-size:10px;color:#86868b;margin-left:4px;white-space:nowrap}
 
+/* ===== TG 代理状态 ===== */
+.tg-proxy-section{margin-top:8px}
+.tg-proxy-header{display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;padding:8px 0}
+.tg-proxy-header:hover{opacity:.8}
+.tg-proxy-title{font-size:13px;font-weight:600;display:flex;align-items:center;gap:6px}
+.tg-proxy-arrow{font-size:10px;color:#aaa;transition:transform .2s}
+.tg-proxy-header.collapsed .tg-proxy-arrow{transform:rotate(-90deg)}
+.tg-proxy-body{display:none}
+.tg-proxy-body.show{display:block}
+.tg-path-row{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:#f8f9fa;border-radius:6px;margin-bottom:4px;font-size:12px}
+.tg-path-name{display:flex;align-items:center;gap:6px;flex:1;min-width:0}
+.tg-path-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.tg-path-dot.active{background:#22c55e}
+.tg-path-dot.idle{background:#ddd}
+.tg-path-dot.error{background:#ef4444}
+.tg-path-info{color:#86868b;font-size:11px;white-space:nowrap;margin-left:8px}
+.tg-path-latency{color:#1d1d1f;font-weight:500}
+.tg-path-fail{color:#ef4444}
+.tg-proxy-summary{font-size:11px;color:#86868b;padding:4px 0 0;display:flex;gap:12px;flex-wrap:wrap}
+.tg-proxy-summary span{display:flex;align-items:center;gap:3px}
+.tg-toggle-btn{background:none;border:none;cursor:pointer;font-size:12px;color:#ff6b35;font-weight:500;padding:4px 0}
+.tg-toggle-btn:hover{text-decoration:underline}
+
 .main{flex:1;min-width:0}
 .main-section{background:#fff;border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
 .main-title{font-size:14px;font-weight:600;color:#1d1d1f;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
@@ -87,15 +110,46 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .toast.show{display:block;animation:toastIn .2s}
 @keyframes toastIn{from{opacity:0;transform:translateX(-50%) translateY(8px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 
-/* ===== 登录弹窗 ===== */
-.login-overlay{position:fixed;inset:0;background:#f0f2f5;z-index:1000;display:flex;align-items:center;justify-content:center}
-.login-box{background:#fff;border-radius:16px;padding:32px;width:320px;box-shadow:0 4px 24px rgba(0,0,0,0.1);text-align:center}
-.login-box h2{font-size:20px;font-weight:700;margin-bottom:6px}
-.login-box p{font-size:13px;color:#86868b;margin-bottom:20px}
-.login-box input{width:100%;padding:12px 14px;border:1px solid #e5e5ea;border-radius:10px;font-size:15px;outline:none;transition:border .2s;text-align:center}
-.login-box input:focus{border-color:#ff6b35}
-.login-box .btn{margin-top:16px;width:100%;padding:12px;border-radius:10px;border:none;background:#ff6b35;color:#fff;font-size:15px;font-weight:600;cursor:pointer}
-.login-box .error{color:#d32f2f;font-size:13px;margin-top:10px;display:none}
+/* ===== 登录页面 ===== */
+.login-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0a0a12}
+.login-overlay canvas{position:absolute;inset:0;width:100%;height:100%}
+.login-box{position:relative;z-index:2;background:rgba(255,255,255,0.04);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.08);border-radius:24px;padding:40px;width:360px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,0.5),inset 0 1px 0 rgba(255,255,255,0.05)}
+.login-logo{width:64px;height:64px;margin:0 auto 20px;background:linear-gradient(135deg,#ff6b35,#ff8c42);border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(255,107,53,0.35)}
+.login-logo svg{width:36px;height:36px;fill:#fff}
+.login-box h2{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:-0.02em}
+.login-box p{font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:24px}
+.login-box .input-wrap{position:relative;margin-bottom:14px}
+.login-box .input-wrap .input-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:18px;height:18px;fill:rgba(255,255,255,0.25);transition:fill .2s;pointer-events:none}
+.login-box input{width:100%;padding:14px 14px 14px 44px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;font-size:15px;color:#fff;outline:none;transition:all .2s;box-sizing:border-box}
+.login-box input::placeholder{color:rgba(255,255,255,0.2)}
+.login-box input:focus{border-color:rgba(255,107,53,0.5);background:rgba(255,255,255,0.08);box-shadow:0 0 0 3px rgba(255,107,53,0.08)}
+.login-box input:focus ~ .input-icon{fill:rgba(255,107,53,0.6)}
+.login-box .btn{margin-top:18px;width:100%;padding:14px;border-radius:12px;border:none;background:linear-gradient(135deg,#ff6b35,#ff8c42);color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(255,107,53,0.25)}
+.login-box .btn:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(255,107,53,0.35)}
+.login-box .btn:active{transform:translateY(0)}
+.login-box .error{color:#ff6b6b;font-size:12px;margin-top:12px;display:none;background:rgba(255,107,107,0.08);padding:8px;border-radius:8px}
+.login-box .step-text{font-size:12px;color:rgba(255,255,255,0.2);margin-top:12px}
+.login-box .back-btn{font-size:12px;color:rgba(255,107,53,0.6);cursor:pointer;margin-top:12px;display:inline-block;transition:color .2s}
+.login-box .back-btn:hover{color:#ff6b35}
+.login-footer{margin-top:24px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.04);font-size:11px;color:rgba(255,255,255,0.15)}
+.login-footer .shield{display:inline-flex;align-items:center;gap:4px;color:rgba(255,255,255,0.2)}
+.login-footer .shield svg{width:12px;height:12px;fill:currentColor}
+
+/* ===== TOTP 设置弹窗 ===== */
+.totp-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:1600;display:none;align-items:center;justify-content:center}
+.totp-overlay.show{display:flex}
+.totp-modal{background:#fff;border-radius:16px;padding:28px;width:340px;box-shadow:0 8px 32px rgba(0,0,0,0.15);text-align:center}
+.totp-modal h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.totp-modal p{font-size:12px;color:#86868b;margin-bottom:12px}
+.totp-modal .qr-wrap{margin:12px 0;padding:12px;background:#f8f9fa;border-radius:10px;display:inline-block}
+.totp-modal .qr-wrap canvas{display:block}
+.totp-modal .secret-box{font-size:11px;color:#86868b;background:#f0f2f5;padding:8px 12px;border-radius:6px;margin:8px 0;word-break:break-all;font-family:monospace}
+.totp-modal input{width:100%;padding:10px 12px;border:1px solid #e5e5ea;border-radius:8px;font-size:14px;outline:none;transition:border .2s;text-align:center;letter-spacing:4px;font-size:18px;font-weight:600}
+.totp-modal input:focus{border-color:#ff6b35}
+.totp-modal .totp-error{color:#d32f2f;font-size:12px;margin-top:8px;display:none}
+.totp-modal .totp-actions{display:flex;gap:10px;margin-top:16px}
+.totp-modal .btn{flex:1;padding:10px;border-radius:8px;font-size:14px}
+.totp-toggle-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;font-size:13px}
 
 /* ===== 修改密码弹窗 ===== */
 .pw-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:1500;display:none;align-items:center;justify-content:center}
@@ -118,21 +172,77 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </head>
 <body>
 
-<!-- 登录弹窗 -->
+<!-- 登录页面 -->
 <div class="login-overlay" id="loginOverlay">
-  <div class="login-box">
-    <h2>🔐 模型控制台</h2>
-    <p>请输入访问口令</p>
-    <input type="password" id="pwInput" placeholder="口令" onkeydown="if(event.key==='Enter')doLogin()" autocomplete="off">
-    <div class="btn" onclick="doLogin()">进入</div>
-    <div class="error" id="loginError">密码错误</div>
+  <canvas id="loginCanvas"></canvas>
+  <div class="login-box" id="loginBox">
+    <div id="loginStep1">
+      <div class="login-logo">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <h2>模型控制台</h2>
+      <p>AI Model Management Console</p>
+      <div class="input-wrap">
+        <input type="password" id="pwInput" placeholder="输入访问口令" onkeydown="if(event.key==='Enter')doLoginStep1()" autocomplete="off">
+        <svg class="input-icon" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+      </div>
+      <div class="btn" onclick="doLoginStep1()">下一步</div>
+      <div class="error" id="loginError">密码错误</div>
+      <div class="login-footer">
+        <span class="shield">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+          加密连接 · 安全认证
+        </span>
+      </div>
+    </div>
+    <div id="loginStep2" style="display:none">
+      <div class="login-logo">
+        <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+      </div>
+      <h2>双重验证</h2>
+      <p>请输入验证器中的 6 位验证码</p>
+      <div class="input-wrap">
+        <input type="text" id="totpInput" placeholder="000000" maxlength="6" onkeydown="if(event.key==='Enter')doLoginStep2()" autocomplete="off" inputmode="numeric">
+        <svg class="input-icon" viewBox="0 0 24 24"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"/></svg>
+      </div>
+      <div class="btn" onclick="doLoginStep2()">验证</div>
+      <div class="back-btn" onclick="showLoginStep1()">返回上一步</div>
+      <div class="error" id="totpError">验证码错误</div>
+    </div>
+  </div>
+</div>
+
+<!-- TOTP 设置弹窗 -->
+<div class="totp-overlay" id="totpOverlay">
+  <div class="totp-modal">
+    <div id="totpSetupStep1">
+      <h3>设置双重验证</h3>
+      <p>用 Google Authenticator 或类似应用扫描下方二维码</p>
+      <div class="qr-wrap" id="totpQrWrap"><img id="totpQrImg" width="180" height="180" alt="QR Code"></div>
+      <div class="secret-box" id="totpSecretBox"></div>
+      <p style="font-size:11px;color:#aaa">扫码失败可手动输入上方密钥</p>
+      <input type="text" id="totpSetupCode" placeholder="输入验证码确认" maxlength="6" inputmode="numeric">
+      <div class="totp-error" id="totpSetupError"></div>
+      <div class="totp-actions">
+        <button class="btn btn-secondary" onclick="closeTotpSetup()">取消</button>
+        <button class="btn btn-primary" onclick="doEnableTotp()">确认开启</button>
+      </div>
+    </div>
+    <div id="totpSetupStep2" style="display:none">
+      <h3>双重验证已开启</h3>
+      <p style="color:#22c55e;font-weight:600">✅ 设置成功</p>
+      <p style="font-size:12px;color:#86868b;margin-top:8px">下次登录时需要输入验证码</p>
+      <div class="totp-actions">
+        <button class="btn btn-primary" onclick="closeTotpSetup()">完成</button>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- 修改密码弹窗 -->
 <div class="pw-modal-overlay" id="pwModalOverlay">
   <div class="pw-modal">
-    <h3>🔑 修改密码</h3>
+    <h3>修改密码</h3>
     <label>当前密码</label>
     <input type="password" id="pwOld" placeholder="输入当前密码">
     <label>新密码</label>
@@ -153,7 +263,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <h1>🤖 模型切换面板</h1>
     <div class="header-right">
       <span class="status" id="netStatus">检测中...</span>
-      <button class="icon-btn" onclick="openPwModal()">🔑 修改密码</button>
+      <button class="icon-btn" id="totpNavBtn" onclick="openTotpSetup()">双重验证</button>
+      <button class="icon-btn" onclick="openPwModal()">修改密码</button>
       <button class="icon-btn pw-btn" onclick="logout()">退出</button>
     </div>
   </div>
@@ -175,6 +286,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div class="sidebar-section">
       <div class="sidebar-title">提供商状态</div>
       <div id="providers">检测中...</div>
+    </div>
+
+    <!-- TG 代理状态 -->
+    <div class="sidebar-section">
+      <div class="tg-proxy-header collapsed" onclick="this.classList.toggle('collapsed');this.nextElementSibling.classList.toggle('show')">
+        <span class="tg-proxy-title">TG 代理</span>
+        <span class="tg-proxy-arrow">▼</span>
+      </div>
+      <div class="tg-proxy-body" id="desktopTgProxy">加载中...</div>
     </div>
 
   </div>
@@ -211,6 +331,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <span>当前模型：</span>
       <span class="name" id="mobileCurrentModel">加载中...</span>
     </div>
+  </div>
+
+  <!-- TG 代理状态 -->
+  <div class="mobile-section">
+    <div class="mobile-section-title" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center" onclick="toggleMobileTgProxy()">
+      <span>TG 代理</span>
+      <span style="font-size:10px;color:#aaa;transition:transform .2s" id="mobileTgArrow">▼</span>
+    </div>
+    <div id="mobileTgProxy" style="display:none">加载中...</div>
   </div>
 
   <!-- 操作 -->
@@ -263,15 +392,55 @@ async function api(url,opts={}){
 
 function showLogin(){
   document.getElementById('loginOverlay').style.display='flex';
-  document.getElementById('pwInput').focus();
+  showLoginStep1();
 }
 function hideLogin(){
   document.getElementById('loginOverlay').style.display='none';
 }
+function showLoginStep1(){
+  document.getElementById('loginStep1').style.display='block';
+  document.getElementById('loginStep2').style.display='none';
+  document.getElementById('pwInput').value='';
+  document.getElementById('totpInput').value='';
+  document.getElementById('loginError').style.display='none';
+  document.getElementById('totpError').style.display='none';
+  setTimeout(()=>document.getElementById('pwInput').focus(),100);
+}
+function showLoginStep2(){
+  document.getElementById('loginStep1').style.display='none';
+  document.getElementById('loginStep2').style.display='block';
+  document.getElementById('totpInput').value='';
+  document.getElementById('totpError').style.display='none';
+  setTimeout(()=>document.getElementById('totpInput').focus(),100);
+}
 
-async function doLogin(){
+async function doLoginStep1(){
   const pw=document.getElementById('pwInput').value;
-  const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:pw})});
+  if(!pw)return;
+  document.getElementById('loginError').style.display='none';
+  const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({step:"1",password:pw})});
+  const d=await r.json();
+  if(d.ok){
+    if(d.need_totp){
+      showLoginStep2();
+    }else{
+      authToken=d.token;
+      localStorage.setItem('panel_token',authToken);
+      hideLogin();
+      refreshAll();
+    }
+  }else{
+    document.getElementById('loginError').textContent=d.error||'密码错误';
+    document.getElementById('loginError').style.display='block';
+  }
+}
+
+async function doLoginStep2(){
+  const code=document.getElementById('totpInput').value;
+  if(!code||code.length!==6)return;
+  document.getElementById('totpError').style.display='none';
+  const pw=document.getElementById('pwInput').value;
+  const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({step:"2",password:pw,totp_code:code})});
   const d=await r.json();
   if(d.ok){
     authToken=d.token;
@@ -279,7 +448,117 @@ async function doLogin(){
     hideLogin();
     refreshAll();
   }else{
-    document.getElementById('loginError').style.display='block';
+    document.getElementById('totpError').textContent=d.error||'验证码错误';
+    document.getElementById('totpError').style.display='block';
+  }
+}
+
+// ===== TOTP 设置 =====
+let _totpSetupSecret='';
+
+async function openTotpSetup(){
+  document.getElementById('totpOverlay').classList.add('show');
+  document.getElementById('totpSetupCode').value='';
+  document.getElementById('totpSetupError').style.display='none';
+  // 先检查当前状态
+  try{
+    const s=await (await fetch('/api/totp/status')).json();
+    if(s.enabled){
+      // 已开启，显示关闭界面
+      document.getElementById('totpSetupStep1').style.display='none';
+      document.getElementById('totpSetupStep2').style.display='block';
+      document.getElementById('totpSetupStep2').innerHTML='<h3>双重验证已开启</h3><p style="color:#22c55e;font-weight:600;margin:12px 0">✅ 当前已启用</p><p style="font-size:12px;color:#86868b;margin-bottom:16px">如需关闭，请输入当前密码</p><input type="password" id="totpDisablePw" placeholder="输入当前密码" style="width:100%;padding:10px 12px;border:1px solid #e5e5ea;border-radius:8px;font-size:14px;outline:none;text-align:center"><div class="totp-error" id="totpDisableError"></div><div class="totp-actions"><button class="btn btn-secondary" onclick="closeTotpSetup()">取消</button><button class="btn btn-primary" onclick="doDisableTotpInput()">关闭验证</button></div>';
+      return;
+    }
+  }catch(e){}
+  // 未开启，显示设置界面
+  document.getElementById('totpSetupStep2').style.display='none';
+  document.getElementById('totpSetupStep1').style.display='block';
+  document.getElementById('totpQrImg').src='';
+  document.getElementById('totpSecretBox').textContent='生成中...';
+  const d=await api('/api/totp/setup',{method:'POST',body:JSON.stringify({action:"generate"})});
+  if(d.ok){
+    _totpSetupSecret=d.secret;
+    document.getElementById('totpSecretBox').textContent=d.secret;
+    document.getElementById('totpQrImg').src='/api/totp/qrcode?uri='+encodeURIComponent(d.uri)+'&token='+encodeURIComponent(authToken);
+  }
+}
+
+function closeTotpSetup(){
+  document.getElementById('totpOverlay').classList.remove('show');
+  _totpSetupSecret='';
+}
+
+async function doEnableTotp(){
+  const code=document.getElementById('totpSetupCode').value;
+  if(!code||code.length!==6)return;
+  document.getElementById('totpSetupError').style.display='none';
+  const d=await api('/api/totp/setup',{method:'POST',body:JSON.stringify({action:"enable",secret:_totpSetupSecret,code:code})});
+  if(d.ok){
+    document.getElementById('totpSetupStep1').style.display='none';
+    document.getElementById('totpSetupStep2').style.display='block';
+    showToast('✅ 双重验证已开启，请重新登录');
+    // 2秒后退出登录，让用户重新登录（此时需要输入TOTP）
+    setTimeout(()=>{
+      closeTotpSetup();
+      logout();
+    },2000);
+  }else{
+    document.getElementById('totpSetupError').textContent=d.error||'验证失败';
+    document.getElementById('totpSetupError').style.display='block';
+  }
+}
+
+async function doDisableTotpInput(){
+  const pw=document.getElementById('totpDisablePw').value;
+  if(!pw)return;
+  const d=await api('/api/totp/setup',{method:'POST',body:JSON.stringify({action:"disable",password:pw})});
+  if(d.ok){
+    showToast('✅ 双重验证已关闭，请重新登录');
+    closeTotpSetup();
+    setTimeout(logout,1500);
+  }else{
+    document.getElementById('totpDisableError').textContent=d.error||'密码错误';
+    document.getElementById('totpDisableError').style.display='block';
+  }
+}
+
+async function doDisableTotp(){
+  const pw=prompt('请输入当前密码关闭双重验证：');
+  if(!pw)return;
+  const d=await api('/api/totp/setup',{method:'POST',body:JSON.stringify({action:"disable",password:pw})});
+  if(d.ok){
+    showToast('✅ 双重验证已关闭，请重新登录');
+    closeTotpSetup();
+    setTimeout(logout,1500);
+  }else{
+    showToast('❌ '+(d.error||'操作失败'));
+  }
+}
+
+function drawQrCode(uri){
+  const canvas=document.getElementById('totpQrCanvas');
+  const ctx=canvas.getContext('2d');
+  const size=180;
+  canvas.width=size;
+  canvas.height=size;
+  // 简单的 QR 绘制（用 canvas 画方块）
+  // 实际用 qrcode.js 库更好，这里用 CDN 动态加载
+  if(window.QRCode){
+    QRCode.toCanvas(canvas,uri,{width:size,margin:1});
+  }else{
+    // 加载 qrcode.js
+    const s=document.createElement('script');
+    s.src='https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js';
+    s.onload=()=>QRCode.toCanvas(canvas,uri,{width:size,margin:1});
+    document.head.appendChild(s);
+    // 临时显示提示
+    ctx.fillStyle='#f0f2f5';
+    ctx.fillRect(0,0,size,size);
+    ctx.fillStyle='#86868b';
+    ctx.font='12px sans-serif';
+    ctx.textAlign='center';
+    ctx.fillText('加载二维码...',size/2,size/2);
   }
 }
 
@@ -290,13 +569,25 @@ function logout(){
 }
 
 // 修改密码
-function openPwModal(){
+async function openPwModal(){
   document.getElementById('pwModalOverlay').classList.add('show');
   document.getElementById('pwOld').value='';
   document.getElementById('pwNew').value='';
   document.getElementById('pwConfirm').value='';
   document.getElementById('pwModalError').style.display='none';
   document.getElementById('pwOld').focus();
+  // 检查 TOTP 状态
+  try{
+    const d=await (await fetch('/api/totp/status')).json();
+    const btn=document.getElementById('totpToggleBtn');
+    if(d.enabled){
+      btn.textContent='已开启，点击关闭';
+      btn.onclick=doDisableTotp;
+    }else{
+      btn.textContent='未开启，点击设置';
+      btn.onclick=openTotpSetup;
+    }
+  }catch(e){}
 }
 function closePwModal(){
   document.getElementById('pwModalOverlay').classList.remove('show');
@@ -454,13 +745,203 @@ async function reloadService(){
   showToast(r.ok?'✅ 配置已重载':`❌ ${r.error||r.stderr}`);
 }
 
-function refreshAll(){refreshStatus();refreshConfig();refreshModels()}
+// ===== TG 代理状态 =====
+let mobileTgExpanded=false;
+
+async function refreshTgProxy(){
+  try{
+    const d=await api('/api/tg-proxy-status');
+    if(d._unauth)return;
+    if(d.error)throw new Error(d.error);
+    renderTgProxy('desktopTgProxy',d);
+    renderTgProxy('mobileTgProxy',d);
+  }catch(e){
+    const err='<div style="font-size:12px;color:#ef4444;padding:8px 0">TG 代理未运行</div>';
+    const el1=document.getElementById('desktopTgProxy');
+    const el2=document.getElementById('mobileTgProxy');
+    if(el1)el1.innerHTML=err;
+    if(el2)el2.innerHTML=err;
+  }
+}
+
+function renderTgProxy(containerId,data){
+  const el=document.getElementById(containerId);
+  if(!el)return;
+  const paths=(data.paths||[]).map(p=>{
+    const dotClass=p.active?'active':(p.fail_count>0?'error':'idle');
+    const latency=p.latency_ms?`<span class="tg-path-latency">${p.latency_ms}ms</span>`:'<span style="color:#aaa">-</span>';
+    const fail=p.fail_count>0?`<span class="tg-path-fail">失败${p.fail_count}次</span>`:'';
+    return `<div class="tg-path-row">
+      <div class="tg-path-name">
+        <div class="tg-path-dot ${dotClass}"></div>
+        <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.name}</span>
+      </div>
+      <div class="tg-path-info">${latency} ${fail}</div>
+    </div>`;
+  }).join('');
+  const s=data.stats||{};
+  const summary=`<div class="tg-proxy-summary">
+    <span>请求 ${s.total||0}</span>
+    <span>失败 ${s.failed||0}</span>
+    <span>运行 ${s.uptime||'?'}</span>
+  </div>`;
+  el.innerHTML=paths+summary;
+}
+
+function toggleMobileTgProxy(){
+  mobileTgExpanded=!mobileTgExpanded;
+  const el=document.getElementById('mobileTgProxy');
+  const arrow=document.getElementById('mobileTgArrow');
+  if(mobileTgExpanded){
+    el.style.display='block';
+    arrow.style.transform='rotate(0deg)';
+    refreshTgProxy();
+  }else{
+    el.style.display='none';
+    arrow.style.transform='rotate(-90deg)';
+  }
+}
+
+function refreshAll(){refreshStatus();refreshConfig();refreshModels();refreshTgProxy()}
 
 function showToast(msg){
   const el=document.getElementById('toast');
   el.textContent=msg;el.classList.add('show');
   setTimeout(()=>el.classList.remove('show'),3000);
 }
+
+// 登录页科技背景 (Canvas)
+(function(){
+  const canvas=document.getElementById('loginCanvas');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+  let w,h,particles=[],gridLines=[];
+  const GRID_SIZE=60;
+  const PARTICLE_COUNT=80;
+
+  function resize(){
+    w=canvas.width=window.innerWidth;
+    h=canvas.height=window.innerHeight;
+    initGrid();
+  }
+
+  function initGrid(){
+    gridLines=[];
+    // 透视网格 - 底部密集，顶部稀疏（模拟地面）
+    const horizon=h*0.35;
+    const vanishX=w*0.5;
+    // 水平线（向消失点汇聚）
+    for(let y=horizon;y<h;y+=GRID_SIZE*0.7){
+      const progress=(y-horizon)/(h-horizon);
+      gridLines.push({type:'h',y,alpha:0.03+progress*0.06});
+    }
+    // 垂直线（向消失点汇聚）
+    for(let i=-20;i<=20;i++){
+      const bottomX=vanishX+i*(w*0.15);
+      gridLines.push({type:'d',x1:vanishX,y1:horizon,x2:bottomX,y2:h,alpha:0.03});
+    }
+  }
+
+  function initParticles(){
+    particles=[];
+    for(let i=0;i<PARTICLE_COUNT;i++){
+      particles.push({
+        x:Math.random()*w,
+        y:Math.random()*h,
+        vx:(Math.random()-0.5)*0.3,
+        vy:-0.2-Math.random()*0.5,
+        size:1+Math.random()*2.5,
+        alpha:0.1+Math.random()*0.4,
+        pulse:Math.random()*Math.PI*2,
+        pulseSpeed:0.02+Math.random()*0.03
+      });
+    }
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+
+    // 背景渐变
+    const bgGrad=ctx.createLinearGradient(0,0,0,h);
+    bgGrad.addColorStop(0,'#08080f');
+    bgGrad.addColorStop(0.5,'#0a0a1a');
+    bgGrad.addColorStop(1,'#0f1020');
+    ctx.fillStyle=bgGrad;
+    ctx.fillRect(0,0,w,h);
+
+    // 顶部聚光灯效果
+    const spotGrad=ctx.createRadialGradient(w*0.5,0,0,w*0.5,0,h*0.7);
+    spotGrad.addColorStop(0,'rgba(79,172,254,0.06)');
+    spotGrad.addColorStop(0.5,'rgba(79,172,254,0.02)');
+    spotGrad.addColorStop(1,'transparent');
+    ctx.fillStyle=spotGrad;
+    ctx.fillRect(0,0,w,h);
+
+    // 底部橙色光晕
+    const orangeGrad=ctx.createRadialGradient(w*0.5,h,0,w*0.5,h,h*0.5);
+    orangeGrad.addColorStop(0,'rgba(255,107,53,0.04)');
+    orangeGrad.addColorStop(1,'transparent');
+    ctx.fillStyle=orangeGrad;
+    ctx.fillRect(0,0,w,h);
+
+    // 绘制网格
+    ctx.lineWidth=1;
+    for(const line of gridLines){
+      ctx.strokeStyle=`rgba(79,172,254,${line.alpha})`;
+      ctx.beginPath();
+      if(line.type==='h'){
+        ctx.moveTo(0,line.y);
+        ctx.lineTo(w,line.y);
+      }else{
+        ctx.moveTo(line.x1,line.y1);
+        ctx.lineTo(line.x2,line.y2);
+      }
+      ctx.stroke();
+    }
+
+    // 绘制粒子
+    for(const p of particles){
+      p.x+=p.vx;
+      p.y+=p.vy;
+      p.pulse+=p.pulseSpeed;
+      const currentAlpha=p.alpha*(0.6+0.4*Math.sin(p.pulse));
+
+      if(p.y<-10){p.y=h+10;p.x=Math.random()*w}
+      if(p.x<-10)p.x=w+10;
+      if(p.x>w+10)p.x=-10;
+
+      // 粒子光晕
+      const grad=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.size*3);
+      grad.addColorStop(0,`rgba(79,172,254,${currentAlpha*0.5})`);
+      grad.addColorStop(0.5,`rgba(79,172,254,${currentAlpha*0.15})`);
+      grad.addColorStop(1,'transparent');
+      ctx.fillStyle=grad;
+      ctx.fillRect(p.x-p.size*3,p.y-p.size*3,p.size*6,p.size*6);
+
+      // 粒子核心
+      ctx.fillStyle=`rgba(200,220,255,${currentAlpha})`;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.size*0.5,0,Math.PI*2);
+      ctx.fill();
+    }
+
+    // 扫描线效果（缓慢移动的水平线）
+    const scanY=(Date.now()*0.03)%h;
+    const scanGrad=ctx.createLinearGradient(0,scanY-30,0,scanY+30);
+    scanGrad.addColorStop(0,'transparent');
+    scanGrad.addColorStop(0.5,'rgba(79,172,254,0.03)');
+    scanGrad.addColorStop(1,'transparent');
+    ctx.fillStyle=scanGrad;
+    ctx.fillRect(0,scanY-30,w,60);
+
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  initParticles();
+  draw();
+  window.addEventListener('resize',()=>{resize();initParticles()});
+})();
 
 // 初始加载
 refreshAll();

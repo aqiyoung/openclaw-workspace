@@ -96,7 +96,31 @@ CFG = {
 }
 
 _pw = ["Younglee1018"]
+_totp_secret = [""]
 _tokens = {}
+_totp_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".totp_secret")
+
+def load_totp():
+    try:
+        if os.path.exists(_totp_file):
+            with open(_totp_file) as f:
+                _totp_secret[0] = f.read().strip()
+    except:
+        pass
+
+def save_totp(secret):
+    try:
+        with open(_totp_file, "w") as f:
+            f.write(secret)
+        _totp_secret[0] = secret
+    except:
+        pass
+
+def verify_totp(code):
+    if not _totp_secret[0]:
+        return True  # 未设置TOTP时跳过
+    import pyotp
+    return pyotp.TOTP(_totp_secret[0]).verify(code, valid_window=1)
 
 # ---------------------------------------------------------------------------
 # 工具函数
@@ -501,7 +525,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         path = self.path.split("?")[0].rstrip("/") or "/"
-        if path not in ("/api/login",) and path.startswith("/api/") and not self._is_auth():
+        if path not in ("/api/login", "/api/totp/status") and path.startswith("/api/") and not self._is_auth():
             self._send({"error": "未授权，请先登录"}, 401)
             return
         if path == "/":
@@ -527,6 +551,46 @@ class Handler(BaseHTTPRequestHandler):
             })
         elif path == "/api/models":
             self._send(get_all_models())
+        elif path == "/api/totp/status":
+            self._send({"enabled": bool(_totp_secret[0])})
+            return
+
+        elif path == "/api/totp/qrcode":
+            # GET 方式返回二维码 PNG
+            try:
+                import qrcode
+                from io import BytesIO
+                from urllib.parse import urlparse, parse_qs
+                parsed = urlparse(self.path)
+                params = parse_qs(parsed.query)
+                uri = params.get("uri", [""])[0]
+                if not uri:
+                    self._send({"error": "需要 uri"}, 400); return
+                qr = qrcode.QRCode(version=1, box_size=6, border=2)
+                qr.add_data(uri)
+                qr.make(fit=True)
+                img = qr.make_image(fill_color="black", back_color="white")
+                buf = BytesIO()
+                img.save(buf, format="PNG")
+                self.send_response(200)
+                self.send_header("Content-Type", "image/png")
+                self.send_header("Content-Length", str(buf.tell()))
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(buf.getvalue())
+            except ImportError:
+                self._send({"error": "需要安装 qrcode: pip3 install qrcode[pil]"}, 500)
+            except Exception as e:
+                self._send({"error": str(e)}, 500)
+            return
+
+        elif path == "/api/tg-proxy-status":
+            try:
+                req = urllib.request.Request("http://127.0.0.1:7892/status")
+                with urllib.request.urlopen(req, timeout=5) as r:
+                    self._send(json.loads(r.read()))
+            except Exception as e:
+                self._send({"error": str(e)[:100]}, 502)
         else:
             self.send_error(404)
 
@@ -538,19 +602,100 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/login":
             try:
                 d = json.loads(body)
-                import sys; sys.stderr.write(f"DEBUG recv={d.get('password','')} pw={_pw[0]}\n"); sys.stderr.flush()
-                if d.get("password", "").strip() == _pw[0].strip():
+                step = d.get("step", "1")
+                if step == "1":
+                    # 第一步：验证密码
+                    if d.get("password", "").strip() != _pw[0].strip():
+                        self._send({"error": "密码错误"}, 403)
+                        return
+                    need_totp = bool(_totp_secret[0])
+                    if need_totp:
+                        self._send({"ok": True, "need_totp": True})
+                    else:
+                        # 未开启 TOTP，直接发 token
+                        t = make_token()
+                        _tokens[t] = time.time() + 86400
+                        self._send({"ok": True, "need_totp": False, "token": t})
+                elif step == "2":
+                    # 第二步：验证 TOTP
+                    if not verify_totp(d.get("totp_code", "")):
+                        self._send({"error": "验证码错误"}, 403)
+                        return
                     t = make_token()
                     _tokens[t] = time.time() + 86400
                     self._send({"ok": True, "token": t})
                 else:
-                    self._send({"error": "密码错误"}, 403)
+                    self._send({"error": "无效步骤"}, 400)
             except Exception as e:
                 self._send({"error": str(e)}, 500)
             return
 
         if not self._is_auth():
             self._send({"error": "未授权，请先登录"}, 401)
+            return
+
+        if path == "/api/totp/qrcode":
+            # 返回二维码 PNG（支持 GET 和 POST）
+            try:
+                import qrcode
+                from io import BytesIO
+                # 支持 GET 和 POST
+                if method == "GET":
+                    from urllib.parse import urlparse, parse_qs
+                    parsed = urlparse(self.path)
+                    params = parse_qs(parsed.query)
+                    uri = params.get("uri", [""])[0]
+                else:
+                    d = json.loads(body)
+                    uri = d.get("uri", "")
+                if not uri:
+                    self._send({"error": "需要 uri"}, 400); return
+                qr = qrcode.QRCode(version=1, box_size=6, border=2)
+                qr.add_data(uri)
+                qr.make(fit=True)
+                img = qr.make_image(fill_color="black", back_color="white")
+                buf = BytesIO()
+                img.save(buf, format="PNG")
+                self.send_response(200)
+                self.send_header("Content-Type", "image/png")
+                self.send_header("Content-Length", str(buf.tell()))
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(buf.getvalue())
+            except ImportError:
+                self._send({"error": "需要安装 qrcode: pip3 install qrcode[pil]"}, 500)
+            except Exception as e:
+                self._send({"error": str(e)}, 500)
+            return
+
+        if path == "/api/totp/setup":
+            try:
+                import pyotp
+                d = json.loads(body)
+                action = d.get("action", "")
+                if action == "generate":
+                    secret = pyotp.random_base32()
+                    uri = pyotp.totp.TOTP(secret).provisioning_uri(name="ModelPanel", issuer_name="model.threel.site")
+                    self._send({"ok": True, "secret": secret, "uri": uri})
+                elif action == "enable":
+                    code = d.get("code", "")
+                    secret = d.get("secret", "")
+                    if not secret or not code:
+                        self._send({"error": "需要 secret 和 code"}, 400); return
+                    if not pyotp.TOTP(secret).verify(code, valid_window=1):
+                        self._send({"error": "验证码错误"}, 403); return
+                    save_totp(secret)
+                    self._send({"ok": True, "message": "双重验证已开启"})
+                elif action == "disable":
+                    d2 = json.loads(body)
+                    if d2.get("password", "") != _pw[0]:
+                        self._send({"error": "密码错误"}, 403); return
+                    save_totp("")
+                    self._send({"ok": True, "message": "双重验证已关闭"})
+                else:
+                    self._send({"error": "无效操作"}, 400)
+            except Exception as e:
+                self._send({"error": str(e)}, 500)
             return
 
         if path == "/api/change-password":
@@ -615,7 +760,8 @@ class Handler(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     load_env()
     _pw[0] = os.environ.get("PANEL_PASSWORD", "changeme")
-    import sys; sys.stderr.write(f"INIT: _pw[0]='{_pw[0]}' env='{os.environ.get('PANEL_PASSWORD','NOT_SET')}'\n"); sys.stderr.flush()
+    load_totp()
+    import sys; sys.stderr.write(f"INIT: _pw[0]='{_pw[0]}' totp={'on' if _totp_secret[0] else 'off'}\n"); sys.stderr.flush()
 
     # 检测框架
     fw = detect_framework()
