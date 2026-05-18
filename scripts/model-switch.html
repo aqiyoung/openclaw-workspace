@@ -178,12 +178,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <div id="providers">检测中...</div>
     </div>
 
-    <!-- 快捷操作 -->
-    <div class="sidebar-section">
-      <div class="sidebar-title">操作</div>
-      <button class="btn btn-secondary btn-block" onclick="refreshAll()" style="margin-bottom:8px">🔄 刷新状态</button>
-      <button class="btn btn-secondary btn-block" onclick="reloadService()">⚙️ 重载服务</button>
-    </div>
   </div>
 
   <!-- 右侧内容 -->
@@ -194,7 +188,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <p style="font-size:13px;color:#86868b;margin-bottom:16px">在左侧选择一个提供商，然后在右侧选择一个模型进行切换。</p>
       <div class="actions">
         <button class="btn btn-primary" id="btnSwitch" disabled onclick="switchModel()">切换模型</button>
-        <button class="btn btn-secondary" onclick="refreshAll()">刷新</button>
+        <button class="btn btn-secondary" onclick="refreshAll()">🔄 刷新</button>
+        <button class="btn btn-secondary" onclick="reloadService()">⚙️ 重载</button>
       </div>
     </div>
 
