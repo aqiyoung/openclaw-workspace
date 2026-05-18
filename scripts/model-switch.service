@@ -1,0 +1,13 @@
+[Unit]
+Description=Model Switch Panel
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/model-switch/model-switch.py
+Restart=always
+RestartSec=5
+WatchdogSec=60
+
+[Install]
+WantedBy=default.target
