@@ -212,6 +212,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     </div>
   </div>
 
+  <!-- 操作 -->
+  <div class="mobile-section">
+    <button class="btn btn-primary btn-block" id="mobileBtnSwitch" disabled onclick="switchModel()" style="margin-bottom:8px">切换模型</button>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-secondary btn-block" onclick="refreshAll()">刷新</button>
+      <button class="btn btn-secondary btn-block" onclick="reloadService()">重载服务</button>
+    </div>
+  </div>
+
   <!-- 提供商状态 -->
   <div class="mobile-section">
     <div class="mobile-section-title">提供商状态</div>
@@ -225,16 +234,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
       <span style="font-size:10px;color:#aaa;transition:transform .2s" id="mobileModelArrow">▼</span>
     </div>
     <div id="mobileModelGroups" style="display:none">加载中...</div>
-  </div>
-
-  <!-- 切换操作 -->
-  <div class="mobile-section">
-    <div class="mobile-section-title">操作</div>
-    <button class="btn btn-primary btn-block" id="mobileBtnSwitch" disabled onclick="switchModel()" style="margin-bottom:8px">切换模型</button>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-secondary btn-block" onclick="refreshAll()">🔄 刷新</button>
-      <button class="btn btn-secondary btn-block" onclick="reloadService()">⚙️ 重载</button>
-    </div>
   </div>
 </div>
 
