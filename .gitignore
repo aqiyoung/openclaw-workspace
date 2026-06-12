@@ -4,3 +4,7 @@ scripts/tg-proxy.py
 scripts/tg-proxy.service
 scripts/tg-proxy-install.sh
 scripts/.totp_secret
+
+# Python 编译产物
+scripts/__pycache__/
+scripts/*.pyc
