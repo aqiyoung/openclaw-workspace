@@ -1,0 +1,1 @@
+[code-worker/sessions/code-worker/7df8c18a-490c-4cd4-9bca-3c45631b9ac7.jsonl#L27] Assistant: [assistant turn failed before producing content]

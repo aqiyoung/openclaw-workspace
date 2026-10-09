@@ -1,0 +1,100 @@
+package com.threel.openlist.ui
+
+import androidx.activity.compose.BackHandler
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.remember
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.threel.openlist.data.api.OpenListRepository
+import com.threel.openlist.ui.screen.AboutScreen
+import com.threel.openlist.ui.screen.FileBrowserScreen
+import com.threel.openlist.ui.screen.LoginScreen
+import com.threel.openlist.util.TelemetryLog
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltViewModel
+class RootViewModel @Inject constructor(
+    private val repo: OpenListRepository,
+) : ViewModel() {
+    private val _loggedIn = MutableStateFlow<Boolean?>(null)  // null=unknown
+    val loggedIn = _loggedIn.asStateFlow()
+
+    init {
+        TelemetryLog.i("NavGraph", "OpenListNavGraph init, isLoggedIn check...")
+        viewModelScope.launch {
+            val isLogin = repo.isLoggedIn()
+            TelemetryLog.i("NavGraph", "isLoggedIn=$isLogin")
+            _loggedIn.value = isLogin
+        }
+    }
+
+    fun logout() {
+        viewModelScope.launch {
+            _loggedIn.value = false
+        }
+    }
+
+    fun setLoggedIn() {
+        _loggedIn.value = true
+    }
+}
+
+@Composable
+fun OpenListNavGraph(vm: RootViewModel = hiltViewModel()) {
+    val nav = rememberNavController()
+    val loggedIn by vm.loggedIn.collectAsState()
+
+    when (loggedIn) {
+        null -> {
+            // 启动检查中 - 居中 Loading (v0.3.14 玻璃风)
+            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+                CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
+            }
+        }
+        true -> NavHost(nav, startDestination = "files") {
+            composable("files") {
+                // 老板 6/14: 在 files (根目录) 按返回键 -> 退出 APP (不返回上一级目录)
+                val currentPath by remember { mutableStateOf("") }
+                FileBrowserScreen(
+                    onLogout = { vm.logout() },
+                    onAbout = { nav.navigate("about") }
+                )
+            }
+            composable("about") {
+                // About 屏幕: 系统返回键 / 手势返回 -> 回到 files
+                BackHandler {
+                    if (!nav.popBackStack()) {
+                        // 没栈了 (理论不会)
+                    }
+                }
+                AboutScreen(onBack = { nav.popBackStack() })
+            }
+        }
+        false -> NavHost(nav, startDestination = "login") {
+            composable("login") {
+                // 老板 6/14: LoginScreen 按返回键 -> 直接退出 APP (没栈)
+                LoginScreen(onLoginSuccess = { vm.setLoggedIn() })
+            }
+        }
+    }
+}
+
+// MutableState import
+private val mutableState: Unit = Unit

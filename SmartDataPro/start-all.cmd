@@ -1,0 +1,66 @@
+@echo off
+chcp 65001 >nul
+
+:: 切换到脚本所在目录
+cd /d "%~dp0"
+
+:: 统一文档转换工具 - 启动脚本
+:: 同时启动前端和后端服务
+
+echo ========================================
+echo SmartDataPro 智能数据处理平台 启动脚本
+echo ========================================
+
+echo.
+echo [1/2] 启动后端服务...
+cd backend
+start "Backend Server" python main.py
+echo 后端服务已启动，运行在 http://localhost:8017/
+
+:: 等待后端服务初始化
+timeout /t 2 /nobreak >nul
+
+echo.
+echo [2/2] 启动前端服务...
+cd ..\frontend
+start "Frontend Server" npm run dev
+echo 前端服务已启动，运行在 http://localhost:5180/
+
+:: 等待前端服务初始化
+timeout /t 3 /nobreak >nul
+
+cd ..
+echo.
+echo ========================================
+echo 🎉 所有服务已成功启动！
+echo ========================================
+echo 前端访问地址: http://localhost:5180/
+echo 后端访问地址: http://localhost:8017/
+echo ========================================
+echo 按任意键关闭所有服务并退出...
+echo ========================================
+
+:: 等待用户输入
+pause >nul
+
+:: 关闭所有服务
+echo.
+echo ========================================
+echo 正在停止所有服务...
+echo ========================================
+
+:: 关闭后端服务
+TASKKILL /FI "WINDOWTITLE eq Backend Server" /F >nul 2>&1
+echo 后端服务已停止
+
+:: 关闭前端服务
+TASKKILL /FI "WINDOWTITLE eq Frontend Server" /F >nul 2>&1
+echo 前端服务已停止
+
+echo.
+echo ========================================
+echo 所有服务已停止，脚本退出。
+echo ========================================
+
+:: 暂停以查看结果
+timeout /t 2 /nobreak >nul

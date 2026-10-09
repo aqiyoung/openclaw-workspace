@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        /* 文章容器 */
+        .article-container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* 顶部装饰条 */
+        .article-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff);
+            z-index: 10;
+        }
+        
+        /* 文章头部 */
+        .article-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 头部装饰图案 */
+        .article-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            animation: moveBackground 20s linear infinite;
+        }
+        
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+        
+        .article-title {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .article-meta {
+            font-size: 15px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .article-meta span {
+            margin: 0 12px;
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 14px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        /* 文章内容 */
+        .article-content {
+            padding: 50px 40px;
+        }
+        
+        /* 标题样式 */
+        .article-content h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin: 40px 0 25px;
+            padding-bottom: 12px;
+            border-bottom: 4px solid transparent;
+            border-image: linear-gradient(90deg, #667eea, #764ba2) 1;
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .article-content h1::before {
+            content: "📌";
+            position: absolute;
+            left: 0;
+            font-size: 22px;
+        }
+        
+        .article-content h2 {
+            font-size: 22px;
+            color: #34495e;
+            margin: 35px 0 20px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .article-content h2::before {
+            content: "🔹";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+        }
+        
+        .article-content h3 {
+            font-size: 19px;
+            color: #5d6d7e;
+            margin: 25px 0 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .article-content h3::before {
+            content: "🔸";
+            position: absolute;
+            left: 0;
+            font-size: 14px;
+        }
+        
+        /* 段落样式 */
+        .article-content p {
+            margin: 18px 0;
+            font-size: 16px;
+            line-height: 1.9;
+            color: #444;
+            text-align: justify;
+        }
+        
+        /* 强调文本 */
+        .article-content strong {
+            color: #e74c3c;
+            font-weight: 700;
+            background: linear-gradient(transparent 60%, #ffeaa7 60%);
+            padding: 0 4px;
+        }
+        
+        .article-content em {
+            color: #9b59b6;
+            font-style: italic;
+            font-weight: 500;
+        }
+        
+        /* 引用块 */
+        .article-content blockquote {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 15px 15px 0;
+            font-style: italic;
+            color: #555;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        .article-content blockquote::before {
+            content: "💡";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            font-size: 28px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* 代码块 - 优化版 */
+        .article-content pre {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            color: #e2e8f0;
+            padding: 25px;
+            border-radius: 15px;
+            overflow-x: auto;
+            margin: 25px 0;
+            font-family: "Fira Code", "Consolas", "Monaco", monospace;
+            font-size: 14px;
+            line-height: 1.7;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border: 1px solid #4a5568;
+        }
+        
+        /* 代码块标题栏 */
+        .article-content pre::before {
+            content: "💻 代码示例";
+            display: block;
+            background: #4a5568;
+            color: #cbd5e0;
+            padding: 8px 15px;
+            margin: -25px -25px 15px -25px;
+            border-radius: 15px 15px 0 0;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        /* 行内代码 */
+        .article-content code {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            color: #e74c3c;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-family: "Fira Code", "Consolas", monospace;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .article-content pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+            border: none;
+            font-weight: normal;
+        }
+        
+        /* 代码语法高亮模拟 */
+        .article-content pre .keyword { color: #c792ea; }
+        .article-content pre .string { color: #c3e88d; }
+        .article-content pre .comment { color: #676e95; font-style: italic; }
+        .article-content pre .function { color: #82aaff; }
+        .article-content pre .number { color: #f78c6c; }
+        
+        /* 列表样式 */
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        .article-content li {
+            margin: 12px 0;
+            line-height: 1.7;
+            position: relative;
+        }
+        
+        .article-content ul li::marker {
+            content: "✅ ";
+            font-size: 16px;
+        }
+        
+        .article-content ol li::marker {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        /* 表格样式 */
+        .article-content table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .article-content th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .article-content td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+        }
+        
+        .article-content tr:nth-child(even) {
+            background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f5 100%);
+        }
+        
+        .article-content tr:hover {
+            background: linear-gradient(135deg, #f1f4ff 0%, #e8ecff 100%);
+            transform: translateY(-1px);
+            transition: all 0.3s ease;
+        }
+        
+        /* 图片样式 */
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease;
+        }
+        
+        .article-content img:hover {
+            transform: scale(1.02);
+        }
+        
+        /* 分割线 */
+        .article-content hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+            margin: 40px 0;
+            border-radius: 2px;
+        }
+        
+        /* 文章底部 */
+        .article-footer {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+            position: relative;
+        }
+        
+        .article-footer::before {
+            content: "✨ ✨ ✨";
+            display: block;
+            font-size: 24px;
+            margin-bottom: 20px;
+            opacity: 0.7;
+        }
+        
+        .article-footer p {
+            color: #6c757d;
+            font-size: 14px;
+            margin: 8px 0;
+        }
+        
+        .article-footer .author {
+            font-weight: 700;
+            color: #495057;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .article-footer .author::before {
+            content: "👤 ";
+        }
+        
+        .article-footer .social {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        
+        .article-footer .social span {
+            margin: 0 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-footer .social span:hover {
+            transform: scale(1.2);
+        }
+        
+        /* 装饰元素 */
+        .decoration {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 28px;
+            opacity: 0.6;
+            letter-spacing: 15px;
+        }
+        
+        /* 提示框 */
+        .article-content .tip-box {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border: 1px solid #b1dfbb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .article-content .tip-box::before {
+            content: "🎯";
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            font-size: 24px;
+        }
+        
+        .article-content .warning-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 1px solid #ffd93d;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .article-content .warning-box::before {
+            content: "⚠️";
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            font-size: 24px;
+        }
+        
+        .article-content .info-box {
+            background: linear-gradient(135deg, #cce5ff 0%, #b8daff 100%);
+            border: 1px solid #99cbff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .article-content .info-box::before {
+            content: "ℹ️";
+            position: absolute;
+            left: 15px;
+            top: 20px;
+            font-size: 24px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .article-header {
+                padding: 35px 25px;
+            }
+            
+            .article-title {
+                font-size: 26px;
+            }
+            
+            .article-meta span {
+                margin: 5px;
+                padding: 5px 10px;
+                font-size: 13px;
+            }
+            
+            .article-content {
+                padding: 35px 25px;
+            }
+            
+            .article-content h1 {
+                font-size: 22px;
+            }
+            
+            .article-content h2 {
+                font-size: 20px;
+            }
+            
+            .article-content pre {
+                padding: 20px;
+                font-size: 13px;
+            }
+            
+            .article-content pre::before {
+                margin: -20px -20px 15px -20px;
+                padding: 6px 12px;
+            }
+        }
+        
+        /* 打印样式 */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .article-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .article-container::before {
+                display: none;
+            }
+            
+            .article-header {
+                background: #667eea !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .article-content pre {
+                background: #f8f9fa !important;
+                color: #333 !important;
+                border: 1px solid #ddd;
+            }
+            
+            .article-content pre::before {
+                background: #eee !important;
+                color: #333 !important;
+            }
+        }
+        
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <!-- 文章头部 -->
+        <div class="article-header">
+            <h1 class="article-title">{{title}}</h1>
+            <div class="article-meta">
+                <span>✍️ {{author}}</span>
+                <span>📅 {{date}}</span>
+                <span>⏱️ {{reading_time}}分钟</span>
+                <span>👀 阅读量: {{reading_count}}</span>
+            </div>
+        </div>
+        
+        <!-- 文章内容 -->
+        <div class="article-content">
+            {{content}}
+        </div>
+        
+        <!-- 装饰元素 -->
+        <div class="decoration">
+            ✨ 💫 ⭐ 🌟 ✨
+        </div>
+        
+        <!-- 文章底部 -->
+        <div class="article-footer">
+            <p class="author">{{author}}</p>
+            <p>感谢阅读！如果觉得有用，欢迎分享给朋友~</p>
+            <p>💬 欢迎在评论区留言讨论</p>
+            <div class="social">
+                <span>👍 点赞</span>
+                <span>⭐ 收藏</span>
+                <span>🔄 分享</span>
+                <span>💬 评论</span>
+            </div>
+            <p style="margin-top: 20px; font-size: 12px; opacity: 0.7;">© {{year}} {{author}} · 保留所有权利</p>
+        </div>
+    </div>
+</body>
+</html>

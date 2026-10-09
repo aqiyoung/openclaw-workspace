@@ -1,0 +1,41 @@
+#!/bin/bash
+URLS=(
+  "http://69.30.245.50/live/cctv1.m3u8"
+  "http://198.204.240.250:82/live/cctv1.m3u8"
+  "http://74.91.26.218:82/live/cctv1hd.m3u8"
+  "http://74.91.26.218:82/live/cctv3hd.m3u8"
+  "http://74.91.26.218:82/live/cctv7hd.m3u8"
+  "http://74.91.26.218:82/live/cctv8hd.m3u8"
+  "http://74.91.26.218:82/live/cctv10hd.m3u8"
+  "http://74.91.26.218:82/live/cctv11hd.m3u8"
+  "http://74.91.26.218:82/live/cctv13hd.m3u8"
+  "http://74.91.26.218:82/live/cctv14hd.m3u8"
+  "http://74.91.26.218:82/live/cctv15hd.m3u8"
+  "http://74.91.26.218:82/live/cctv16hd.m3u8"
+  "http://74.91.26.218:82/live/cctv17hd.m3u8"
+  "http://74.91.26.218:82/live/cctv4hd.m3u8"
+  "http://69.30.245.50/live/cctv6.m3u8"
+  "http://198.204.240.250:82/live/cctv6.m3u8"
+  "http://198.204.240.250:82/live/cctv4k.m3u8"
+  "https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8"
+  "https://xykt-fix.github.io/play/a02b/index.m3u8"
+  "https://xykt-fix.github.io/play/a02e/index.m3u8"
+  "https://xykt-fix.github.io/Y77.m3u8"
+  "https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8"
+  "https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8"
+  "http://go.bkpcp.top/mg/cctv13"
+  "https://cdn3.163189.xyz/163189/cctv13"
+  "http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub"
+  "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub"
+)
+for u in "${URLS[@]}"; do
+    ./test_urls.sh "$u" "" 6 >> baseline.txt 2>&1 &
+done
+wait
+echo "all done"

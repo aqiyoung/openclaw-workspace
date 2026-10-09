@@ -1,0 +1,463 @@
+[http://69.30.245.50/live/cctv1.m3u8]
+  url=http://69.30.245.50/live/cctv1.m3u8
+  HEAD=curl: (56) Recv failure: Connection reset by peer
+000|0|0.300030 exit=56 elapsed=374ms
+  GET =curl: (56) Recv failure: Connection reset by peer
+000|0|0.313180 exit=56 bytes=14
+  body_head=404: Not Found
+
+[http://69.30.245.50/live/cctv6.m3u8]
+  url=http://69.30.245.50/live/cctv6.m3u8
+  HEAD=curl: (56) Recv failure: Connection reset by peer
+000|0|0.300862 exit=56 elapsed=404ms
+  GET =curl: (56) Recv failure: Connection reset by peer
+000|0|0.307569 exit=56 bytes=14
+  body_head=404: Not Found
+
+[https://xykt-fix.github.io/play/a02b/index.m3u8]
+  url=https://xykt-fix.github.io/play/a02b/index.m3u8
+  HEAD=curl: (18) transfer closed with 2018 bytes remaining to read
+200|0|0.296911 exit=18 elapsed=394ms
+  GET =206|1024|0.400181 exit=0 bytes=1024
+  body_head=#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1372000
+https://shcm-stream-cf1.stream.264788.xyz/cms001/ch00000090990000001059/2500_hls.m3u8?IASHttpSessionId=RR&m3u8_level=2&ispcode=12&ztecid=ch0000
+
+[https://xykt-fix.github.io/Y77.m3u8]
+  url=https://xykt-fix.github.io/Y77.m3u8
+  HEAD=curl: (18) transfer closed with 1662 bytes remaining to read
+200|0|0.528777 exit=18 elapsed=597ms
+  GET =206|1024|0.729083 exit=0 bytes=1024
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=4716800,AVERAGE-BANDWIDTH=4540800,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,FRAME-RATE=25.000
+https://shcm-stream-cf1.stream
+
+[https://xykt-fix.github.io/play/a02e/index.m3u8]
+  url=https://xykt-fix.github.io/play/a02e/index.m3u8
+  HEAD=curl: (18) transfer closed with 2515 bytes remaining to read
+200|0|0.551035 exit=18 elapsed=671ms
+  GET =206|1024|0.673699 exit=0 bytes=1024
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=4716800,AVERAGE-BANDWIDTH=4540800,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,FRAME-RATE=25.000
+https://shcm-stream-cf1.stream
+
+[https://cdn3.163189.xyz/163189/cctv13]
+  url=https://cdn3.163189.xyz/163189/cctv13
+  HEAD=curl: (18) transfer closed with 15 bytes remaining to read
+521|0|2.792247 exit=18 elapsed=2889ms
+  GET =521|15|0.797334 exit=0 bytes=15
+  body_head=error code: 521
+
+[https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8]
+  url=https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
+  HEAD=curl: (18) transfer closed with 426 bytes remaining to read
+200|0|0.983628 exit=18 elapsed=1084ms
+  GET =200|426|2.851863 exit=0 bytes=426
+  body_head=#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:735681
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXTINF:4.560000,
+1781762780.ts
+#EXTINF:4.920000,
+1781762785.ts
+#EXTINF:5.040000,
+1781762789.t
+
+[http://198.204.240.250:82/live/cctv4k.m3u8]
+  url=http://198.204.240.250:82/live/cctv4k.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 out of 198 bytes received
+200|0|5.999677 exit=28 elapsed=6053ms
+  GET =206|198|0.515095 exit=0 bytes=198
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:12
+#EXT-X-MEDIA-SEQUENCE:282
+#EXTINF:5.840000,
+cctv4k/segment_282.ts
+#EXTINF:10.800000,
+cctv4k/segment_283.ts
+#EXTINF:12.200000,
+cctv4k/segment_284.ts
+
+[http://go.bkpcp.top/mg/cctv13]
+  url=http://go.bkpcp.top/mg/cctv13
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 bytes received
+302|0|6.001191 exit=28 elapsed=6078ms
+  GET =206|138|0.490063 exit=0 bytes=138
+  body_head=<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+[http://198.204.240.250:82/live/cctv1.m3u8]
+  url=http://198.204.240.250:82/live/cctv1.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 out of 202 bytes received
+200|0|6.000288 exit=28 elapsed=6147ms
+  GET =206|202|0.513391 exit=0 bytes=202
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:12
+#EXT-X-MEDIA-SEQUENCE:12077
+#EXTINF:12.320000,
+cctv1/segment_12077.ts
+#EXTINF:8.840000,
+cctv1/segment_12078.ts
+#EXTINF:8.720000,
+cctv1/segment_12079.t
+
+[http://198.204.240.250:82/live/cctv6.m3u8]
+  url=http://198.204.240.250:82/live/cctv6.m3u8
+  HEAD=curl: (28) Operation timed out after 6008 milliseconds with 0 out of 204 bytes received
+200|0|6.008873 exit=28 elapsed=6139ms
+  GET =206|204|0.523860 exit=0 bytes=204
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:12078
+#EXTINF:10.000000,
+cctv6/segment_12078.ts
+#EXTINF:10.000000,
+cctv6/segment_12079.ts
+#EXTINF:10.000000,
+cctv6/segment_12080
+
+[http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999785 exit=28 elapsed=6068ms
+  GET =206|191|0.938447 exit=0 bytes=191
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:506
+#EXTINF:10.000000,
+ystq/segment_506.ts
+#EXTINF:8.800000,
+ystq/segment_507.ts
+#EXTINF:9.800000,
+ystq/segment_508.ts
+
+[http://74.91.26.218:82/live/cctv11hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv11hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999695 exit=28 elapsed=6018ms
+  GET =206|205|1.043962 exit=0 bytes=205
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:552
+#EXTINF:10.000000,
+cctv3md/segment_552.ts
+#EXTINF:10.000000,
+cctv3md/segment_553.ts
+#EXTINF:10.000000,
+cctv3md/segment_554.t
+
+[http://74.91.26.218:82/live/cctv3hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv3hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999563 exit=28 elapsed=6022ms
+  GET =206|202|1.044636 exit=0 bytes=202
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:552
+#EXTINF:10.000000,
+cctv3md/segment_552.ts
+#EXTINF:10.000000,
+cctv3md/segment_553.ts
+#EXTINF:10.000000,
+cctv3md/segment_554.t
+
+[http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6002 milliseconds with 0 bytes received
+302|0|6.002510 exit=28 elapsed=6098ms
+  GET =206|195|0.947205 exit=0 bytes=195
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:493
+#EXTINF:7.760000,
+gefwq/segment_493.ts
+#EXTINF:10.000000,
+gefwq/segment_494.ts
+#EXTINF:10.000000,
+gefwq/segment_495.ts
+
+[http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|6.000790 exit=28 elapsed=6116ms
+  GET =206|191|0.945724 exit=0 bytes=191
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:490
+#EXTINF:8.600000,
+sjdl/segment_490.ts
+#EXTINF:10.360000,
+sjdl/segment_491.ts
+#EXTINF:7.840000,
+sjdl/segment_492.ts
+
+[http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
+[http://74.91.26.218:82/live/cctv1hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv1hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|6.000466 exit=28 elapsed=6098ms
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+  GET =206|192|1.001490 exit=0 bytes=408
+301|0|6.000052 exit=28 elapsed=6092ms
+  GET =206|206|1.054268 exit=0 bytes=408
+[https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8]
+  url=https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=2616415,AVERAGE-BANDWIDTH=2378560,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=768x576,FRAME-RATE=25.000
+CCTV-10-avc1_2000000=3-mp4a_256000_eng=10.m3u
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 out of 408 bytes received
+200|0|6.001469 exit=28 elapsed=6119ms
+  GET =206|408|0.985726 exit=0 bytes=192
+
+[http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6011 milliseconds with 0 bytes received
+302|0|6.011235 exit=28 elapsed=6111ms
+  GET =206|192|0.971976 exit=0 bytes=408
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=2616415,AVERAGE-BANDWIDTH=2378560,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=768x576,FRAME-RATE=25.000
+CCTV-10-avc1_2000000=3-mp4a_256000_eng=10.m3u
+
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:495
+#EXTINF:10.760000,
+fyyy/segment_495.ts
+#EXTINF:10.000000,
+fyyy/segment_496.ts
+#EXTINF:8.600000,
+fyyy/segment_497.ts
+
+[http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 bytes received
+302|0|6.001420 exit=28 elapsed=6107ms
+  GET =206|192|1.009114 exit=0 bytes=192
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:495
+#EXTINF:10.760000,
+fyyy/segment_495.ts
+#EXTINF:10.000000,
+fyyy/segment_496.ts
+#EXTINF:8.600000,
+fyyy/segment_497.ts
+
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:11
+#EXT-X-MEDIA-SEQUENCE:495
+#EXTINF:10.760000,
+fyyy/segment_495.ts
+#EXTINF:10.000000,
+fyyy/segment_496.ts
+#EXTINF:8.600000,
+fyyy/segment_497.ts
+
+[http://74.91.26.218:82/live/cctv15hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv15hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999481 exit=28 elapsed=6097ms
+  GET =206|205|1.038952 exit=0 bytes=193
+[http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub]
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:486
+#EXTINF:10.000000,
+dyjc/segment_486.ts
+#EXTINF:10.000000,
+dyjc/segment_487.ts
+#EXTINF:10.000000,
+dyjc/segment_488.ts
+  url=http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
+
+  HEAD=curl: (28) Operation timed out after 6012 milliseconds with 0 bytes received
+302|0|6.012867 exit=28 elapsed=6115ms
+  GET =206|193|1.018943 exit=0 bytes=193
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:486
+#EXTINF:10.000000,
+dyjc/segment_486.ts
+#EXTINF:10.000000,
+dyjc/segment_487.ts
+#EXTINF:10.000000,
+dyjc/segment_488.ts
+
+[http://74.91.26.218:82/live/cctv10hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv10hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6003 milliseconds with 0 bytes received
+302|0|6.003724 exit=28 elapsed=6119ms
+  GET =206|213|1.040500 exit=0 bytes=209
+[http://74.91.26.218:82/live/cctv13hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv13hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6009 milliseconds with 0 bytes received
+302|0|6.009443 exit=28 elapsed=6128ms
+  GET =206|209|1.037805 exit=0 bytes=209
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:2689
+#EXTINF:10.000000,
+cctv13md/segment_2689.ts
+#EXTINF:10.000000,
+cctv13md/segment_2690.ts
+#EXTINF:10.000000,
+cctv13md/segment
+
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:2689
+#EXTINF:10.000000,
+cctv13md/segment_2689.ts
+#EXTINF:10.000000,
+cctv13md/segment_2690.ts
+#EXTINF:10.000000,
+cctv13md/segment
+
+[http://74.91.26.218:82/live/cctv14hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv14hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999963 exit=28 elapsed=6134ms
+  GET =206|213|1.101191 exit=0 bytes=206
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:3323
+#EXTINF:10.000000,
+cctv7md/segment_3323.ts
+#EXTINF:10.000000,
+cctv7md/segment_3324.ts
+#EXTINF:10.000000,
+cctv7md/segment_33
+
+[http://74.91.26.218:82/live/cctv7hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv7hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 bytes received
+302|0|6.001733 exit=28 elapsed=6123ms
+  GET =206|206|1.062340 exit=0 bytes=206
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:3323
+#EXTINF:10.000000,
+cctv7md/segment_3323.ts
+#EXTINF:10.000000,
+cctv7md/segment_3324.ts
+#EXTINF:10.000000,
+cctv7md/segment_33
+
+[https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8]
+  url=https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
+  HEAD=curl: (28) Operation timed out after 6003 milliseconds with 0 out of 227 bytes received
+200|0|6.003835 exit=28 elapsed=6164ms
+  GET =206|227|1.098471 exit=0 bytes=227
+  body_head=#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=2500000,RESOLUTION=1920x1080
+https://global.cgtn.cicc.media.caton.cloud/hls/1669979134887520542/1669979134887520542.m3u8?vkey=261C68BCD6A0C8C11748E5F6D67CB1270492DD
+
+[http://74.91.26.218:82/live/cctv8hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv8hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+000|0|6.000323 exit=28 elapsed=6088ms
+  GET =206|202|1.799170 exit=0 bytes=202
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:505
+#EXTINF:10.000000,
+cctv17/segment_505.ts
+#EXTINF:10.000000,
+cctv17/segment_506.ts
+#EXTINF:10.000000,
+cctv17/segment_507.ts
+
+[http://74.91.26.218:82/live/cctv17hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv17hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 bytes received
+302|0|6.001925 exit=28 elapsed=6110ms
+  GET =206|199|1.787447 exit=0 bytes=199
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:505
+#EXTINF:10.000000,
+cctv17/segment_505.ts
+#EXTINF:10.000000,
+cctv17/segment_506.ts
+#EXTINF:10.000000,
+cctv17/segment_507.ts
+
+[http://74.91.26.218:82/live/cctv16hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv16hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6001 milliseconds with 0 bytes received
+301|0|6.001688 exit=28 elapsed=6111ms
+  GET =206|167|1.975856 exit=0 bytes=167
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:17
+#EXT-X-MEDIA-SEQUENCE:517
+#EXTINF:8.333333,
+byt/0517.ts
+#EXTINF:16.666667,
+byt/0518.ts
+#EXTINF:8.333333,
+byt/0519.ts
+
+[http://74.91.26.218:82/live/cctv4hd.m3u8]
+  url=http://74.91.26.218:82/live/cctv4hd.m3u8
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+301|0|5.999780 exit=28 elapsed=6143ms
+  GET =206|210|2.064964 exit=0 bytes=210
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:65322
+#EXTINF:10.000000,
+cctv4md/segment_65322.ts
+#EXTINF:10.000000,
+cctv4md/segment_65323.ts
+#EXTINF:10.000000,
+cctv4md/segment
+
+[http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub]
+  url=http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
+  HEAD=curl: (28) Operation timed out after 6000 milliseconds with 0 bytes received
+302|0|5.999917 exit=28 elapsed=6101ms
+  GET =206|191|3.015840 exit=0 bytes=191
+  body_head=#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:13
+#EXT-X-MEDIA-SEQUENCE:492
+#EXTINF:9.520000,
+gfjs/segment_492.ts
+#EXTINF:9.640000,
+gfjs/segment_493.ts
+#EXTINF:12.600000,
+gfjs/segment_494.ts
+

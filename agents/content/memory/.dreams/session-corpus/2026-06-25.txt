@@ -1,0 +1,1 @@
+[content/sessions/content/43b240a0-db3f-4e70-a3e9-e9e5d92b47ae.jsonl#L21] Assistant: [assistant turn failed before producing content]

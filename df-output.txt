@@ -1,0 +1,15 @@
+Filesystem                                               Size  Used Avail Use% Mounted on
+udev                                                     1.8G     0  1.8G   0% /dev
+tmpfs                                                    381M  5.2M  376M   2% /run
+efivarfs                                                 100K   90K  5.2K  95% /sys/firmware/efi/efivars
+/dev/nvme0n1p2                                            63G   35G   25G  59% /
+tmpfs                                                    1.9G  1.4M  1.9G   1% /dev/shm
+tmpfs                                                    5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p1                                            93M  8.1M   85M   9% /boot/efi
+trimafs                                                  890G  181G  709G  21% /fs
+/dev/mapper/trim_0b26fd1e_3628_4ccb_8de5_7ddb5584ffa1-0  890G  181G  709G  21% /vol1
+/dev/sda1                                                300M   36M  264M  12% /vol00/SAMSUNG MZNLN128HAHQ-00000
+/dev/sda3                                                119G   76G   43G  64% /vol00/SAMSUNG MZNLN128HAHQ-00000_1
+/dev/sda4                                                893M  792M  102M  89% /vol00/SAMSUNG MZNLN128HAHQ-00000_2
+/dev/mapper/trim_0b26fd1e_3628_4ccb_8de5_7ddb5584ffa1-0  890G  181G  709G  21% /home/liyang/.dsh
+tmpfs                                                    381M   12K  381M   1% /run/user/1000

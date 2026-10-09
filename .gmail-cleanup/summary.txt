@@ -1,0 +1,6 @@
+ok=5223
+fail=428
+seen=39011
+in_inbox_after=0
+elapsed_min=675
+delegated_to=/tmp/gmail_cleanup/

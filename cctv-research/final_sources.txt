@@ -1,0 +1,21 @@
+# CCTV Verified Sources (v0.3.5.3) - 2026-06-18
+# All URLs verified with HEAD + 1KB GET, returns #EXTM3U master m3u8
+
+CCTV-1  | https://ldncctvwbcdtxy.liveplay.myqcloud.com/ldncctvwbcd/cdrmldcctv1_1/index.m3u8  | Tencent Cloud (official CCTV CDN, full quality, only works for 1+13)
+CCTV-1  | http://198.204.240.250:82/live/cctv1.m3u8                                          | Legacy iptv
+CCTV-4K | http://198.204.240.250:82/live/cctv4k.m3u8                                          | Legacy iptv
+CCTV-4  | https://xykt-fix.github.io/play/a02a/index.m3u8                                     | cctvnews.cctv.com (auto-refresh auth)
+CCTV-6  | http://198.204.240.250:82/live/cctv6.m3u8                                           | Legacy iptv
+CCTV-8  | http://198.204.240.250:82/live/cctv8.m3u8                                           | Legacy iptv
+CCTV-9  | https://xykt-fix.github.io/Y77.m3u8                                                 | kankanlive (stable)
+CCTV-10 | https://cdn4.skygo.mn/live/disk1/CCTV-10/HLSv3-FTA/CCTV-10.m3u8                    | skygo.mn (Mongolia CDN)
+CCTV-11 | https://xykt-fix.github.io/play/a02b/index.m3u8                                     | CMCC (auto-refresh token)
+CCTV-13 | http://ldncctvwbcdtxy.liveplay.myqcloud.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u8 | Tencent Cloud
+CCTV-14 | https://cdn4.skygo.mn/live/disk1/CCTV-14/HLSv3-FTA/CCTV-14.m3u8                    | skygo.mn
+CCTV-15 | https://xykt-fix.github.io/play/a02e/index.m3u8                                     | CMCC
+
+# NO PUBLIC SOURCE FOUND (2026-06-18):
+# CCTV-2, 3, 5, 5+, 7, 12, 16, 17
+# iptv-org dropped CCTV-5/5+ (copyright 2026)
+# CCTV official CDN is geo-blocked for non-1/13 from external IPs
+# All other IPTV m3u mirrors tested are dead (ottrrs.ott.mobaibox timeout, bkpcp.top 404)

@@ -1,0 +1,67 @@
+{
+  "wechat": {
+    "app_id": "wx97bc84bb54232e27",
+    "app_secret": "08a9374b66f7d1ceca7553abd21d41b7",
+    "default_author": "三页札记",
+    "ip_whitelist": "dynamic-2026-08-22-verified",
+    "content_source_url": "",
+    "need_open_comment": 0,
+    "only_fans_can_comment": 0
+  },
+  "fonts": {
+    "english": "/home/liyang/.local/share/fonts/MiSans/MiSans-Regular.ttf",
+    "chinese": "/home/liyang/.local/share/fonts/MiSans/MiSans-Bold.ttf",
+    "misans": "/home/liyang/.local/share/fonts/MiSans/MiSans-Regular.ttf",
+    "misans_bold": "/home/liyang/.local/share/fonts/MiSans/MiSans-Bold.ttf"
+  },
+  "styles": {
+    "default": "tech",
+    "cover_default": "tech"
+  },
+  "article_styles": {
+    "tech": {
+      "name": "技术干货",
+      "description": "开门见山，先给结论，步骤清晰，代码可复制"
+    },
+    "story": {
+      "name": "故事叙事",
+      "description": "场景化开头，情节推进有起伏，金句点睛"
+    },
+    "opinion": {
+      "name": "观点评论",
+      "description": "明确立场，论据充分，承认反方观点"
+    }
+  },
+  "cover_styles": {
+    "tech": {
+      "name": "科技感",
+      "description": "深蓝渐变 + 红色点缀",
+      "emoji": "🚀"
+    },
+    "ocean": {
+      "name": "海洋风",
+      "description": "蓝绿渐变 + 青色点缀",
+      "emoji": "🌊"
+    },
+    "sunset": {
+      "name": "日落",
+      "description": "橙红渐变 + 金色点缀",
+      "emoji": "🌅"
+    },
+    "forest": {
+      "name": "森林",
+      "description": "绿色渐变 + 浅绿点缀",
+      "emoji": "🌲"
+    },
+    "dark": {
+      "name": "暗黑",
+      "description": "深灰渐变 + 红色点缀",
+      "emoji": "🌙"
+    },
+    "purple": {
+      "name": "紫韵",
+      "description": "紫色渐变 + 金色点缀",
+      "emoji": "💜"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "lark-mcp": {
+      "command": "npx",
+      "args": ["-y", "@larksuiteoapi/lark-mcp", "mcp", "-a", "cli_a948ab8487f85bdd", "-s", "HsIJ797Rel0HjlNndzQV6cZSHEA1fioM"]
+    }
+  },
+  "imports": []
+}

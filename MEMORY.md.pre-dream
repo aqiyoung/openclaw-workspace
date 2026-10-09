@@ -1,0 +1,243 @@
+# MEMORY.md — 小七的长期记忆 🤖
+
+> 上次梦境更新：2026-06-06。目标：保持在 200 行以内，索引而非堆砌。
+
+## 关于老板
+
+- **名称：** Young，喜欢被叫"阳仔"
+- **技术背景：** 运维工程师，熟悉 Linux、飞牛NAS、信创系统、nginx、docker、mihomo 代理
+- **沟通风格：** 直接、不废话、偏好技术交流
+- **暗号：** 小龙虾 = OpenClaw
+
+## 账号信息
+
+- **Telegram：** @XNM_SHR (ID: 460212872)
+- **飞书 open_id：** ou_3c1068d79dee7c0e06ffb89eb461aed7
+- **NAS 服务器：** threelnas (192.168.31.58)
+- **飞书群组：** 牛马公司 (oc_34f560ad2af0a629b9ef9ae189ba7a63)
+
+## 模型配置
+
+- **主模型：** xiaomimimo-cn/mimo-v2.5-pro（小米 Token Plan，免费，2026-06-01 切换）
+- **cron 任务模型：** LongCat-2.0-Preview（isolated agent 环境用主会话模型更稳定）
+- **⚠️ isolated agent ≠ 主会话环境**：模型 provider 路由可能不一致
+- **MiMo API 限制**：Anthropic 端点只返回 thinking 不返回 text，不兼容 Claude Code（2026-06-03 确认）
+
+## LLM Wiki (wiki.threel.site)
+
+- **访问**：https://wiki.threel.site（SSL 正常）
+- **后端**：Node.js server.mjs，端口 3000，数据 /vol1/1000/dev-projects/synapse/data
+- **认证**：API Token = `535f740c4b4f1963bb19353654ed6dcdcd988fa64b51277ad4d142cdc75bc05e`
+- **用途**：老板的私人知识库，小七维护 + 老板也能写
+- **规则**：老板让搜集/处理/整理的东西 → 自动存到 wiki
+- **已同步**：23 篇历史工作日记
+- **⚠️ 排序 bug**：手写文章同步后跑到最后面，需修复排序逻辑
+
+## 微信公众号
+
+### 分工（2026-05-27 确认）
+- **公众号A（三页札记）**：小七负责
+- **公众号B（故事不过夜）**：Hermes 负责，小七不管
+
+### 凭证与规则
+- **公众号A**：AppID `wx97bc84bb54232e27` | AppSecret 见 .env `WECHAT_APPSECRET_A`
+- **⚠️ AppSecret 可能过期，推送前先测 token**
+- **代理铁律**：unset ALL proxy vars → Python urllib 直连 → 不能用 curl
+- **排版**：`<pre>` 内联样式，正文 14px/行高1.9，标题 17px；封面 900x506 JPEG < 64KB
+- **写作**：口语化、去AI化；正文不加 h1；结尾必须有钩子
+- **结尾铁律**：引导关注写「每天」，不写「每周」（公众号每天更新）
+- **待发布**：银河麒麟 V10 维护避坑指南草稿（5/24 创建）
+
+## NAS 事件推送
+
+- **容器**：fn-message-bot，端口 818 | **Bot**：@xiaozht_bot（Chat ID：460212872）
+- **监控**：nas_telegram_monitor.py 监听 logger_data.db3 → SSH 登录、CPU/内存/磁盘告警 → Telegram
+
+## Claude Design Card（封面图生成主力）
+
+- **技能**：`skills/claude-design-card/SKILL.md`（195 stars）
+- **功能**：14 种格式 HTML 卡片 → Playwright 截图为 PNG
+- **核心格式**：公众号首图（900×383）、视频号/小红书（1080×1440）、抖音（1080×1920）
+- **设计语言**：暖色调（Terracotta #c96442）、衬线标题、书籍级行高
+- **正文排版**：从第 8 篇起，正文也用 Claude Design Card 设计语言
+
+## 新增项目（2026-05-25~06-03）
+
+- **Superpowers 框架**（06-03）：14 个技能，brainstorming→planning→subagent-dev→TDD→debugging
+- **Addy Osmani Agent Skills**（06-02）：23 个生产级工程技能（47.9K stars）
+- **ECC Skills**（05-30）：249 个（198K stars），写作/研究/开发/运维/安全
+- **AI Sentinel Pro**：Flutter 移动端 LLM Tool Call Monitor
+- **GitHub Trending 看板**：dashboard.threel.site
+- **360 补丁自动化**：`scripts/360patch.py`
+- **Flowsint OSINT**、**browser-use**、**ricoui-astro-starter**、**OpenClaw Android 中文化**
+
+## 安全规则
+
+- **API Key：** 统一放 `~/.openclaw/.env` 和 `~/.bashrc`
+- **NAS 禁令：** ❌ 禁止操作 `/usr/trim/` 下任何文件
+- **Docker：** 可改容器配置，❌ 不能改 Docker 本身配置
+- **备份：** 重要变更后立即备份到 `/vol1/1000/openclaw/backup/`
+
+## Telegram 稳定性模式（重要！）
+
+- **根因**：长对话（如 Pi Agent 安装 + API Key 调试）→ context 90%+ → 模型响应变慢（5-15s）→ Telegram socket 超时断开（UND_ERR_SOCKET）
+- **症状**：sessions.list 5-8s、chat.history 15s+、event loop 阻塞 7s+
+- **解决**：`/new` 开新 session 清掉 context
+- **预防**：长对话后主动提醒老板 `/new`
+- **已多次发生**：2026-05-28 一天内崩了 3+ 次
+
+## MCP SSE 代理（2026-06-05 修复）
+
+- **问题**：两个 nginx master 进程抢 443 端口，旧 worker 用旧配置处理请求，`location /sse` 不生效
+- **修复**：杀掉旧 worker + 用 `location = /sse` 精确匹配（最高优先级）
+- **结果**：`https://wiki.threel.site/sse` → event: endpoint ✅ 外网可访问
+- **MCP 配置**：移除 mount_path，直接用 `/sse` 路径
+- **其他 Agent 连接**：`{"mcpServers:{"wiki":{"url":"https://wiki.threel.site/sse","headers":{"Authorization":"Bearer ***"}}}}`
+
+## 重要经验教训
+
+- **WeChat API 代理铁律**：unset ALL proxy vars → Python urllib 直连 → 不能用 curl（已踩坑 3+ 次！）
+- **Telegram socket 超时**：长对话 context 撑满 → 模型响应慢 → socket 断开 → `/new`（详见上方稳定性模式）
+- **isolated agent 环境差异**：模型 provider 路由与主会话不同，定时任务需用主会话模型
+- **输出前验证完整性**：不要基于部分信息交付（GPT-Image-2 教训）
+- **大文件下载**：应在 NAS 终端执行，不要从远端服务器下载
+- **nginx SNI**：修改后需完全重启（stop+start），不能只 reload
+- **Telegram NO_PROXY**：`NO_PROXY` 里不要包含 `api.telegram.org`，除非确认服务器可直连 Telegram（2026-06-05 踩坑）
+- **nginx 双 master**：修改配置后旧 worker 可能仍在用旧配置，需先停 gateway 再重启（2026-06-05 MCP 修复）
+- **NVIDIA Embedding**：不能用 nvidia provider，需 openai-compatible + 显式 base URL
+- **web_search 不可用**：web_fetch 直接抓站点是可靠备选方案
+- **模型限流**：多模型同时限流时 assistant turn 会失败
+- **Chromium 反复崩溃**：Gateway 重启后 Chromium 多次挂掉，auto-restart 能恢复但根因未查
+
+## 飞牛 NAS Telegram 推送格式（2026-05-28 更新）
+
+- **格式**：`📱 飞牛NAS · APP登录 ✅` + 字段标签（时间/用户/ISP/位置）
+- **三种类型**：📱 APP登录、🌐 网页登录、🖥️ SSH登录/SSH登录失败
+
+## 定时任务管理（2026-06-03 更新）
+
+- **工作总结**：从 cron 改为手动 Skill 触发，老板说「总结一下工作」时执行
+- **彩票平台数据**：已归档（多天未更新，无后续行动）
+- **daily-ai-skills-search**：已禁用（连续 4 天超时失败）
+- **horizon-daily-news**：已禁用，改为 skill 手动触发
+- **必要 cron**：仅保留 heartbeat、memory-dreaming 等核心任务
+
+## APP 更新机制（2026-06-02 设计）
+
+- **方案**：APP → 服务端（wiki.threel.site）→ 拉 GitHub Release APK → 推送给 APP
+- **原因**：APP 无法直连 GitHub（需代理），服务端可以
+- **域名**：wiki.threel.site（已有 SSL 证书）
+- **版本**：synapse-v2.2.15+57
+- **⚠️ 版本号铁律**：每次 feature push 前必须 bump pubspec.yaml 版本号，否则 GitHub Actions 会把 APK 上传到旧 Release
+
+## 视频号生活妙招（2026-06-04 启动）
+
+- **赛道**：生活妙招，面向中老年受众
+- **项目目录**：`/vol1/1000/video-lifetips/`
+- **技能**：`skills/video-lifetips/SKILL.md`
+- **工具链**：edge-tts + playwright + ffmpeg，全自动流水线
+- **选题库**：30+ 选题，覆盖衣物、厨房、冰箱、省钱、家居
+- **第一期**：白衣服发黄（已完成，视频 647KB）
+- **节奏**：每天1条，连续7天打标签权重
+- **6/8 新验证**：Pillow 分镜图 + edge-tts 配音 + ffmpeg 合成 → 80年代陕北视频成品（2.8MB/41秒），流水线复用成功
+
+## 近期重点跟踪事项
+
+### 知识库 APP 功能扩展（2026-06-08 完成）
+- **统计面板**：总笔记/标签/阅读量/时长 + 日趋势柱状图 + 热门笔记 Top10
+- **分类管理**：文件夹 CRUD + 6色选择器 + 笔记分类分配
+- **通知中心**：未读计数 + 全部已读 + 删除 + 设置开关
+- **入口集成**："我的"页面 3 个导航卡片 + 首页统计卡片 + 底部导航通知角标
+- **图标**：Pillow 生成 5 种分辨率 PNG（mdpi~xxxhdpi），橙色齿轮 + 白色圆形背景
+- 版本：v2.2.37+79 → beta 构建中
+
+### sub2api 改为本地构建（2026-06-08 确认）
+- 老板明确说不用 Docker 部署了
+- Docker 容器已清理
+- 改为本地构建安装到项目目录
+- ⚠️ GitHub 网络不通，等恢复后拉源码
+
+### 视频制作流水线（2026-06-08 验证）
+- **方案**：Pillow 分镜图 + edge-tts 配音 + ffmpeg 合成
+- **成品**：80年代陕北视频 2.8MB，41 秒，6 张分镜图 + 6 条配音
+- 可复用于视频号生活妙招后续期
+
+### Gateway 绑定地址问题（2026-06-08 发现）
+- Gateway 绑定 loopback（127.0.0.1），Android 客户端从外网连不上
+- 需改成 `all`/`0.0.0.0`，老板已知，待确认是否改
+
+### 工作总结同步规则（2026-06-03 确认）
+- 「工作总结」→ 同步**知识库 + IMA 笔记**，缺一不可
+- 顺序：① wiki.threel.site `/api/notes` → ② ima.qq.com `/openapi/note/v1/import_doc`
+- 凭证：`~/.config/ima/client_id` + `~/.config/ima/api_key`
+
+### P0 紧急
+- **Telegram 稳定性**：长对话后 context 撑满导致 socket 断开，已多次发生。需主动管理 session 生命周期
+- **AppSecret 过期风险**：最后更新 2026-05-22，已知频繁过期。建议：推送前先测 token 接口，失败则通知老板
+- **Hermes 不响应**：2026-05-31 老板反馈 Hermes (@thinkpa_bot) 不回复消息，**连续 5 个梦境未排查** ⚠️（已 stale，如老板未再提及则下次移除）
+- **Wiki 排序 bug**：手写文章同步后跑到最后面，需修复
+
+### P1 重要
+- **Android APK 卡 logo**：需重新编译（待老板确认）
+- **Chromium 反复崩溃**：Gateway 重启后多次挂掉并自动恢复，根因未查
+
+### 已完成（5/27~6/3）
+- 推文+Linux系列(8篇)+MiMo 800亿key+Synapse v2.2.15+Wiki systemd+Addy Osmani技能+Docker代理 ✅
+
+
+## 2026-05-30~06-03 工作摘要
+
+- **模型**：LongCat → deepseek-v4-flash → mimo-v2.5-pro（800亿 key），MiMo 1M context 修复
+- **Linux 系列**：8篇（Vim已发布，7篇草稿箱）
+- **Synapse v2.2.15**：OTA 流式下载+进度条+自动安装
+- **NAS 禁令再犯**：尝试改 Trim nginx 被制止（需更快自检）
+- **OpenClaw 更新**：2026.6.1-beta.3 → 2026.6.2-beta.1
+
+## dev-projects 项目规范
+
+- **位置**：`/vol1/1000/dev-projects/`
+- **规则**：一个项目一个子目录，各自维护 README，nginx 独立配置，端口独立分配，数据文件项目内自治
+- **新建项目**：在 dev-projects/ 下创建独立子目录，创建 README.md，按需配置 nginx 和端口
+
+## Cloudflare
+
+- **API Token：** `CF_API_TOKEN`（~/.openclaw/.env）
+- **Account ID：** `1caaacb82c8c6a0d441ef9a803f2e640`
+
+## TTS 语音配置
+
+- **小米 MiMo TTS**：新加坡节点 `https://token-plan-sgp.xiaomimimo.com/v1`，音色 Mia
+- **Microsoft TTS**：`zh-CN-XiaoxiaoNeural`（edge-tts 备选）
+
+## OpenList
+
+- **容器**：`openlist`，端口 5244，数据 `/vol1/1000/openlist/data`
+- **功能**：AList 分支，多盘聚合（阿里云盘、百度网盘等）
+
+
+
+## Archived (stale)
+<!-- photon集成, Anthropic-Security, xhs-cli, Mihomo密码, 彩票数据源, Hermes不响应 -->
+
+## Promoted From Short-Term Memory (2026-06-10)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03-1845.md:3:5 -->
+- Session: 2026-06-03 18:45:26 GMT+8: **Session Key**: agent:main:telegram:direct:460212872; **Session ID**: 03ac9345-8402-46b8-94ea-f87a198f3d41; **Source**: telegram [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03-1845.md:3-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03-1845.md:9:12 -->
+- Conversation Summary: assistant: ⚠️ Something went wrong while processing your request. Please try again, or use /new to start a fresh session. assistant: ⚠️ Missing API key for the selected provider on the gateway. Configure provider auth, then try again. user: 你好 assistant: [assistant turn failed before producing content] [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03-1845.md:9-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03.md:12:15 -->
+- MiMo Token 测试（2026-06-03）: | 额度 | Token | 状态 | |------|-------|------| | 100亿 | tp-c2dofj4d0cmsu6r4uz4mc5bx0x8l0oa1mnzrff2srnrp0dw8 | ✅ 有效 | | 100亿 | tp-crup1ausfktf409xep3hve8kaqmnl82ahqx7qpm4gwg1urev | ❌ 无效(401) | [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03.md:16:19 -->
+- MiMo Token 测试（2026-06-03）: | 400亿 | tp-cenecv82h98uzlsfvufdnzw58gazzlsq4p549q08mngmo368 | ✅ 有效（当前在用） | | 400亿 | tp-swcvvjq5hra1m88sk5w2bo9a9syryww2ilbbjmarlypqiq9p | ❌ 无效(401) | | 800亿 | tp-chreaatui2a9y0emzyfznb4dmofsr6wyh4lk540a2uyr3da8 | ✅ 有效 | | 800亿 | tp-cvysl9xs0e43gdevz6vwqaz87ikhtxmztgxd81nh4e0tgeyw | ❌ 无效(401) | [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03.md:16-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03.md:25:27 -->
+- MiMo Key 切换: 切换到 800亿额度 token：tp-chreaatui2a9y0emzyfznb4dmofsr6wyh4lk540a2uyr3da8; 旧 key（400亿）已备份到 .env 注释行; Gateway 热重载完成 [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03.md:25-27]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03.md:31:32 -->
+- Cron 任务清理: `daily-ai-skills-search`：已禁用（连续 4 天超时失败）; `horizon-daily-news`：已禁用，改为 skill 手动触发（`skills/horizon-news/SKILL.md`） [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03.md:31-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-03.md:4:7 -->
+- Linux 图文教程系列: 完成 df/du 磁盘空间排查文章，使用真实终端输出; 封面用 Claude Design Card 风格生成（900×383）; 推送到公众号草稿箱 ✅; 8 篇 Linux 系列全部同步知识库（ID 155-162） [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-03.md:4-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-04.md:14:17 -->
+- 2026-06-04 10:40 - MiMo 标准计划 API key: 老板提供了新的 MiMo 标准计划 API key：`tp-soh8jl61nb2gkbasgnqigtx0p33im47addz8l8r0fz3hrp16`; 已更新到 openclaw.json 和 .env; cron 任务继续用 LongCat，主会话用 MiMo; LongCat provider 已恢复（之前被禁用为 longcat-disabled） [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-04.md:14-17]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-04.md:18:19 -->
+- 2026-06-04 10:40 - MiMo 标准计划 API key: LongCat 恢复后第一次 cron 运行成功（用 LongCat 模型），但文件编辑出错（任务级错误，非模型问题）; 正在尝试更新到最新 beta 版 [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-04.md:18-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-04.md:23:25 -->
+- 2026-06-04 10:45 - 更新到 2026.6.2-beta.1: npm 走代理连 registry.npmjs.org 超时，改用 npmmirror 镜像成功; 版本：2026.6.1-beta.3 → 2026.6.2-beta.1; npm config 要记得清理 proxy 设置，否则以后还会出问题 [score=0.834 recalls=0 avg=0.620 source=memory/2026-06-04.md:23-25]

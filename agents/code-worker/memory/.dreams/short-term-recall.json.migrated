@@ -1,0 +1,2795 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-08T19:01:04.109Z",
+  "entries": {
+    "memory:memory/.dreams/session-corpus/2026-05-28.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-28.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-28.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: 请帮我推送代码到 GitHub 并触发构建。仓库是 aqiyoung/knowledge-base，当前目录是 /vol1/1000/dev-projects/knowledge-base。使用 git push origin main，然后 gh workflow run build-apk.yml --repo aqiyoung/knowledge-base。token 是 ghp_Jf…643r。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-28T19:00:10.226Z",
+      "lastRecalledAt": "2026-05-28T19:00:10.226Z",
+      "queryHashes": [
+        "f9fcbbc6bd1e"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "aqiyoung/knowledge-base",
+        "build-apk.yml",
+        "ghp-jf",
+        "推送",
+        "代码",
+        "github",
+        "触发",
+        "仓库"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-28.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-28.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-28.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 代码推送成功了 ✅，但触发 GitHub Actions workflow 失败了。 ## 结果 | 步骤 | 状态 | 详情 | |------|------|------| | `git push origin main` | ✅ 成功 | `a67c3a5..71ba89d main -> main` | | `gh workflow run build-apk.yml` | ❌ 失败 | 无法连接 GitHub API | ## 失败原因 当前服务器的网络无法正常连接 `api.github.com:443` — TLS 握",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-28T19:00:10.226Z",
+      "lastRecalledAt": "2026-05-28T19:00:10.226Z",
+      "queryHashes": [
+        "f9fcbbc6bd1e"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "网络",
+        "build-apk.yml",
+        "api.github.com",
+        "代码",
+        "推送",
+        "成功",
+        "触发",
+        "github"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-28.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-28.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-28.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 代码推送成功了 ✅，但触发 GitHub Actions workflow 失败了。 ## 结果 | 步骤 | 状态 | 详情 | |------|------|------| | `git push origin main` | ✅ 成功 | `a67c3a5..71ba89d main -> main` | | `gh workflow run build-apk.yml` | ❌ 失败 | 无法连接 GitHub API | ## 失败原因 当前服务器的网络无法正常连接 `api.github.com:443` — TLS 握",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-28T19:00:10.226Z",
+      "lastRecalledAt": "2026-05-28T19:00:10.226Z",
+      "queryHashes": [
+        "f9fcbbc6bd1e"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "网络",
+        "build-apk.yml",
+        "api.github.com",
+        "代码",
+        "推送",
+        "成功",
+        "触发",
+        "github"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-28.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-28.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-28.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: 请帮我推送代码到 GitHub 并触发构建。仓库是 aqiyoung/knowledge-base，当前目录是 /vol1/1000/dev-projects/knowledge-base。使用 git push origin main，然后 gh workflow run build-apk.yml --repo aqiyoung/knowledge-base --ref main。token 是 ghp_Jf…643r。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-28T19:00:10.226Z",
+      "lastRecalledAt": "2026-05-28T19:00:10.226Z",
+      "queryHashes": [
+        "f9fcbbc6bd1e"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "aqiyoung/knowledge-base",
+        "build-apk.yml",
+        "ghp-jf",
+        "推送",
+        "代码",
+        "github",
+        "触发",
+        "仓库"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-28.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-28.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-28.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 全部完成了 ✅ | 步骤 | 状态 | 详情 | |------|------|------| | `git push origin main` | ✅ 成功 | `71ba89d..d1640d9 main -> main` | | `gh workflow run build-apk.yml` | ✅ 成功 | HTTP 204，workflow 已触发 | **构建已成功触发。** 你可以在 GitHub 仓库的 [Actions 页面](https://github.com/aqiyoung/knowledge-base/a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-28T19:00:10.226Z",
+      "lastRecalledAt": "2026-05-28T19:00:10.226Z",
+      "queryHashes": [
+        "f9fcbbc6bd1e"
+      ],
+      "recallDays": [
+        "2026-05-29",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "build-apk.yml",
+        "全部",
+        "完成",
+        "步骤",
+        "状态",
+        "详情",
+        "git",
+        "push"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 代码已经推上去了，workflow 也触发成功了（HTTP 204）。你可以在 GitHub Actions 页面查看构建进度。 HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "代码",
+        "已经",
+        "推上",
+        "去了",
+        "workflow",
+        "触发",
+        "成功"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the heartbeat file first.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "heartbeat",
+        "first"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 没有配置任何定期任务，跳过 API 调用。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "没有",
+        "配置",
+        "任何",
+        "定期",
+        "任务",
+        "api"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务需要执行。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务",
+        "需要",
+        "执行"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-29.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-29.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-29.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "0e934d1f0d1c"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-29T19:00:09.489Z",
+      "lastRecalledAt": "2026-05-29T19:00:09.489Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-30",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-30T19:00:17.495Z",
+      "lastRecalledAt": "2026-05-30T19:00:17.495Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-05-31",
+        "2026-05-30"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-30.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-30.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-30.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "3558e5ebbbb7"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 文件为空，没有配置任何定期检查任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "文件",
+        "没有",
+        "配置",
+        "任何",
+        "定期",
+        "检查"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-31.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-31.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-31.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-31T19:00:10.091Z",
+      "lastRecalledAt": "2026-05-31T19:00:10.091Z",
+      "queryHashes": [
+        "cffe9e514f4f"
+      ],
+      "recallDays": [
+        "2026-06-01",
+        "2026-05-31"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-02.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-02.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-02.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "e10dbdebc851"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-03.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-03.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-03.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "87e9e611ff5e"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-03.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-03.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-03.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "87e9e611ff5e"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-04.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-04.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-04.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: The user keeps sending heartbeat polls. I should just respond with NO_REPLY since the HEARTBEAT.md file is empty and has no tasks configured.HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "ecfa2a7911d5"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "heartbeat.md",
+        "configured.heartbeat.md",
+        "keeps",
+        "sending",
+        "heartbeat",
+        "polls",
+        "respond"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-04.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-04.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-04.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: The user keeps sending heartbeat polls. I should just respond with NO_REPLY since the HEARTBEAT.md file is empty and has no tasks configured.HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "ecfa2a7911d5"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "heartbeat.md",
+        "configured.heartbeat.md",
+        "keeps",
+        "sending",
+        "heartbeat",
+        "polls",
+        "respond"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: The user keeps sending heartbeat polls. I should just respond with NO_REPLY since the HEARTBEAT.md file is empty and has no tasks configured.HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-04T19:00:28.178Z",
+      "lastRecalledAt": "2026-06-04T19:00:28.178Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-05",
+        "2026-06-04"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "heartbeat.md",
+        "configured.heartbeat.md",
+        "keeps",
+        "sending",
+        "heartbeat",
+        "polls",
+        "respond"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md is empty, no tasks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-05T19:00:10.604Z",
+      "lastRecalledAt": "2026-06-05T19:00:10.604Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-06",
+        "2026-06-05"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "empty",
+        "tasks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-05T19:00:10.604Z",
+      "lastRecalledAt": "2026-06-05T19:00:10.604Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-06",
+        "2026-06-05"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-06.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-06.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-06.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:08.425Z",
+      "lastRecalledAt": "2026-06-06T19:00:08.425Z",
+      "queryHashes": [
+        "b7b515e69d3c"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-06T19:00:08.425Z",
+      "lastRecalledAt": "2026-06-06T19:00:08.425Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-07",
+        "2026-06-06"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:07.893Z",
+      "lastRecalledAt": "2026-06-07T19:00:07.893Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:07.893Z",
+      "lastRecalledAt": "2026-06-07T19:00:07.893Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:43.030Z",
+      "lastRecalledAt": "2026-06-08T19:00:43.030Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-09.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-09.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-09.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:43.030Z",
+      "lastRecalledAt": "2026-06-08T19:00:43.030Z",
+      "queryHashes": [
+        "25f210cf024c"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-09.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-09.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-09.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT.md 为空，无定期任务。 NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-08T19:00:43.030Z",
+      "lastRecalledAt": "2026-06-08T19:00:43.030Z",
+      "queryHashes": [
+        "25f210cf024c"
+      ],
+      "recallDays": [
+        "2026-06-09",
+        "2026-06-08"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "no-reply",
+        "定期",
+        "任务"
+      ]
+    }
+  }
+}

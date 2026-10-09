@@ -1,0 +1,129 @@
+[2026-06-16T09:20:04+08:00] ===== monitor start =====
+[2026-06-16T09:20:56+08:00] ===== monitor start =====
+[2026-06-16T09:26:13+08:00] status: driver alive, ok=4051 fail=40 seen=4053
+[2026-06-16T09:31:33+08:00] status: driver alive, ok=4299 fail=44 seen=4300
+[2026-06-16T09:36:51+08:00] status: driver alive, ok=4431 fail=58 seen=4433
+[2026-06-16T09:41:54+08:00] status: driver alive, ok=4699 fail=69 seen=4701
+[2026-06-16T09:46:55+08:00] status: driver alive, ok=5123 fail=73 seen=5126
+[2026-06-16T09:51:55+08:00] status: driver alive, ok=5571 fail=77 seen=5573
+[2026-06-16T09:56:56+08:00] status: driver alive, ok=6048 fail=82 seen=6050
+[2026-06-16T10:01:56+08:00] status: driver alive, ok=6471 fail=87 seen=6473
+[2026-06-16T10:06:58+08:00] status: driver alive, ok=6897 fail=91 seen=6900
+[2026-06-16T10:11:59+08:00] status: driver alive, ok=7370 fail=96 seen=7373
+[2026-06-16T10:16:59+08:00] status: driver alive, ok=7870 fail=100 seen=7873
+[2026-06-16T10:21:59+08:00] status: driver alive, ok=8270 fail=105 seen=8273
+[2026-06-16T12:40:18+08:00] ===== monitor (v2) start =====
+[2026-06-16T12:40:18+08:00] first status: driver pid=2961702 ok=8920 fail=111 seen=8925
+[2026-06-16T12:40:18+08:00] status: driver alive (pid=2961702), ok=8920 fail=111 seen=8925
+[2026-06-16T12:45:18+08:00] status: driver alive (pid=2961702), ok=9347 fail=115 seen=9352
+[2026-06-16T12:50:19+08:00] status: driver alive (pid=2961702), ok=9762 fail=119 seen=9768
+[2026-06-16T12:55:19+08:00] status: driver alive (pid=2961702), ok=9990 fail=130 seen=9996
+[2026-06-16T13:00:19+08:00] status: driver alive (pid=2961702), ok=10203 fail=132 seen=10209
+[2026-06-16T13:05:28+08:00] status: driver alive (pid=2961702), ok=10570 fail=136 seen=10576
+[2026-06-16T13:10:28+08:00] status: driver alive (pid=2961702), ok=10959 fail=139 seen=10965
+[2026-06-16T13:15:28+08:00] status: driver alive (pid=2961702), ok=11359 fail=144 seen=11365
+[2026-06-16T13:20:29+08:00] status: driver alive (pid=2961702), ok=11811 fail=148 seen=11817
+[2026-06-16T13:25:29+08:00] status: driver alive (pid=2961702), ok=12259 fail=152 seen=12265
+[2026-06-16T13:30:30+08:00] status: driver alive (pid=2961702), ok=12658 fail=157 seen=12665
+[2026-06-16T13:35:30+08:00] status: driver alive (pid=2961702), ok=13158 fail=161 seen=13165
+[2026-06-16T13:40:30+08:00] status: driver alive (pid=2961702), ok=13603 fail=166 seen=13611
+[2026-06-16T13:45:30+08:00] status: driver alive (pid=2961702), ok=13857 fail=169 seen=13865
+[2026-06-16T13:50:31+08:00] status: driver alive (pid=2961702), ok=14356 fail=173 seen=14364
+[2026-06-16T13:55:31+08:00] status: driver alive (pid=2961702), ok=14756 fail=178 seen=14765
+[2026-06-16T14:00:31+08:00] status: driver alive (pid=2961702), ok=15256 fail=182 seen=15265
+[2026-06-16T14:05:31+08:00] status: driver alive (pid=2961702), ok=15667 fail=187 seen=15677
+[2026-06-16T14:10:32+08:00] status: driver alive (pid=2961702), ok=16155 fail=191 seen=16165
+[2026-06-16T14:15:32+08:00] status: driver alive (pid=2961702), ok=16591 fail=196 seen=16601
+[2026-06-16T14:20:32+08:00] status: driver alive (pid=2961702), ok=17055 fail=201 seen=17065
+[2026-06-16T14:25:32+08:00] status: driver alive (pid=2961702), ok=17521 fail=205 seen=17531
+[2026-06-16T14:30:33+08:00] status: driver alive (pid=2961702), ok=17855 fail=209 seen=17865
+[2026-06-16T14:35:33+08:00] status: driver alive (pid=2961702), ok=18171 fail=212 seen=18181
+[2026-06-16T14:40:33+08:00] status: driver alive (pid=2961702), ok=18654 fail=216 seen=18665
+[2026-06-16T14:45:33+08:00] status: driver alive (pid=2961702), ok=19054 fail=221 seen=19065
+[2026-06-16T14:50:33+08:00] status: driver alive (pid=2961702), ok=19508 fail=225 seen=19520
+[2026-06-16T14:55:34+08:00] status: driver alive (pid=2961702), ok=19946 fail=229 seen=19959
+[2026-06-16T15:00:34+08:00] status: driver alive (pid=2961702), ok=20367 fail=234 seen=20381
+[2026-06-16T15:05:34+08:00] status: driver alive (pid=2961702), ok=20722 fail=237 seen=20736
+[2026-06-16T15:10:35+08:00] status: driver alive (pid=2961702), ok=20964 fail=242 seen=20978
+[2026-06-16T15:13:35+08:00] driver gone (pid='2961702') — verifying INBOX state
+[2026-06-16T15:13:50+08:00] post-driver in:inbox sample: 
+[2026-06-16T15:14:50+08:00] ===== monitor end: ok=21044 fail=248 seen=21058 in_inbox= elapsed_min=160 =====
+[2026-06-16T15:15:03+08:00] summary saved to /home/liyang/.openclaw/workspace/.gmail-cleanup/summary.txt
+[2026-06-16T16:47:33+08:00] ===== monitor (v2) start =====
+[2026-06-16T16:47:33+08:00] first status: driver pid=3179263 ok=21071 fail=248 seen=21085
+[2026-06-16T16:47:33+08:00] status: driver alive (pid=3179263), ok=21071 fail=248 seen=21085
+[2026-06-16T19:19:23+08:00] ===== monitor (v2) start =====
+[2026-06-16T19:19:23+08:00] first status: driver pid=3209354 ok=21385 fail=251 seen=21400
+[2026-06-16T19:19:23+08:00] status: driver alive (pid=3209354), ok=21385 fail=251 seen=21400
+[2026-06-16T19:24:23+08:00] status: driver alive (pid=3209354), ok=21843 fail=256 seen=21858
+[2026-06-16T19:29:23+08:00] status: driver alive (pid=3209354), ok=22319 fail=260 seen=22334
+[2026-06-16T19:34:24+08:00] status: driver alive (pid=3209354), ok=22743 fail=265 seen=22758
+[2026-06-16T19:39:24+08:00] status: driver alive (pid=3209354), ok=329 fail=269 seen=23244
+[2026-06-16T19:44:24+08:00] status: driver alive (pid=3209354), ok=743 fail=274 seen=23658
+[2026-06-16T19:49:24+08:00] status: driver alive (pid=3209354), ok=1222 fail=278 seen=24137
+[2026-06-16T19:54:25+08:00] status: driver alive (pid=3209354), ok=1643 fail=282 seen=24558
+[2026-06-16T19:59:25+08:00] status: driver alive (pid=3209354), ok=2010 fail=286 seen=24925
+[2026-06-16T20:04:25+08:00] status: driver alive (pid=3209354), ok=2286 fail=289 seen=25201
+[2026-06-16T20:09:25+08:00] status: driver alive (pid=3209354), ok=2585 fail=292 seen=25500
+[2026-06-16T20:14:26+08:00] status: driver alive (pid=3209354), ok=2858 fail=295 seen=25773
+[2026-06-16T20:19:26+08:00] status: driver alive (pid=3209354), ok=3170 fail=298 seen=26085
+[2026-06-16T20:24:26+08:00] status: driver alive (pid=3209354), ok=3643 fail=302 seen=26558
+[2026-06-16T20:29:27+08:00] status: driver alive (pid=3209354), ok=4043 fail=307 seen=26958
+[2026-06-16T20:34:27+08:00] status: driver alive (pid=3209354), ok=4484 fail=311 seen=27402
+[2026-06-16T20:39:27+08:00] status: driver alive (pid=3209354), ok=4839 fail=315 seen=27758
+[2026-06-16T20:44:27+08:00] status: driver alive (pid=3209354), ok=5238 fail=319 seen=28158
+[2026-06-16T20:45:57+08:00] driver gone (pid='3209354') — verifying INBOX state
+[2026-06-16T20:46:11+08:00] post-driver in:inbox sample: 100
+[2026-06-16T20:47:11+08:00] driver restarted (3209354 → 3325215) — resuming watch
+[2026-06-16T20:49:41+08:00] status: driver alive (pid=3325215), ok=94 fail=324 seen=28558
+[2026-06-16T20:54:42+08:00] status: driver alive (pid=3325215), ok=493 fail=327 seen=28958
+[2026-06-16T20:59:42+08:00] status: driver alive (pid=3325215), ok=892 fail=331 seen=29358
+[2026-06-16T21:04:42+08:00] status: driver alive (pid=3325215), ok=1292 fail=335 seen=29758
+[2026-06-16T21:09:43+08:00] status: driver alive (pid=3325215), ok=1690 fail=339 seen=30157
+[2026-06-16T21:14:43+08:00] status: driver alive (pid=3325215), ok=2090 fail=343 seen=30558
+[2026-06-16T21:19:43+08:00] status: driver alive (pid=3325215), ok=2355 fail=346 seen=30824
+[2026-06-16T21:24:43+08:00] status: driver alive (pid=3325215), ok=2774 fail=350 seen=31243
+[2026-06-16T21:29:44+08:00] status: driver alive (pid=3325215), ok=3096 fail=354 seen=31566
+[2026-06-16T21:34:44+08:00] status: driver alive (pid=3325215), ok=3389 fail=357 seen=31860
+[2026-06-16T21:39:44+08:00] status: driver alive (pid=3325215), ok=3777 fail=360 seen=32249
+[2026-06-16T21:44:45+08:00] status: driver alive (pid=3325215), ok=4087 fail=364 seen=32561
+[2026-06-16T21:49:45+08:00] status: driver alive (pid=3325215), ok=4484 fail=367 seen=32958
+[2026-06-16T21:54:45+08:00] status: driver alive (pid=3325215), ok=4877 fail=371 seen=33351
+[2026-06-16T21:59:45+08:00] status: driver alive (pid=3325215), ok=5121 fail=374 seen=33596
+[2026-06-16T22:04:46+08:00] status: driver alive (pid=3325215), ok=5283 fail=376 seen=33758
+[2026-06-16T22:09:46+08:00] status: driver alive (pid=3325215), ok=281 fail=379 seen=34058
+[2026-06-16T22:14:46+08:00] status: driver alive (pid=3325215), ok=581 fail=382 seen=34358
+[2026-06-16T22:19:46+08:00] status: driver alive (pid=3325215), ok=796 fail=384 seen=34574
+[2026-06-16T22:24:47+08:00] status: driver alive (pid=3325215), ok=978 fail=385 seen=34758
+[2026-06-16T22:29:47+08:00] status: driver alive (pid=3325215), ok=1355 fail=389 seen=35135
+[2026-06-16T22:34:47+08:00] status: driver alive (pid=3325215), ok=1678 fail=392 seen=35458
+[2026-06-16T22:39:47+08:00] status: driver alive (pid=3325215), ok=1977 fail=396 seen=35758
+[2026-06-16T22:44:48+08:00] status: driver alive (pid=3325215), ok=2377 fail=400 seen=36158
+[2026-06-16T22:49:48+08:00] status: driver alive (pid=3325215), ok=2676 fail=402 seen=36458
+[2026-06-16T22:54:48+08:00] status: driver alive (pid=3325215), ok=2876 fail=405 seen=36658
+[2026-06-16T22:59:49+08:00] status: driver alive (pid=3325215), ok=3075 fail=407 seen=36858
+[2026-06-16T23:04:49+08:00] status: driver alive (pid=3325215), ok=3474 fail=411 seen=37258
+[2026-06-16T23:09:49+08:00] status: driver alive (pid=3325215), ok=3827 fail=414 seen=37612
+[2026-06-16T23:14:49+08:00] status: driver alive (pid=3325215), ok=3973 fail=416 seen=37758
+[2026-06-16T23:19:50+08:00] status: driver alive (pid=3325215), ok=4273 fail=419 seen=38058
+[2026-06-16T23:24:50+08:00] status: driver alive (pid=3325215), ok=4672 fail=422 seen=38458
+[2026-06-16T23:29:50+08:00] status: driver alive (pid=3325215), ok=5072 fail=426 seen=38858
+[2026-06-16T23:34:50+08:00] status: driver alive (pid=3509796), ok=5223 fail=428 seen=39011
+[2026-06-16T23:39:51+08:00] status: driver alive (pid=3511528), ok=5223 fail=428 seen=39011
+[2026-06-16T23:41:21+08:00] driver gone (pid='3512027') — verifying INBOX state
+[2026-06-16T23:41:28+08:00] post-driver in:inbox sample: 0
+[2026-06-16T23:42:28+08:00] driver restarted (3512027 → 3512528) — resuming watch
+[2026-06-16T23:44:28+08:00] driver gone (pid='3513043') — verifying INBOX state
+[2026-06-16T23:44:36+08:00] post-driver in:inbox sample: 0
+[2026-06-16T23:45:36+08:00] driver restarted (3513043 → 3513466) — resuming watch
+[2026-06-16T23:45:36+08:00] status: driver alive (pid=3513466), ok=5223 fail=428 seen=39011
+[2026-06-16T23:46:06+08:00] driver gone (pid='3513466') — verifying INBOX state
+[2026-06-16T23:46:18+08:00] post-driver in:inbox sample: 0
+[2026-06-16T23:47:18+08:00] driver restarted (3513466 → 3513946) — resuming watch
+[2026-06-16T23:47:48+08:00] driver gone (pid='3513946') — verifying INBOX state
+[2026-06-16T23:47:57+08:00] post-driver in:inbox sample: 0
+[2026-06-16T23:48:57+08:00] driver restarted (3513946 → 3514375) — resuming watch
+[2026-06-16T23:49:27+08:00] driver gone (pid='3514375') — verifying INBOX state
+[2026-06-16T23:49:33+08:00] post-driver in:inbox sample: 0
+[2026-06-16T23:50:33+08:00] ===== monitor end: ok=5223 fail=428 seen=39011 in_inbox=0 elapsed_min=675 =====
+[2026-06-16T23:50:52+08:00] summary saved to /home/liyang/.openclaw/workspace/.gmail-cleanup/summary.txt

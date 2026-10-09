@@ -1,0 +1,2 @@
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L1893] User: 🔐 每日安全审计完成 — OpenClaw: 3 个问题, Lynis: 35 个警告
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L1894] Assistant: [internal context: 通知是 Clash 流量 + 飞牛音乐，跟配置无关。] HEARTBEAT_OK

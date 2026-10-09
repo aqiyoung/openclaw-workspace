@@ -1,0 +1,2 @@
+[devops/sessions/devops/4b6ba309-ed8d-4863-ad46-b171a64a382d.jsonl#L61] Assistant: HEARTBEAT.md is empty — no periodic checks configured. Nothing to do. HEARTBEAT_OK
+[devops/sessions/devops/4b6ba309-ed8d-4863-ad46-b171a64a382d.jsonl#L71] Assistant: HEARTBEAT.md is empty — no tasks configured. Nothing to check. HEARTBEAT_OK

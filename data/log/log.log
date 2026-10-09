@@ -1,0 +1,312 @@
+[33mWARN[0m[2026-06-13 11:46:01] not enable search                            
+[36mINFO[0m[2026-06-13 11:46:01] get admin user from CLI                      
+[36mINFO[0m[2026-06-13 11:46:01] closing db                                   
+[33mWARN[0m[2026-06-13 16:03:39] not enable search                            
+[36mINFO[0m[2026-06-13 16:03:39] admin user has been update from CLI          
+[31mERRO[0m[2026-06-13 16:03:39] [del_user_cache_online] error: token is invalidated 
+[36mINFO[0m[2026-06-13 16:03:39] closing db                                   
+[33mWARN[0m[2026-06-27 16:51:38] not enable search                            
+[36mINFO[0m[2026-06-27 16:51:38] get admin user from CLI                      
+[36mINFO[0m[2026-06-27 16:51:38] closing db                                   
+[33mWARN[0m[2026-06-27 16:52:22] not enable search                            
+[36mINFO[0m[2026-06-27 16:52:22] admin user has been update from CLI          
+[31mERRO[0m[2026-06-27 16:52:22] [del_user_cache_online] error: token is invalidated 
+[36mINFO[0m[2026-06-27 16:52:22] closing db                                   
+[33mWARN[0m[2026-06-27 16:52:41] not enable search                            
+[36mINFO[0m[2026-06-27 16:52:41] show admin token from CLI                    
+[36mINFO[0m[2026-06-27 16:52:41] closing db                                   
+[33mWARN[0m[2026-06-27 16:53:07] not enable search                            
+[36mINFO[0m[2026-06-27 16:53:07] show admin token from CLI                    
+[36mINFO[0m[2026-06-27 16:53:07] closing db                                   
+[33mWARN[0m[2026-06-27 17:30:47] not enable search                            
+[36mINFO[0m[2026-06-27 17:30:47] admin user has been update from CLI          
+[31mERRO[0m[2026-06-27 17:30:47] [del_user_cache_online] error: token is invalidated 
+[36mINFO[0m[2026-06-27 17:30:47] closing db                                   
+[33mWARN[0m[2026-06-27 17:32:04] not enable search                            
+[36mINFO[0m[2026-06-27 17:32:04] admin user has been update from CLI          
+[31mERRO[0m[2026-06-27 17:32:04] [del_user_cache_online] error: token is invalidated 
+[36mINFO[0m[2026-06-27 17:32:04] closing db                                   
+[33mWARN[0m[2026-06-27 17:32:35] not enable search                            
+[36mINFO[0m[2026-06-27 17:32:35] admin user has been update from CLI          
+[33mWARN[0m[2026-06-27 17:32:35] [del_user_cache_online] failed: Post "http://localhost:5244/api/admin/user/del_cache?username=admin": dial tcp [::1]:5244: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:32:35] closing db                                   
+[33mWARN[0m[2026-06-27 17:33:08] not enable search                            
+[36mINFO[0m[2026-06-27 17:33:08] admin user has been update from CLI          
+[33mWARN[0m[2026-06-27 17:33:08] [del_user_cache_online] failed: Post "http://localhost:5244/api/admin/user/del_cache?username=admin": dial tcp [::1]:5244: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:33:08] closing db                                   
+[33mWARN[0m[2026-06-27 17:37:20] not enable search                            
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 17:37:20] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool 123 Open success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 17:37:20] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 17:37:20] init offline download tool 115 Cloud success: ok 
+[33mWARN[0m[2026-06-27 17:37:20] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:37:20] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 17:37:23 | 200 |    4.218525ms |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 17:37:56 | 200 |     458.606µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/"
+[GIN] 2026/06/27 - 17:37:56 | 200 |     327.684µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/archive_extensions"
+[GIN] 2026/06/27 - 17:37:56 | 200 |    6.244498ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/settings"
+[GIN] 2026/06/27 - 17:37:56 | 200 |    1.707022ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:37:57 | 200 |    1.690749ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:37:58 | 200 |    1.394691ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:37:59 | 200 |    1.729724ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:05 | 200 |    1.498826ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:06 | 200 |    1.243637ms | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:06 | 200 |     225.164µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:06 | 200 |     662.123µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:06 | 200 |     606.208µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:30 | 200 |     500.547µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/@login?redirect=%2F"
+[GIN] 2026/06/27 - 17:38:30 | 200 |     245.355µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/archive_extensions"
+[GIN] 2026/06/27 - 17:38:30 | 200 |      852.48µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/settings"
+[GIN] 2026/06/27 - 17:38:31 | 200 |     890.079µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 17:38:32 | 200 |     115.134µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:33 | 200 |     155.014µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:33 | 200 |     360.224µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:34 | 200 |      359.85µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:34 | 200 |     326.337µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:44 | 200 |     491.411µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/"
+[GIN] 2026/06/27 - 17:38:44 | 200 |     289.091µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/archive_extensions"
+[GIN] 2026/06/27 - 17:38:44 | 200 |     572.495µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/public/settings"
+[GIN] 2026/06/27 - 17:38:44 | 200 |     289.892µs | 2409:8a70:104b:6040:da7e:e880:9d5:40bd | GET      "/api/me"
+[GIN] 2026/06/27 - 17:38:47 | 200 |     128.647µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 17:38:59 | 200 |     136.369µs |       127.0.0.1 | POST     "/api/auth/login"
+[36mINFO[0m[2026-06-27 17:39:17] Shutdown server...                           
+[36mINFO[0m[2026-06-27 17:39:17] Server exit                                  
+[36mINFO[0m[2026-06-27 17:39:17] closing db                                   
+[33mWARN[0m[2026-06-27 17:46:21] not enable search                            
+[36mINFO[0m[2026-06-27 17:46:21] admin user has been update from CLI          
+[33mWARN[0m[2026-06-27 17:46:21] [del_user_cache_online] failed: Post "http://localhost:5244/api/admin/user/del_cache?username=admin": dial tcp [::1]:5244: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:46:21] closing db                                   
+[33mWARN[0m[2026-06-27 17:51:26] not enable search                            
+[33mWARN[0m[2026-06-27 17:51:26] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 17:51:26] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 17:51:26] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] init offline download tool 123 Open success: ok 
+[36mINFO[0m[2026-06-27 17:51:26] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 17:51:33 | 200 |     556.517µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 18:17:26] not enable search                            
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool PikPak success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool ThunderBrowser success: ok 
+[33mWARN[0m[2026-06-27 18:17:26] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool SimpleHttp success: ok 
+[33mWARN[0m[2026-06-27 18:17:26] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool ThunderX success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 18:17:26] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 18:17:26] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 18:17:26] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 18:17:34 | 200 |     548.742µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 19:11:55] not enable search                            
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool 123 Open success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 19:11:55] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool 123Pan success: ok 
+[33mWARN[0m[2026-06-27 19:11:55] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 19:11:55] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 19:11:55] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:11:55] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 19:11:59 | 200 |     571.305µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:12:17 | 200 |     166.488µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | GET      "/"
+[GIN] 2026/06/27 - 19:12:17 | 200 |     184.782µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:12:34 | 200 |     124.251µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | GET      "/"
+[GIN] 2026/06/27 - 19:12:34 | 200 |       170.5µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:13:14 | 200 |    1.602559ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:13:32 | 200 |     301.464µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/auth/login"
+[31mERRO[0m[2026-06-27 19:13:32] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:13:32 | 200 |    3.807672ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 19:13:49 | 200 |     520.599µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/auth/login"
+[31mERRO[0m[2026-06-27 19:13:49] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:13:49 | 200 |     902.551µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 19:13:55 | 200 |     502.106µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/"
+[GIN] 2026/06/27 - 19:13:55 | 200 |      300.61µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/archive_extensions"
+[GIN] 2026/06/27 - 19:13:55 | 200 |    4.544256ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/settings"
+[GIN] 2026/06/27 - 19:13:55 | 200 |     487.865µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/me"
+[GIN] 2026/06/27 - 19:13:55 | 200 |     437.519µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/manifest.json"
+[GIN] 2026/06/27 - 19:13:57 | 200 |    2.157294ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 19:14:15 | 200 |     593.934µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/auth/login/hash"
+[GIN] 2026/06/27 - 19:14:15 | 200 |     627.605µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/me"
+[31mERRO[0m[2026-06-27 19:14:15] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:14:15 | 200 |    1.517665ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/get"
+[GIN] 2026/06/27 - 19:14:15 | 200 |    2.565098ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/offline_download_tools"
+[31mERRO[0m[2026-06-27 19:14:15] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:14:15 | 200 |    1.325152ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 19:14:21 | 200 |     432.664µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/me"
+[GIN] 2026/06/27 - 19:14:21 | 200 |     650.336µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/assets/Storages-C-fj1_XL.js"
+[GIN] 2026/06/27 - 19:14:21 | 200 |     559.864µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/admin/driver/names"
+[GIN] 2026/06/27 - 19:14:21 | 200 |    3.254333ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/admin/storage/list"
+[GIN] 2026/06/27 - 19:14:31 | 200 |     329.969µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/assets/Common-CuMTwq1n.js"
+[GIN] 2026/06/27 - 19:14:31 | 200 |     246.196µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/assets/ResponsiveGrid-BJ8SaM57.js"
+[GIN] 2026/06/27 - 19:14:31 | 200 |     265.718µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/assets/item_type-CQwehD1y.js"
+[GIN] 2026/06/27 - 19:14:31 | 200 |     416.768µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/assets/SettingItem-D5-YVctp.js"
+[GIN] 2026/06/27 - 19:14:31 | 200 |    3.677825ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/admin/setting/list?group=4"
+[GIN] 2026/06/27 - 19:14:36 | 200 |    1.894792ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/admin/user/list"
+[GIN] 2026/06/27 - 19:14:42 | 200 |      115.23µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/"
+[GIN] 2026/06/27 - 19:14:42 | 200 |      150.42µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/me"
+[31mERRO[0m[2026-06-27 19:14:42] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:14:42 | 200 |     314.416µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 19:14:42 | 200 |     1.11464ms | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/offline_download_tools"
+[GIN] 2026/06/27 - 19:14:42 | 200 |      58.345µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/archive_extensions"
+[GIN] 2026/06/27 - 19:14:42 | 200 |     154.852µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/settings"
+[GIN] 2026/06/27 - 19:14:42 | 200 |     120.683µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/me"
+[31mERRO[0m[2026-06-27 19:14:42] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:14:42 | 200 |     254.471µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/get"
+[GIN] 2026/06/27 - 19:14:42 | 200 |     983.739µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | GET      "/api/public/offline_download_tools"
+[31mERRO[0m[2026-06-27 19:14:42] failed list /: storage not found; please add a storage first
+failed get storage 
+[GIN] 2026/06/27 - 19:14:42 | 200 |     240.591µs | 2409:8a70:104b:6040:250b:a88c:8836:ffd2 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 19:16:05 | 200 |     256.505µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:16:15 | 200 |     181.706µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:16:59 | 200 |     166.352µs |       127.0.0.1 | GET      "/api/me"
+[GIN] 2026/06/27 - 19:17:23 | 200 |     225.317µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 19:17:23 | 200 |     416.877µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 19:19:01] not enable search                            
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 19:19:01] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 19:19:01] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 19:19:01] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 19:19:01] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 19:19:05 | 200 |     775.476µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 19:20:55] not enable search                            
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 19:20:55] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool ThunderX success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool 115 Cloud success: ok 
+[33mWARN[0m[2026-06-27 19:20:55] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 19:20:55] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:20:55] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 19:20:55] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 19:20:59 | 200 |     897.542µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 19:22:58] not enable search                            
+[33mWARN[0m[2026-06-27 19:22:58] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 19:22:58] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 19:22:58] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] init offline download tool ThunderX success: ok 
+[36mINFO[0m[2026-06-27 19:22:58] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 19:23:01 | 200 |     853.083µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 21:12:27] not enable search                            
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 21:12:27] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 21:12:27] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 21:12:27] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 21:12:27] start HTTP server @ 0.0.0.0:5244             
+[31mERRO[0m[2026-06-27 21:12:27] failed to start http: listen tcp 0.0.0.0:5244: bind: address already in use 
+[33mWARN[0m[2026-06-27 21:18:41] not enable search                            
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool 123 Open success: ok 
+[33mWARN[0m[2026-06-27 21:18:41] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[33mWARN[0m[2026-06-27 21:18:41] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool Thunder success: ok 
+[33mWARN[0m[2026-06-27 21:18:41] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool PikPak success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool ThunderX success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] init offline download tool 123Pan success: ok 
+[36mINFO[0m[2026-06-27 21:18:41] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 21:18:45 | 200 |     586.885µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 21:19:11 | 200 |     160.407µs | 2409:8a70:104b:6040:dc9d:93ba:ffc:dbc6 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 21:19:11 | 200 |      97.217µs |       127.0.0.1 | GET      "/"
+[GIN] 2026/06/27 - 21:19:11 | 200 |     176.169µs |       127.0.0.1 | POST     "/api/auth/login"
+[33mWARN[0m[2026-06-27 21:21:42] not enable search                            
+[36mINFO[0m[2026-06-27 21:21:42] admin user has been update from CLI          
+[33mWARN[0m[2026-06-27 21:21:42] [del_user_cache_online] failed: Post "http://localhost:5244/api/admin/user/del_cache?username=admin": dial tcp [::1]:5244: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:21:42] closing db                                   
+[33mWARN[0m[2026-06-27 21:21:42] not enable search                            
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool ThunderX success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool 123Pan success: ok 
+[33mWARN[0m[2026-06-27 21:21:42] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 21:21:42] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool 123 Open success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool SimpleHttp success: ok 
+[33mWARN[0m[2026-06-27 21:21:42] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 21:21:42] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 21:21:42] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 21:21:46 | 200 |     650.502µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 21:22:08 | 200 |     177.715µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 21:22:08 | 200 |     379.134µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 21:22:08 | 200 |     503.538µs |       127.0.0.1 | POST     "/api/fs/list"
+[33mWARN[0m[2026-06-27 22:03:49] not enable search                            
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool 115 Open success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool 123Pan success: ok 
+[33mWARN[0m[2026-06-27 22:03:49] init offline download tool aria2 failed: failed get aria2 version: Post "http://localhost:6800/jsonrpc": dial tcp [::1]:6800: connect: connection refused 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool SimpleHttp success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool PikPak success: ok 
+[33mWARN[0m[2026-06-27 22:03:49] init offline download tool qBittorrent failed: Post "http://localhost:8080/api/v2/auth/login": dial tcp [::1]:8080: connect: connection refused 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool Thunder success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool ThunderBrowser success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool 115 Cloud success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool 123 Open success: ok 
+[36mINFO[0m[2026-06-27 22:03:49] init offline download tool ThunderX success: ok 
+[33mWARN[0m[2026-06-27 22:03:49] init offline download tool Transmission failed: failed get transmission version: can't get session values: 'session-get' rpc method failed: failed to execute HTTP request: Post "http://localhost:9091/transmission/rpc": dial tcp [::1]:9091: connect: connection refused 
+[36mINFO[0m[2026-06-27 22:03:49] start HTTP server @ 0.0.0.0:5244             
+[GIN] 2026/06/27 - 22:03:53 | 200 |     707.366µs |       127.0.0.1 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 22:03:53 | 200 |     329.866µs |       127.0.0.1 | POST     "/api/fs/list"
+[GIN] 2026/06/27 - 22:06:13 | 200 |      239.04µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | GET      "/"
+[GIN] 2026/06/27 - 22:06:13 | 200 |     132.768µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | POST     "/api/auth/login"
+[GIN] 2026/06/27 - 22:06:13 | 200 |     107.397µs | 2409:8a70:104b:6040:8bbc:c60:4a6b:b5e2 | POST     "/api/fs/list"
+[33mWARN[0m[2026-06-27 22:13:34] not enable search                            
+[36mINFO[0m[2026-06-27 22:13:34] admin user has been update from CLI          
+[33mWARN[0m[2026-06-27 22:13:34] [del_user_cache_online] failed: Post "http://localhost:5244/api/admin/user/del_cache?username=liyang": dial tcp [::1]:5244: connect: connection refused 
+[36mINFO[0m[2026-06-27 22:13:34] closing db                                   

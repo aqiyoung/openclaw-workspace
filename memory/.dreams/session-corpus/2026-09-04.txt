@@ -1,0 +1,9 @@
+[main/sessions/main/0dbdc6c8-1ba5-4f7c-bf0e-5cf299739c37#L13] Assistant: All checks clean — no severe issues. Recording silently.
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L257] User: 更新完成了吗
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L260] User: 更新被阻止是什么情况
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L264] Assistant: 让我看看当前什么被阻止了。
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L267] Assistant: OpenClaw 这边一切正常： - **版本**：`2026.9.1`（beta 通道，已是最新） - **Gateway**：运行中，pid 1681861 - **状态**：up to date，没有阻止 你说的"更新被阻止"是指哪个？ 1. **OpenClaw 更新** — ✅ 已是最新，没有被阻止 2. **飞牛音乐** — 上次检查时发现上游仓库不可达，无法判断是否有更新（需要你在 NAS 应用商店里看） 3. **其他什么更新？** 你是在 Dashboard 里看到什么阻止提示了吗？截个图或者贴一下报错内容，我帮你
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L268] User: OpenClaw requires working inference: Authentication failed (provider returned HTTP 401). Your provider token may have expired — try the request again in a moment. If the failure persists, re-authenticate this provider.
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L273] Assistant: 找到了。 **TokenRouter 的 API Key 返回 401（认证失败）**，这就是报错的原因。 当前 session 被 pinned 到 `tokenrouter/z-ai/glm-5.3-free`，但 TokenRouter key 过期了。 两个方案： **方案 A：清掉 session pin，回到默认 sensenova** ``` /model default ``` 你在聊天里发 `/model default` 就行，sensenova key 正常（200）。 **方案 B：换掉 TokenRoute
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L292] Assistant: 之前的报错是因为会话被 pinned 到 **tokenrouter/z-ai/glm-5.3-free**，而该 provider 的 API Key 已经过期（返回 401）。 我已经把会话模型切回默认（**sensenova/glm-5.2**，实际当前使用 **nvidia/nemotron-3-super-120b-a12b**），认证已恢复正常。 OpenClaw 本身目前是 **2026.9.1（beta）**，已是最新，没有待更新的内容。 如果你仍想使用 tokenrouter，需要前往 tokenrouter.co
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L1923] User: 🔐 每日安全审计完成 — OpenClaw: 4 个问题, Lynis: 35 个警告

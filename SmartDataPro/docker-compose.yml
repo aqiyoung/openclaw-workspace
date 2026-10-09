@@ -1,0 +1,56 @@
+services:
+  # 后端服务 - FastAPI应用
+  backend:
+    image: ghcr.io/aqiyoung/smartdatapro-backend:latest
+    container_name: smartdatapro-backend
+    ports:
+      - "8016:8016"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata/
+      - DEBUG=${DEBUG:-0}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:5180,http://localhost}
+      - PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+    volumes:
+      - ./tmp:/tmp
+      - ./backend/logs:/app/logs
+      - ./backend/data:/app/data
+      - playwright-cache:/ms-playwright
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; r = requests.get('http://localhost:8016/'); exit(0 if r.status_code < 500 else 1)"]
+      interval: 30s
+      timeout: 20s
+      retries: 10
+      start_period: 300s
+    networks:
+      - smartdatapro-network
+    restart: unless-stopped
+
+  # 前端服务 - Nginx应用
+  frontend:
+    image: ghcr.io/aqiyoung/smartdatapro-frontend:latest
+    container_name: smartdatapro-frontend
+    ports:
+      - "5180:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend/logs:/var/log/nginx
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 90s
+    networks:
+      - smartdatapro-network
+    restart: unless-stopped
+
+networks:
+  smartdatapro-network:
+    driver: bridge
+    name: smartdatapro-network
+
+volumes:
+  playwright-cache:

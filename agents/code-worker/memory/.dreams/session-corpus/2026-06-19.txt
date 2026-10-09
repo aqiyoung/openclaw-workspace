@@ -1,0 +1,2 @@
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L449] Assistant: I notice these heartbeats are firing every ~12 seconds and have been doing so for weeks. The HEARTBEAT.md file has no tasks. I'll just ack this properly. HEARTBEAT_OK
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L452] Assistant: [assistant turn failed before producing content][assistant turn failed before producing content

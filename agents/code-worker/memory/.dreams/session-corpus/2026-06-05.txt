@@ -1,0 +1,2 @@
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L335] Assistant: The user keeps sending heartbeat polls. I should just respond with NO_REPLY since the HEARTBEAT.md file is empty and has no tasks configured.HEARTBEAT.md 为空，无定期任务。 NO_REPLY
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L337] Assistant: HEARTBEAT.md is empty, no tasks.

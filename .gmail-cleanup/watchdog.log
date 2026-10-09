@@ -1,0 +1,587 @@
+[2026-06-16T19:26:36+08:00] ===== watchdog start =====
+[2026-06-16T20:46:02+08:00] driver dead (was alive at 1781613932, dead for 30s)
+[2026-06-16T20:46:04+08:00] sanity check 1: in:inbox sampled 10 returned 11
+[2026-06-16T20:46:04+08:00] restarting driver (attempt 1)
+[2026-06-16T20:46:04+08:00] started driver pid=3325215
+[2026-06-16T23:32:15+08:00] driver dead (was alive at 1781623905, dead for 30s)
+[2026-06-16T23:32:18+08:00] sanity check 1: in:inbox sampled 10 returned 1
+[2026-06-16T23:32:18+08:00] restarting driver (attempt 2)
+[2026-06-16T23:32:18+08:00] started driver pid=3508922
+[2026-06-16T23:32:48+08:00] driver dead (was alive at 1781623958, dead for 10s)
+[2026-06-16T23:32:50+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:32:50+08:00] restarting driver (attempt 3)
+[2026-06-16T23:32:50+08:00] started driver pid=3509119
+[2026-06-16T23:33:17+08:00] driver dead (was alive at 1781623987, dead for 10s)
+[2026-06-16T23:33:19+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:33:19+08:00] restarting driver (attempt 4)
+[2026-06-16T23:33:19+08:00] started driver pid=3509291
+[2026-06-16T23:33:45+08:00] driver dead (was alive at 1781624015, dead for 10s)
+[2026-06-16T23:33:46+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:33:46+08:00] restarting driver (attempt 5)
+[2026-06-16T23:33:46+08:00] started driver pid=3509460
+[2026-06-16T23:34:13+08:00] driver dead (was alive at 1781624043, dead for 10s)
+[2026-06-16T23:34:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:34:15+08:00] restarting driver (attempt 6)
+[2026-06-16T23:34:15+08:00] started driver pid=3509622
+[2026-06-16T23:34:42+08:00] driver dead (was alive at 1781624072, dead for 10s)
+[2026-06-16T23:34:44+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:34:44+08:00] restarting driver (attempt 7)
+[2026-06-16T23:34:44+08:00] started driver pid=3509796
+[2026-06-16T23:35:12+08:00] driver dead (was alive at 1781624102, dead for 10s)
+[2026-06-16T23:35:16+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:35:16+08:00] restarting driver (attempt 8)
+[2026-06-16T23:35:16+08:00] started driver pid=3509983
+[2026-06-16T23:35:43+08:00] driver dead (was alive at 1781624133, dead for 10s)
+[2026-06-16T23:35:44+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:35:44+08:00] restarting driver (attempt 9)
+[2026-06-16T23:35:44+08:00] started driver pid=3510151
+[2026-06-16T23:36:10+08:00] driver dead (was alive at 1781624160, dead for 10s)
+[2026-06-16T23:36:17+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:36:17+08:00] restarting driver (attempt 10)
+[2026-06-16T23:36:17+08:00] started driver pid=3510329
+[2026-06-16T23:36:44+08:00] driver dead (was alive at 1781624194, dead for 10s)
+[2026-06-16T23:36:47+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:36:47+08:00] restarting driver (attempt 11)
+[2026-06-16T23:36:47+08:00] started driver pid=3510512
+[2026-06-16T23:37:13+08:00] driver dead (was alive at 1781624223, dead for 10s)
+[2026-06-16T23:37:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:37:15+08:00] restarting driver (attempt 12)
+[2026-06-16T23:37:15+08:00] started driver pid=3510677
+[2026-06-16T23:37:41+08:00] driver dead (was alive at 1781624251, dead for 10s)
+[2026-06-16T23:37:42+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:37:42+08:00] restarting driver (attempt 13)
+[2026-06-16T23:37:42+08:00] started driver pid=3510852
+[2026-06-16T23:38:09+08:00] driver dead (was alive at 1781624279, dead for 10s)
+[2026-06-16T23:38:10+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:38:10+08:00] restarting driver (attempt 14)
+[2026-06-16T23:38:10+08:00] started driver pid=3511020
+[2026-06-16T23:38:37+08:00] driver dead (was alive at 1781624307, dead for 10s)
+[2026-06-16T23:38:38+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:38:38+08:00] restarting driver (attempt 15)
+[2026-06-16T23:38:38+08:00] started driver pid=3511189
+[2026-06-16T23:39:05+08:00] driver dead (was alive at 1781624335, dead for 10s)
+[2026-06-16T23:39:06+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:39:06+08:00] restarting driver (attempt 16)
+[2026-06-16T23:39:06+08:00] started driver pid=3511358
+[2026-06-16T23:39:34+08:00] driver dead (was alive at 1781624364, dead for 10s)
+[2026-06-16T23:39:36+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:39:36+08:00] restarting driver (attempt 17)
+[2026-06-16T23:39:36+08:00] started driver pid=3511528
+[2026-06-16T23:40:02+08:00] driver dead (was alive at 1781624391, dead for 11s)
+[2026-06-16T23:40:03+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:40:03+08:00] restarting driver (attempt 18)
+[2026-06-16T23:40:03+08:00] started driver pid=3511702
+[2026-06-16T23:40:30+08:00] driver dead (was alive at 1781624420, dead for 10s)
+[2026-06-16T23:40:32+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:40:32+08:00] restarting driver (attempt 19)
+[2026-06-16T23:40:32+08:00] started driver pid=3511866
+[2026-06-16T23:40:58+08:00] driver dead (was alive at 1781624448, dead for 10s)
+[2026-06-16T23:41:00+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:41:00+08:00] restarting driver (attempt 20)
+[2026-06-16T23:41:00+08:00] started driver pid=3512027
+[2026-06-16T23:41:26+08:00] driver dead (was alive at 1781624476, dead for 10s)
+[2026-06-16T23:41:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:41:28+08:00] restarting driver (attempt 21)
+[2026-06-16T23:41:28+08:00] started driver pid=3512205
+[2026-06-16T23:41:53+08:00] driver dead (was alive at 1781624503, dead for 10s)
+[2026-06-16T23:41:55+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:41:55+08:00] restarting driver (attempt 22)
+[2026-06-16T23:41:55+08:00] started driver pid=3512365
+[2026-06-16T23:42:20+08:00] driver dead (was alive at 1781624530, dead for 10s)
+[2026-06-16T23:42:22+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:42:22+08:00] restarting driver (attempt 23)
+[2026-06-16T23:42:22+08:00] started driver pid=3512528
+[2026-06-16T23:42:47+08:00] driver dead (was alive at 1781624557, dead for 10s)
+[2026-06-16T23:42:52+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:42:52+08:00] restarting driver (attempt 24)
+[2026-06-16T23:42:52+08:00] started driver pid=3512702
+[2026-06-16T23:43:19+08:00] driver dead (was alive at 1781624589, dead for 10s)
+[2026-06-16T23:43:22+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:43:22+08:00] restarting driver (attempt 25)
+[2026-06-16T23:43:22+08:00] started driver pid=3512874
+[2026-06-16T23:43:47+08:00] driver dead (was alive at 1781624617, dead for 10s)
+[2026-06-16T23:43:49+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:43:49+08:00] restarting driver (attempt 26)
+[2026-06-16T23:43:49+08:00] started driver pid=3513043
+[2026-06-16T23:44:45+08:00] driver dead (was alive at 1781624654, dead for 31s)
+[2026-06-16T23:44:47+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:44:47+08:00] restarting driver (attempt 27)
+[2026-06-16T23:44:47+08:00] started driver pid=3513299
+[2026-06-16T23:45:14+08:00] driver dead (was alive at 1781624704, dead for 10s)
+[2026-06-16T23:45:18+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:45:18+08:00] restarting driver (attempt 28)
+[2026-06-16T23:45:18+08:00] started driver pid=3513466
+[2026-06-16T23:46:13+08:00] driver dead (was alive at 1781624742, dead for 30s)
+[2026-06-16T23:46:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:46:15+08:00] restarting driver (attempt 29)
+[2026-06-16T23:46:15+08:00] started driver pid=3513714
+[2026-06-16T23:47:12+08:00] driver dead (was alive at 1781624802, dead for 30s)
+[2026-06-16T23:47:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:47:15+08:00] restarting driver (attempt 30)
+[2026-06-16T23:47:15+08:00] started driver pid=3513946
+[2026-06-16T23:48:12+08:00] driver dead (was alive at 1781624862, dead for 30s)
+[2026-06-16T23:48:13+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:48:13+08:00] restarting driver (attempt 31)
+[2026-06-16T23:48:13+08:00] started driver pid=3514211
+[2026-06-16T23:48:40+08:00] driver dead (was alive at 1781624910, dead for 10s)
+[2026-06-16T23:48:42+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:48:42+08:00] restarting driver (attempt 32)
+[2026-06-16T23:48:42+08:00] started driver pid=3514375
+[2026-06-16T23:49:36+08:00] driver dead (was alive at 1781624946, dead for 30s)
+[2026-06-16T23:49:39+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:49:39+08:00] restarting driver (attempt 33)
+[2026-06-16T23:49:39+08:00] started driver pid=3514633
+[2026-06-16T23:50:05+08:00] driver dead (was alive at 1781624995, dead for 10s)
+[2026-06-16T23:50:07+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:50:07+08:00] restarting driver (attempt 34)
+[2026-06-16T23:50:07+08:00] started driver pid=3514792
+[2026-06-16T23:50:33+08:00] driver dead (was alive at 1781625023, dead for 10s)
+[2026-06-16T23:50:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:50:35+08:00] restarting driver (attempt 35)
+[2026-06-16T23:50:35+08:00] started driver pid=3514995
+[2026-06-16T23:51:08+08:00] driver dead (was alive at 1781625058, dead for 10s)
+[2026-06-16T23:51:11+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:51:11+08:00] restarting driver (attempt 36)
+[2026-06-16T23:51:11+08:00] started driver pid=3515175
+[2026-06-16T23:51:37+08:00] driver dead (was alive at 1781625087, dead for 10s)
+[2026-06-16T23:51:39+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:51:39+08:00] restarting driver (attempt 37)
+[2026-06-16T23:51:39+08:00] started driver pid=3515337
+[2026-06-16T23:52:05+08:00] driver dead (was alive at 1781625115, dead for 10s)
+[2026-06-16T23:52:10+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:52:10+08:00] restarting driver (attempt 38)
+[2026-06-16T23:52:10+08:00] started driver pid=3515503
+[2026-06-16T23:52:36+08:00] driver dead (was alive at 1781625146, dead for 10s)
+[2026-06-16T23:52:40+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:52:40+08:00] restarting driver (attempt 39)
+[2026-06-16T23:52:40+08:00] started driver pid=3515666
+[2026-06-16T23:53:05+08:00] driver dead (was alive at 1781625175, dead for 10s)
+[2026-06-16T23:53:07+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:53:07+08:00] restarting driver (attempt 40)
+[2026-06-16T23:53:07+08:00] started driver pid=3515825
+[2026-06-16T23:53:33+08:00] driver dead (was alive at 1781625203, dead for 10s)
+[2026-06-16T23:53:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:53:35+08:00] restarting driver (attempt 41)
+[2026-06-16T23:53:35+08:00] started driver pid=3515990
+[2026-06-16T23:54:02+08:00] driver dead (was alive at 1781625232, dead for 10s)
+[2026-06-16T23:54:05+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:54:05+08:00] restarting driver (attempt 42)
+[2026-06-16T23:54:05+08:00] started driver pid=3516150
+[2026-06-16T23:54:31+08:00] driver dead (was alive at 1781625261, dead for 10s)
+[2026-06-16T23:54:33+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:54:33+08:00] restarting driver (attempt 43)
+[2026-06-16T23:54:33+08:00] started driver pid=3516313
+[2026-06-16T23:54:58+08:00] driver dead (was alive at 1781625288, dead for 10s)
+[2026-06-16T23:55:01+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:55:01+08:00] restarting driver (attempt 44)
+[2026-06-16T23:55:01+08:00] started driver pid=3516471
+[2026-06-16T23:55:28+08:00] driver dead (was alive at 1781625318, dead for 10s)
+[2026-06-16T23:55:30+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:55:30+08:00] restarting driver (attempt 45)
+[2026-06-16T23:55:30+08:00] started driver pid=3516636
+[2026-06-16T23:55:56+08:00] driver dead (was alive at 1781625346, dead for 10s)
+[2026-06-16T23:55:58+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:55:58+08:00] restarting driver (attempt 46)
+[2026-06-16T23:55:58+08:00] started driver pid=3516779
+[2026-06-16T23:56:24+08:00] driver dead (was alive at 1781625374, dead for 10s)
+[2026-06-16T23:56:26+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:56:26+08:00] restarting driver (attempt 47)
+[2026-06-16T23:56:26+08:00] started driver pid=3516940
+[2026-06-16T23:56:52+08:00] driver dead (was alive at 1781625402, dead for 10s)
+[2026-06-16T23:56:53+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:56:53+08:00] restarting driver (attempt 48)
+[2026-06-16T23:56:53+08:00] started driver pid=3517096
+[2026-06-16T23:57:19+08:00] driver dead (was alive at 1781625429, dead for 10s)
+[2026-06-16T23:57:20+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:57:20+08:00] restarting driver (attempt 49)
+[2026-06-16T23:57:20+08:00] started driver pid=3517256
+[2026-06-16T23:57:45+08:00] driver dead (was alive at 1781625455, dead for 10s)
+[2026-06-16T23:57:47+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:57:47+08:00] restarting driver (attempt 50)
+[2026-06-16T23:57:47+08:00] started driver pid=3517413
+[2026-06-16T23:58:12+08:00] driver dead (was alive at 1781625482, dead for 10s)
+[2026-06-16T23:58:14+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:58:14+08:00] restarting driver (attempt 51)
+[2026-06-16T23:58:14+08:00] started driver pid=3517565
+[2026-06-16T23:58:39+08:00] driver dead (was alive at 1781625509, dead for 10s)
+[2026-06-16T23:58:40+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:58:40+08:00] restarting driver (attempt 52)
+[2026-06-16T23:58:40+08:00] started driver pid=3517726
+[2026-06-16T23:59:06+08:00] driver dead (was alive at 1781625536, dead for 10s)
+[2026-06-16T23:59:08+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:59:08+08:00] restarting driver (attempt 53)
+[2026-06-16T23:59:08+08:00] started driver pid=3517884
+[2026-06-16T23:59:35+08:00] driver dead (was alive at 1781625565, dead for 10s)
+[2026-06-16T23:59:36+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-16T23:59:36+08:00] restarting driver (attempt 54)
+[2026-06-16T23:59:36+08:00] started driver pid=3518048
+[2026-06-17T00:00:31+08:00] driver dead (was alive at 1781625601, dead for 30s)
+[2026-06-17T00:00:34+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:00:34+08:00] restarting driver (attempt 55)
+[2026-06-17T00:00:34+08:00] started driver pid=3518327
+[2026-06-17T00:01:01+08:00] driver dead (was alive at 1781625651, dead for 10s)
+[2026-06-17T00:01:03+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:01:03+08:00] restarting driver (attempt 56)
+[2026-06-17T00:01:03+08:00] started driver pid=3518483
+[2026-06-17T00:01:58+08:00] driver dead (was alive at 1781625688, dead for 30s)
+[2026-06-17T00:02:02+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:02:02+08:00] restarting driver (attempt 57)
+[2026-06-17T00:02:02+08:00] started driver pid=3518712
+[2026-06-17T00:02:27+08:00] driver dead (was alive at 1781625737, dead for 10s)
+[2026-06-17T00:02:29+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:02:29+08:00] restarting driver (attempt 58)
+[2026-06-17T00:02:29+08:00] started driver pid=3518860
+[2026-06-17T00:03:24+08:00] driver dead (was alive at 1781625774, dead for 30s)
+[2026-06-17T00:03:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:03:28+08:00] restarting driver (attempt 59)
+[2026-06-17T00:03:28+08:00] started driver pid=3519084
+[2026-06-17T00:03:53+08:00] driver dead (was alive at 1781625823, dead for 10s)
+[2026-06-17T00:03:56+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:03:56+08:00] restarting driver (attempt 60)
+[2026-06-17T00:03:56+08:00] started driver pid=3519241
+[2026-06-17T00:04:50+08:00] driver dead (was alive at 1781625860, dead for 30s)
+[2026-06-17T00:04:53+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:04:53+08:00] restarting driver (attempt 61)
+[2026-06-17T00:04:53+08:00] started driver pid=3519468
+[2026-06-17T00:05:20+08:00] driver dead (was alive at 1781625910, dead for 10s)
+[2026-06-17T00:05:27+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:05:27+08:00] restarting driver (attempt 62)
+[2026-06-17T00:05:27+08:00] started driver pid=3519692
+[2026-06-17T00:05:54+08:00] driver dead (was alive at 1781625944, dead for 10s)
+[2026-06-17T00:05:56+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:05:56+08:00] restarting driver (attempt 63)
+[2026-06-17T00:05:56+08:00] started driver pid=3519848
+[2026-06-17T00:06:20+08:00] driver dead (was alive at 1781625970, dead for 10s)
+[2026-06-17T00:06:23+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:06:23+08:00] restarting driver (attempt 64)
+[2026-06-17T00:06:23+08:00] started driver pid=3520012
+[2026-06-17T00:06:48+08:00] driver dead (was alive at 1781625998, dead for 10s)
+[2026-06-17T00:06:50+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:06:50+08:00] restarting driver (attempt 65)
+[2026-06-17T00:06:50+08:00] started driver pid=3520170
+[2026-06-17T00:07:14+08:00] driver dead (was alive at 1781626024, dead for 10s)
+[2026-06-17T00:07:16+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:07:16+08:00] restarting driver (attempt 66)
+[2026-06-17T00:07:16+08:00] started driver pid=3520322
+[2026-06-17T00:08:10+08:00] driver dead (was alive at 1781626060, dead for 30s)
+[2026-06-17T00:08:12+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:08:12+08:00] restarting driver (attempt 67)
+[2026-06-17T00:08:12+08:00] started driver pid=3520550
+[2026-06-17T00:08:40+08:00] driver dead (was alive at 1781626110, dead for 10s)
+[2026-06-17T00:08:44+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:08:44+08:00] restarting driver (attempt 68)
+[2026-06-17T00:08:44+08:00] started driver pid=3520715
+[2026-06-17T00:09:09+08:00] driver dead (was alive at 1781626139, dead for 10s)
+[2026-06-17T00:09:11+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:09:11+08:00] restarting driver (attempt 69)
+[2026-06-17T00:09:11+08:00] started driver pid=3520872
+[2026-06-17T00:09:36+08:00] driver dead (was alive at 1781626166, dead for 10s)
+[2026-06-17T00:09:41+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:09:41+08:00] restarting driver (attempt 70)
+[2026-06-17T00:09:41+08:00] started driver pid=3521038
+[2026-06-17T00:10:07+08:00] driver dead (was alive at 1781626197, dead for 10s)
+[2026-06-17T00:10:09+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:10:09+08:00] restarting driver (attempt 71)
+[2026-06-17T00:10:09+08:00] started driver pid=3521198
+[2026-06-17T00:10:34+08:00] driver dead (was alive at 1781626224, dead for 10s)
+[2026-06-17T00:10:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:10:35+08:00] restarting driver (attempt 72)
+[2026-06-17T00:10:35+08:00] started driver pid=3521357
+[2026-06-17T00:11:00+08:00] driver dead (was alive at 1781626250, dead for 10s)
+[2026-06-17T00:11:01+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:11:01+08:00] restarting driver (attempt 73)
+[2026-06-17T00:11:01+08:00] started driver pid=3521512
+[2026-06-17T00:11:26+08:00] driver dead (was alive at 1781626276, dead for 10s)
+[2026-06-17T00:11:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:11:28+08:00] restarting driver (attempt 74)
+[2026-06-17T00:11:28+08:00] started driver pid=3521659
+[2026-06-17T00:11:53+08:00] driver dead (was alive at 1781626303, dead for 10s)
+[2026-06-17T00:11:55+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:11:55+08:00] restarting driver (attempt 75)
+[2026-06-17T00:11:55+08:00] started driver pid=3521814
+[2026-06-17T00:12:20+08:00] driver dead (was alive at 1781626330, dead for 10s)
+[2026-06-17T00:12:22+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:12:22+08:00] restarting driver (attempt 76)
+[2026-06-17T00:12:22+08:00] started driver pid=3521975
+[2026-06-17T00:12:47+08:00] driver dead (was alive at 1781626357, dead for 10s)
+[2026-06-17T00:12:49+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:12:49+08:00] restarting driver (attempt 77)
+[2026-06-17T00:12:49+08:00] started driver pid=3522137
+[2026-06-17T00:13:14+08:00] driver dead (was alive at 1781626384, dead for 10s)
+[2026-06-17T00:13:16+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:13:16+08:00] restarting driver (attempt 78)
+[2026-06-17T00:13:16+08:00] started driver pid=3522295
+[2026-06-17T00:13:41+08:00] driver dead (was alive at 1781626411, dead for 10s)
+[2026-06-17T00:13:42+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:13:42+08:00] restarting driver (attempt 79)
+[2026-06-17T00:13:42+08:00] started driver pid=3522452
+[2026-06-17T00:14:07+08:00] driver dead (was alive at 1781626437, dead for 10s)
+[2026-06-17T00:14:10+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:14:10+08:00] restarting driver (attempt 80)
+[2026-06-17T00:14:10+08:00] started driver pid=3522609
+[2026-06-17T00:15:05+08:00] driver dead (was alive at 1781626475, dead for 30s)
+[2026-06-17T00:15:07+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:15:07+08:00] restarting driver (attempt 81)
+[2026-06-17T00:15:07+08:00] started driver pid=3522839
+[2026-06-17T00:15:34+08:00] driver dead (was alive at 1781626524, dead for 10s)
+[2026-06-17T00:15:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:15:35+08:00] restarting driver (attempt 82)
+[2026-06-17T00:15:35+08:00] started driver pid=3523001
+[2026-06-17T00:16:01+08:00] driver dead (was alive at 1781626551, dead for 10s)
+[2026-06-17T00:16:04+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:16:04+08:00] restarting driver (attempt 83)
+[2026-06-17T00:16:04+08:00] started driver pid=3523158
+[2026-06-17T00:16:32+08:00] driver dead (was alive at 1781626582, dead for 10s)
+[2026-06-17T00:16:34+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:16:34+08:00] restarting driver (attempt 84)
+[2026-06-17T00:16:34+08:00] started driver pid=3523327
+[2026-06-17T00:17:29+08:00] driver dead (was alive at 1781626619, dead for 30s)
+[2026-06-17T00:17:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:17:35+08:00] restarting driver (attempt 85)
+[2026-06-17T00:17:35+08:00] started driver pid=3523557
+[2026-06-17T00:18:03+08:00] driver dead (was alive at 1781626673, dead for 10s)
+[2026-06-17T00:18:05+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:18:05+08:00] restarting driver (attempt 86)
+[2026-06-17T00:18:05+08:00] started driver pid=3523719
+[2026-06-17T00:19:00+08:00] driver dead (was alive at 1781626710, dead for 30s)
+[2026-06-17T00:19:03+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:19:03+08:00] restarting driver (attempt 87)
+[2026-06-17T00:19:03+08:00] started driver pid=3523949
+[2026-06-17T00:19:29+08:00] driver dead (was alive at 1781626759, dead for 10s)
+[2026-06-17T00:19:31+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:19:31+08:00] restarting driver (attempt 88)
+[2026-06-17T00:19:31+08:00] started driver pid=3524100
+[2026-06-17T00:19:49+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3524100) after previous run died
+[2026-06-17T00:20:04+08:00] driver dead (was alive at 1781626794, dead for 10s)
+[2026-06-17T00:20:05+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:20:05+08:00] restarting driver (attempt 89)
+[2026-06-17T00:20:05+08:00] started driver pid=3524281
+[2026-06-17T00:20:23+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3524281) after previous run died
+[2026-06-17T00:20:38+08:00] driver dead (was alive at 1781626828, dead for 10s)
+[2026-06-17T00:20:40+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:20:40+08:00] restarting driver (attempt 90)
+[2026-06-17T00:20:40+08:00] started driver pid=3524455
+[2026-06-17T00:21:05+08:00] driver dead (was alive at 1781626855, dead for 10s)
+[2026-06-17T00:21:06+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:21:06+08:00] restarting driver (attempt 91)
+[2026-06-17T00:21:06+08:00] started driver pid=3524608
+[2026-06-17T00:21:24+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3524608) after previous run died
+[2026-06-17T00:21:39+08:00] driver dead (was alive at 1781626889, dead for 10s)
+[2026-06-17T00:21:41+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:21:41+08:00] restarting driver (attempt 92)
+[2026-06-17T00:21:41+08:00] started driver pid=3524790
+[2026-06-17T00:21:59+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3524790) after previous run died
+[2026-06-17T00:22:14+08:00] driver dead (was alive at 1781626924, dead for 10s)
+[2026-06-17T00:22:16+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:22:16+08:00] restarting driver (attempt 93)
+[2026-06-17T00:22:16+08:00] started driver pid=3524957
+[2026-06-17T00:22:40+08:00] driver dead (was alive at 1781626950, dead for 10s)
+[2026-06-17T00:22:42+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:22:42+08:00] restarting driver (attempt 94)
+[2026-06-17T00:22:42+08:00] started driver pid=3525121
+[2026-06-17T00:23:00+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3525121) after previous run died
+[2026-06-17T00:23:15+08:00] driver dead (was alive at 1781626985, dead for 10s)
+[2026-06-17T00:23:17+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:23:17+08:00] restarting driver (attempt 95)
+[2026-06-17T00:23:17+08:00] started driver pid=3525288
+[2026-06-17T00:23:35+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3525288) after previous run died
+[2026-06-17T00:23:50+08:00] driver dead (was alive at 1781627020, dead for 10s)
+[2026-06-17T00:23:52+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:23:52+08:00] restarting driver (attempt 96)
+[2026-06-17T00:23:52+08:00] started driver pid=3525472
+[2026-06-17T00:24:11+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3525472) after previous run died
+[2026-06-17T00:24:26+08:00] driver dead (was alive at 1781627056, dead for 10s)
+[2026-06-17T00:24:27+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:24:27+08:00] restarting driver (attempt 97)
+[2026-06-17T00:24:27+08:00] started driver pid=3525647
+[2026-06-17T00:24:45+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3525647) after previous run died
+[2026-06-17T00:25:00+08:00] driver dead (was alive at 1781627090, dead for 10s)
+[2026-06-17T00:25:01+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:25:01+08:00] restarting driver (attempt 98)
+[2026-06-17T00:25:01+08:00] started driver pid=3525823
+[2026-06-17T00:25:26+08:00] driver dead (was alive at 1781627116, dead for 10s)
+[2026-06-17T00:25:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:25:28+08:00] restarting driver (attempt 99)
+[2026-06-17T00:25:28+08:00] started driver pid=3525980
+[2026-06-17T00:25:46+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3525980) after previous run died
+[2026-06-17T00:26:01+08:00] driver dead (was alive at 1781627151, dead for 10s)
+[2026-06-17T00:26:03+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:26:03+08:00] restarting driver (attempt 100)
+[2026-06-17T00:26:03+08:00] started driver pid=3526165
+[2026-06-17T00:26:22+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3526165) after previous run died
+[2026-06-17T00:26:37+08:00] driver dead (was alive at 1781627187, dead for 10s)
+[2026-06-17T00:26:38+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:26:38+08:00] restarting driver (attempt 101)
+[2026-06-17T00:26:38+08:00] started driver pid=3526342
+[2026-06-17T00:27:03+08:00] driver dead (was alive at 1781627213, dead for 10s)
+[2026-06-17T00:27:04+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:27:04+08:00] restarting driver (attempt 102)
+[2026-06-17T00:27:04+08:00] started driver pid=3526498
+[2026-06-17T00:27:22+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3526498) after previous run died
+[2026-06-17T00:27:37+08:00] driver dead (was alive at 1781627247, dead for 10s)
+[2026-06-17T00:27:38+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:27:38+08:00] restarting driver (attempt 103)
+[2026-06-17T00:27:38+08:00] started driver pid=3526671
+[2026-06-17T00:27:59+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3526671) after previous run died
+[2026-06-17T00:28:14+08:00] driver dead (was alive at 1781627284, dead for 10s)
+[2026-06-17T00:28:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:28:15+08:00] restarting driver (attempt 104)
+[2026-06-17T00:28:15+08:00] started driver pid=3551554
+[2026-06-17T00:28:44+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3551554) after previous run died
+[2026-06-17T00:28:59+08:00] driver dead (was alive at 1781627329, dead for 10s)
+[2026-06-17T00:29:00+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:29:00+08:00] restarting driver (attempt 105)
+[2026-06-17T00:29:00+08:00] started driver pid=3575618
+[2026-06-17T00:29:27+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3575618) after previous run died
+[2026-06-17T00:29:42+08:00] driver dead (was alive at 1781627372, dead for 10s)
+[2026-06-17T00:29:44+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:29:44+08:00] restarting driver (attempt 106)
+[2026-06-17T00:29:44+08:00] started driver pid=3584486
+[2026-06-17T00:30:10+08:00] driver dead (was alive at 1781627400, dead for 10s)
+[2026-06-17T00:30:12+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:30:12+08:00] restarting driver (attempt 107)
+[2026-06-17T00:30:12+08:00] started driver pid=3584648
+[2026-06-17T00:30:38+08:00] driver dead (was alive at 1781627428, dead for 10s)
+[2026-06-17T00:30:39+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:30:39+08:00] restarting driver (attempt 108)
+[2026-06-17T00:30:39+08:00] started driver pid=3584813
+[2026-06-17T00:31:05+08:00] driver dead (was alive at 1781627455, dead for 10s)
+[2026-06-17T00:31:06+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:31:06+08:00] restarting driver (attempt 109)
+[2026-06-17T00:31:06+08:00] started driver pid=3584969
+[2026-06-17T00:31:32+08:00] driver dead (was alive at 1781627482, dead for 10s)
+[2026-06-17T00:31:33+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:31:33+08:00] restarting driver (attempt 110)
+[2026-06-17T00:31:33+08:00] started driver pid=3585129
+[2026-06-17T00:31:59+08:00] driver dead (was alive at 1781627509, dead for 10s)
+[2026-06-17T00:32:00+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:32:00+08:00] restarting driver (attempt 111)
+[2026-06-17T00:32:00+08:00] started driver pid=3585273
+[2026-06-17T00:32:27+08:00] driver dead (was alive at 1781627537, dead for 10s)
+[2026-06-17T00:32:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:32:28+08:00] restarting driver (attempt 112)
+[2026-06-17T00:32:28+08:00] started driver pid=3585437
+[2026-06-17T00:32:54+08:00] driver dead (was alive at 1781627564, dead for 10s)
+[2026-06-17T00:32:56+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:32:56+08:00] restarting driver (attempt 113)
+[2026-06-17T00:32:56+08:00] started driver pid=3585594
+[2026-06-17T00:33:22+08:00] driver dead (was alive at 1781627592, dead for 10s)
+[2026-06-17T00:33:23+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:33:23+08:00] restarting driver (attempt 114)
+[2026-06-17T00:33:23+08:00] started driver pid=3585751
+[2026-06-17T00:33:51+08:00] driver dead (was alive at 1781627621, dead for 10s)
+[2026-06-17T00:33:53+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:33:53+08:00] restarting driver (attempt 115)
+[2026-06-17T00:33:53+08:00] started driver pid=3585912
+[2026-06-17T00:34:18+08:00] driver dead (was alive at 1781627648, dead for 10s)
+[2026-06-17T00:34:20+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:34:20+08:00] restarting driver (attempt 116)
+[2026-06-17T00:34:20+08:00] started driver pid=3586070
+[2026-06-17T00:34:47+08:00] driver dead (was alive at 1781627677, dead for 10s)
+[2026-06-17T00:34:48+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:34:48+08:00] restarting driver (attempt 117)
+[2026-06-17T00:34:48+08:00] started driver pid=3586231
+[2026-06-17T00:35:14+08:00] driver dead (was alive at 1781627704, dead for 10s)
+[2026-06-17T00:35:15+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:35:15+08:00] restarting driver (attempt 118)
+[2026-06-17T00:35:15+08:00] started driver pid=3586387
+[2026-06-17T00:35:41+08:00] driver dead (was alive at 1781627731, dead for 10s)
+[2026-06-17T00:35:42+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:35:42+08:00] restarting driver (attempt 119)
+[2026-06-17T00:35:42+08:00] started driver pid=3586550
+[2026-06-17T00:36:09+08:00] driver dead (was alive at 1781627759, dead for 10s)
+[2026-06-17T00:36:10+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:36:10+08:00] restarting driver (attempt 120)
+[2026-06-17T00:36:10+08:00] started driver pid=3586708
+[2026-06-17T00:36:36+08:00] driver dead (was alive at 1781627786, dead for 10s)
+[2026-06-17T00:36:37+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:36:37+08:00] restarting driver (attempt 121)
+[2026-06-17T00:36:37+08:00] started driver pid=3586873
+[2026-06-17T00:37:03+08:00] driver dead (was alive at 1781627813, dead for 10s)
+[2026-06-17T00:37:05+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:37:05+08:00] restarting driver (attempt 122)
+[2026-06-17T00:37:05+08:00] started driver pid=3587033
+[2026-06-17T00:37:32+08:00] driver dead (was alive at 1781627842, dead for 10s)
+[2026-06-17T00:37:34+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:37:34+08:00] restarting driver (attempt 123)
+[2026-06-17T00:37:34+08:00] started driver pid=3587197
+[2026-06-17T00:38:00+08:00] driver dead (was alive at 1781627870, dead for 10s)
+[2026-06-17T00:38:01+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:38:01+08:00] restarting driver (attempt 124)
+[2026-06-17T00:38:01+08:00] started driver pid=3587341
+[2026-06-17T00:38:28+08:00] driver dead (was alive at 1781627898, dead for 10s)
+[2026-06-17T00:38:29+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:38:29+08:00] restarting driver (attempt 125)
+[2026-06-17T00:38:29+08:00] started driver pid=3587501
+[2026-06-17T00:38:55+08:00] driver dead (was alive at 1781627925, dead for 10s)
+[2026-06-17T00:38:56+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:38:56+08:00] restarting driver (attempt 126)
+[2026-06-17T00:38:56+08:00] started driver pid=3587655
+[2026-06-17T00:39:22+08:00] driver dead (was alive at 1781627952, dead for 10s)
+[2026-06-17T00:39:23+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:39:23+08:00] restarting driver (attempt 127)
+[2026-06-17T00:39:23+08:00] started driver pid=3587811
+[2026-06-17T00:39:49+08:00] driver dead (was alive at 1781627979, dead for 10s)
+[2026-06-17T00:39:51+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:39:51+08:00] restarting driver (attempt 128)
+[2026-06-17T00:39:51+08:00] started driver pid=3587972
+[2026-06-17T00:40:17+08:00] driver dead (was alive at 1781628007, dead for 10s)
+[2026-06-17T00:40:18+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:40:18+08:00] restarting driver (attempt 129)
+[2026-06-17T00:40:18+08:00] started driver pid=3588129
+[2026-06-17T00:40:44+08:00] driver dead (was alive at 1781628034, dead for 10s)
+[2026-06-17T00:40:45+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:40:45+08:00] restarting driver (attempt 130)
+[2026-06-17T00:40:45+08:00] started driver pid=3588283
+[2026-06-17T00:41:11+08:00] driver dead (was alive at 1781628061, dead for 10s)
+[2026-06-17T00:41:12+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:41:12+08:00] restarting driver (attempt 131)
+[2026-06-17T00:41:12+08:00] started driver pid=3588441
+[2026-06-17T00:41:39+08:00] driver dead (was alive at 1781628089, dead for 10s)
+[2026-06-17T00:41:40+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:41:40+08:00] restarting driver (attempt 132)
+[2026-06-17T00:41:40+08:00] started driver pid=3588604
+[2026-06-17T00:42:06+08:00] driver dead (was alive at 1781628116, dead for 10s)
+[2026-06-17T00:42:07+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:42:07+08:00] restarting driver (attempt 133)
+[2026-06-17T00:42:07+08:00] started driver pid=3588761
+[2026-06-17T00:42:32+08:00] driver dead (was alive at 1781628142, dead for 10s)
+[2026-06-17T00:42:34+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:42:34+08:00] restarting driver (attempt 134)
+[2026-06-17T00:42:34+08:00] started driver pid=3588925
+[2026-06-17T00:43:00+08:00] driver dead (was alive at 1781628170, dead for 10s)
+[2026-06-17T00:43:01+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:43:01+08:00] restarting driver (attempt 135)
+[2026-06-17T00:43:01+08:00] started driver pid=3589070
+[2026-06-17T00:43:27+08:00] driver dead (was alive at 1781628197, dead for 10s)
+[2026-06-17T00:43:28+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:43:28+08:00] restarting driver (attempt 136)
+[2026-06-17T00:43:28+08:00] started driver pid=3589222
+[2026-06-17T00:43:55+08:00] driver dead (was alive at 1781628224, dead for 11s)
+[2026-06-17T00:43:56+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:43:56+08:00] restarting driver (attempt 137)
+[2026-06-17T00:43:56+08:00] started driver pid=3589381
+[2026-06-17T00:44:23+08:00] driver dead (was alive at 1781628253, dead for 10s)
+[2026-06-17T00:44:24+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:44:24+08:00] restarting driver (attempt 138)
+[2026-06-17T00:44:24+08:00] started driver pid=3589541
+[2026-06-17T00:44:42+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3589541) after previous run died
+[2026-06-17T00:44:57+08:00] driver dead (was alive at 1781628287, dead for 10s)
+[2026-06-17T00:45:00+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:45:00+08:00] restarting driver (attempt 139)
+[2026-06-17T00:45:00+08:00] started driver pid=3589715
+[2026-06-17T00:45:18+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3589715) after previous run died
+[2026-06-17T00:45:33+08:00] driver dead (was alive at 1781628323, dead for 10s)
+[2026-06-17T00:45:35+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:45:35+08:00] restarting driver (attempt 140)
+[2026-06-17T00:45:35+08:00] started driver pid=3589909
+[2026-06-17T00:45:54+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3589909) after previous run died
+[2026-06-17T00:46:09+08:00] driver dead (was alive at 1781628359, dead for 10s)
+[2026-06-17T00:46:10+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:46:10+08:00] restarting driver (attempt 141)
+[2026-06-17T00:46:10+08:00] started driver pid=3590075
+[2026-06-17T00:46:28+08:00] telegram send failed: 🔄 Watchdog: restarted driver (pid=3590075) after previous run died
+[2026-06-17T00:46:43+08:00] driver dead (was alive at 1781628393, dead for 10s)
+[2026-06-17T00:46:45+08:00] sanity check 1: inconclusive (timeout/error)
+[2026-06-17T00:46:45+08:00] restarting driver (attempt 142)
+[2026-06-17T00:46:45+08:00] started driver pid=3590257

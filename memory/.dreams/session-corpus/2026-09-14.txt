@@ -1,0 +1,16 @@
+[main/sessions/main/0067f928-71d3-48e3-b3b5-faf700c6f526#L16] Assistant: All three exec attempts failed — the auto-reviewer couldn't produce a risk assessment (model stopped), and Telegram native exec approvals aren't configured, so there's no approval path for an unattended cron run. Let me record this to memory.
+[main/sessions/main/0067f928-71d3-48e3-b3b5-faf700c6f526#L22] Assistant: 每日安全扫描执行失败，已记录到 `memory/2026-09-14.md`。 **失败原因**：exec auto-reviewer model 无响应，所有命令（lastb/last/df -h/apt check-update）被 defer 到人工审批，而 Telegram 未配置 native exec approvals，无人值守 cron 无法获得审批。 **这不是重试能解决的问题**——需要 threely 配置 `channels.telegram.execApprovals.approvers` 或 `comma
+[main/sessions/main/3aefd747-b9d0-4ee8-aa4a-7e55282193ae#L2] User: https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.30 mihomo内核升级
+[main/sessions/main/3aefd747-b9d0-4ee8-aa4a-7e55282193ae#L262] Assistant: ⚠️ Process failed
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1697] User: 构建的版本号怎么还是9.11.10
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1830] Assistant: ⚠️ Exec failed
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1831] User: 还是一样的提示
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1850] Assistant: 构建完了。Release 页面上有两个 APK，情况是这样的： | APK 文件名 | 上传时间 | 来源 | |---|---|---| | `openclaw-2026.9.11.10.apk` | 15:47:50Z | 第一次打 tag 时，`Version.properties` 还没同步，还是 9.11.10 | | `openclaw-2026.9.13.1.apk` | 16:17:17Z | 第二次 force tag 后，`Version.properties` 已同步到 9.13.1 ✅ | **正确的包是 `
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1851] User: 我发的图片没有收到吗？ 问题没有解决
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1853] Assistant: 收到图片了。两张都是手机上 OpenClaw App 的截图——能看到聊天记录和模型选择器。 但问题确实没解决，我直说： **Release 里现在有两个 APK：** | 文件名 | 大小 | sha256 | 状态 | |---|---|---|---| | `openclaw-2026.9.11.10.apk` | 38MB | `1af27f31...` | ❌ 第一次 tag 时的残留，Version.properties 还没同步 | | `openclaw-2026.9.13.1.apk` | 38MB | `2cab
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1854] User: 要解决 模型不能切换 一直提示要更新gateway
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1987] Assistant: ⚠️ Exec failed
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1988] Assistant: ⬆️ Updating OpenClaw 2026.9.4 → the latest release. The gateway stays available while the update is validated; you'll get a message here when it finishes.
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L1989] Assistant: ⚠️ OpenClaw update failed: plugin-target-unavailable. The gateway is running 2026.9.4. Phases: requested (90.97s) → staging (210ms) → validating (10.57s) Failed: validating Failed: plugin-target-unavailable — Exit code: 1; ckages or registry are available, use `opencla
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L2045] Assistant: 问题找到了。不是版本号的问题——是 capability 判断的 bug。 ## 根因 `ChatController.kt` 里，模型清单请求被一个 capability 检查 gate 住了： ```kotlin val catalogSupported = gatewayAdvertisesCapability( SESSION_SCOPED_MODEL_CATALOG_CAPABILITY // "session-scoped-model-catalog" ) == true ``` 如果 gateway 的 hello 没
+[main/sessions/main/72691d9f-eee6-435a-a9d4-09091bc79d7f#L2045] Assistant: APK 是 fix 之前的 你 Release 里的 `openclaw-2026.9.13.1.apk` 是 `9be448b8` 打的，**在 `2d73006d` 之前**，所以模型切换还是坏的。 --- **你要装的是 `v2026.9.14.2` 的 APK**（或 9.14.1），那个才带 fix。 要我从 `v2026.9.14.2` Release 拉下载链接给你吗？

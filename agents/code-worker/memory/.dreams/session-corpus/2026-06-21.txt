@@ -1,0 +1,2 @@
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L458] Assistant: [assistant turn failed before producing content][assistant turn failed before producing content
+[code-worker/sessions/code-worker/61eda6b9-9316-4045-9138-397f8a849ff5.jsonl#L460] Assistant: [assistant turn failed before producing content][assistant turn failed before producing content

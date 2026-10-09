@@ -1,0 +1,6 @@
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L517] User: 怎么测试一下 审核
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L540] Assistant: 测完了，结果如下： ``` [FAIL] 40125 invalid appsecret [HINT] app_secret 已失效，需要去微信公众号后台重新生成 ``` ## 现状 | 项目 | 状态 | |---|---| | **verify_token.py** | ✅ 已修复，能正常跑 | | **app_secret** | 🔴 40125 无效，已过期 | | **access_token** | 🔴 也是旧的，需要刷新 | | **IP 白名单** | 🔴 之前报 111.19.33.150，你改成了 111.
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L2396] Assistant: threely，抱歉——之前那个修复脚本（补 `MINIMAX_API_KEY` 到 env 文件）一直被 exec 安全策略拒绝，没跑成。昨晚一堆心跳 poll 也没回上来，是因为模型响应又超时了。 **当前未完成的事：** 1. **`MINIMAX_API_KEY` 没补上** — 脚本被拒了，env 文件里还是只有 `GMI_API_KEY`，没有 `MINIMAX_API_KEY` 2. **`AMD_API_KEY`** — `.env` 和 `gateway.systemd.env` 里都没找到，你之前说"应该有"但我
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L2397] User: 🔐 每日安全审计完成 — OpenClaw: 4 个问题, Lynis: 35 个警告
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L2402] Assistant: 审计结果出来了。好消息是 **critical 从 5 个降到了 2 个**，之前修的 Telegram DM allowlist + amd 插件 + skill 冲突都生效了。 **当前 2 个 critical：** 1. **`models.small_params`** — sandbox=off 还在报。我之前改了 `sandbox.mode=all` 和 `workspaceOnly=true`，但 **gateway 没重启**，配置没加载。 2. **`skills.code_safety`** — `huashu
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L2402] Assistant: 那个。`huashu-design` 的 child_process 是 PPT 生成脚本用的，属于正常功能，可以加白名单或忽略。

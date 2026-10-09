@@ -1,0 +1,5 @@
+[main/sessions/main/259a3ed5-de29-430f-81ca-714c7f4a9d57#L11] Assistant: 怎么回事？你没说完我就
+[main/sessions/main/259a3ed5-de29-430f-81ca-714c7f4a9d57#L13] User: > The agent run failed怎么回事 before producing a reply.
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L16] User: [System] Your previous turn was interrupted by a gateway restart while OpenClaw was waiting on tool/model work. Continue from the existing transcript and finish the interrupted response.
+[main/sessions/main/c389c296-2c47-4a51-b718-016fba418eb8#L5] User: [System] Your previous turn was interrupted by a gateway restart while OpenClaw was waiting on tool/model work. Continue from the existing transcript and finish the interrupted response. Note: The interrupted final reply was captured: "↪️ Model Fallback cleared: sensenova/d
+[main/sessions/main/c389c296-2c47-4a51-b718-016fba418eb8#L9] Assistant: I couldn't recover this session after repeated gateway restarts. Use /new or /reset to start a replacement session.

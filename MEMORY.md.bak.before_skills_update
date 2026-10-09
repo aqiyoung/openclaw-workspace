@@ -1,0 +1,177 @@
+# MEMORY.md — 小七的长期记忆 🤖
+
+> 上次梦境更新：2026-05-13。目标：保持在 200 行以内，索引而非堆砌。
+
+## 关于老板
+
+- **名称：** Young，喜欢被叫"阳仔"
+- **技术背景：** 运维工程师，熟悉 Linux、飞牛NAS、信创系统、nginx、docker、mihomo 代理
+- **沟通风格：** 直接、不废话、偏好技术交流
+
+## 账号信息
+
+- **Telegram：** @XNM_SHR (ID: 460212872)
+- **飞书 open_id：** ou_3c1068d79dee7c0e06ffb89eb461aed7
+- **NAS 服务器：** threelnas (192.168.31.58)，Docker 在 /usr/bin/docker，用户需加入 docker 组才能操作
+
+## 模型配置
+
+- **主模型：** LongCat-2.0-Preview（注意：不带 longcat/ 前缀）
+- **cron 任务模型：** LongCat-Flash-Lite
+- **代理：** Mihomo 127.0.0.1:7890
+- **⚠️ 模型 ID 规则：OpenClaw 配置中用裸模型名（不带 provider 前缀），cron.json 同理**
+
+## 飞书群组
+
+- **牛马公司** (oc_34f560ad2af0a629b9ef9ae189ba7a63)
+  - 群主：老板，机器人：小七、柠檬、喵喵
+
+## 已安装的技能
+
+- **github / gh-issues / github-ops** — GitHub 操作
+- **ima-skill** — 艾玛笔记管理
+- **wechat-mp-writer / wechat-mp-publisher** — 微信公众号写作与发布
+- **huashu-design** — 设计生成（原型、幻灯片）
+- **agent-dream** — 梦境系统
+- **music-download** — 音乐下载
+- **gog / google-workspace** — Google Workspace
+
+## 老板的暗号
+
+- **小龙虾** = OpenClaw
+
+## 微信公众号
+
+- **AppID：** wx97bc84bb54232e27
+- **IP 白名单：** 111.19.39.227（变动时需检测并通知老板）
+- **推文规则：** 每篇必须标记原创，body 不设 max-width，代码块用 `<pre>` 内联样式
+- **封面图：** 用 PIL 脚本生成，风格统一（深蓝科技风），不用 AI 生图（比例不对+有水印文字）
+
+### 艾玛笔记（IMA）
+
+- **用途：** 每天新建工作日记，标题格式 `YYYY-MM-DD 周X — 小七工作日记`
+- **凭证位置：** `~/.config/ima/client_id`、`~/.config/ima/api_key`
+- **写入接口：** 必须使用 `import_doc`，content_format=1（Markdown）
+
+## 飞书日记
+
+- **doc_id：** QBN9d0mi5oVEd1xEuB2c1nuhnCg
+
+## 运维规则
+
+- **Gateway 重启成功**：通过微信通道发通知"Gateway 重启成功 🍋"（硬规则）
+- **修改/更新前先让老板确认**
+- **能本地化的定时任务尽量本地化**（systemd timer + bash），减少 token 消耗
+
+## 定时任务
+
+### OpenClaw cron（~/.openclaw/cron/jobs.json）
+- **daily-work-diary** — 每天 23:30，整理工作日记，同步艾玛笔记 + 飞书日记
+- **daily-security-audit** — 每天 8:00，安全审计
+- **daily-weather** — 每天 6:00，西安天气播报
+- **daily-ai-skills-search** — 每天 10:00，AI 技能搜索
+- **agent-dream** — 每天 3:00 AM，记忆整合
+- **horizon-daily-news** — 每天 8:00，AI 新闻采集+分析推送（agent=content）
+- **github-daily-sync** — 每天 9:00，GitHub 同步
+- **openclaw-auto-update** — 每 6 小时，检查更新
+
+### systemd timers
+- **openclaw-restart-notify** — 每 15 秒，Gateway 重启通知
+- **nas-telegram-monitor** — NAS 事件监听（service 常驻，不需要 timer）
+
+## 踩坑记录
+
+- **微信相关：** `<pre>` 标签最稳定，body 不设 max-width
+- **系统相关：** 飞牛 NAS `/usr/trim/` 文件绝对不能动
+- **模型 ID：** cron 和 agent 配置必须用裸模型名（如 `LongCat-Flash-Lite`），不能用 `longcat/LongCat-Flash-Lite`
+- **AI 生图：** Z-Image-Turbo 只能生成竖版，不适合公众号封面；PIL 本地生成更可控
+- **cron delivery：** 统一用 `telegram:460212872` 格式（带前缀）
+- **content agent：** 需要显式配置 channels.telegram 才能在 isolated session 发消息
+- **nas-telegram-monitor：** service 是常驻进程，OnUnitActiveSec 会导致 timer 只触发一次，应该停掉 timer 只保留 service
+
+## 安全规则
+
+- **API Key 管理：** 所有 API Key 统一放到环境变量（~/.openclaw/.env 和 ~/.bashrc）
+- **飞牛 NAS 禁令：** 绝对不允许操作 `/usr/trim/` 下任何文件
+- **NAS Docker 原则：** 可以修改容器内配置，但绝对不能改 Docker 本身的配置
+- **备份铁律：** 每次重要变更后必须立即备份到 `/vol1/1000/openclaw/backup/`
+
+## 工具路径速查
+
+- 封面图生成：`scripts/cover_gen.py`（PIL，思源黑体，2400×1350）
+- 终端截图：`skills/wechat-image-generator/`（Playwright）
+- 音乐下载：`scripts/musicdl.py` → `/vol1/1000/music/downloads/`
+- 邮件发送：`gog gmail send --to xxx --subject xxx --body xxx --attach xxx`
+- 备份目录：`/vol1/1000/openclaw/backup/`
+- 公众号草稿：`drafts/`
+
+## Horizon 新闻系统
+
+- **项目位置：** `/opt/Horizon/`
+- **数据采集：** `cd /opt/Horizon && .venv/bin/python scripts/horizon_collect.py`
+- **数据目录：** `/vol1/1000/Horizon/data/raw/`
+- **API：** 使用 OpenRouter（OPENAI_API_BASE_URL=https://openrouter.ai/api/v1）
+
+## FNMessageBots（飞牛 NAS 事件推送）
+
+- **位置：** `/vol1/1000/FNMessageBots/`
+- **容器：** `fn-message-bot`
+- **Telegram Bot：** `@xiaozht_bot`（Chat ID：460212872）
+- **⚠️ 容器重启需老板执行：`docker restart fn-message-bot`**
+
+## Cloudflare
+
+- **API Token：** `CF_API_TOKEN`（~/.openclaw/.env）
+- **Account ID：** `1caaacb82c8c6a0d441ef9a803f2e640`
+
+## 梦境系统
+
+- **技能：** `skills/agent-dream/SKILL.md`
+- **定时任务：** 每天凌晨 3:00
+- **功能：** 记忆整合、自我反思、长期记忆维护
+
+## GitHub 项目处理
+
+- **videodl** — 轻量级视频下载器，支持50+平台，License：PolyForm Noncommercial 1.0.0（禁止商用）
+
+## 当前系统状态（2026-05-13 更新）
+
+### Docker 容器（6个运行中）
+| 容器 | 镜像 | 端口 |
+|---|---|---|
+| fn-message-bot | sunanang/fn-message-bots | 18080 |
+| searxng | searxng/searxng | 8888 |
+| hermes-agent | nousresearch/hermes-agent | - |
+| openlist | openlistteam/openlist | 5244 |
+| nitter | zedeus/nitter | - |
+| nitter-redis | redis:6-alpine | - |
+
+### Cron 任务状态
+- ✅ daily-work-diary — 23:30 正常
+- ✅ daily-security-audit — 08:00 正常
+- ✅ daily-weather — 06:00 正常
+- ✅ openclaw-auto-update — 正常
+- ⚠️ horizon-daily-news — error（已修复模型 ID，明天验证）
+- ✅ github-daily-sync — 正常
+- ✅ daily-ai-skills-search — 正常
+- ✅ agent-dream — 正常
+
+### 网络
+- 公网 IP：172.104.97.39（可能变动，公众号白名单需同步更新）
+
+### 已修复的问题
+- cron 模型 ID：longcat/LongCat-Flash-Lite → LongCat-Flash-Lite
+- content agent 添加 telegram channel
+- nas-telegram-monitor timer 已停（service 常驻）
+- delivery 格式统一为 telegram:460212872
+
+## 视频剪辑技能（video-editing）
+
+- **技能名称：** video-editing（maxazure/video-editing-skill）
+- **安装位置：** 
+- **虚拟环境：** 
+- **依赖：** ffmpeg 7.1.3 ✅ | faster-whisper 1.2.1 ✅
+- **GPU：** AMD（h264_qsv 硬件编码）
+- **推荐模型：** medium（CPU+iGPU）
+- **功能：** 按句子切分口播视频、语音识别、自动字幕、去口误、加封面、水印、B-roll、多平台导出
+- **视频文件位置：**  下

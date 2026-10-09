@@ -1,0 +1,58 @@
+{
+  "version": 3,
+  "files": {
+    "research:sessions/research/0ed4b729-752d-4771-b09d-70f95167e9e2.jsonl.deleted.2026-06-06T16-50-09.644Z": {
+      "mtimeMs": 1778130999978,
+      "size": 5172,
+      "contentHash": "a6736163757329a0509caebeaac0fae631c47829acccd3920c59be265de91dd2",
+      "lineCount": 4,
+      "lastContentLine": 4
+    },
+    "research:sessions/research/3d898046-539c-4485-8a1c-a88f23a2ed14.jsonl": {
+      "mtimeMs": 1777989365503,
+      "size": 88297,
+      "contentHash": "acc4347a5d4b388e9e62eb4ff5470d95ab36c67c081de21410105c397804f733",
+      "lineCount": 7,
+      "lastContentLine": 7
+    },
+    "research:sessions/research/47d18376-aad3-489f-ae5c-413099c86e01.jsonl": {
+      "mtimeMs": 1777989365501,
+      "size": 4364,
+      "contentHash": "eb6364def1e2b57bb78b05c07c15be03df5204a656c77f6da4495068ba091a28",
+      "lineCount": 1,
+      "lastContentLine": 1
+    },
+    "research:sessions/research/4e74eb41-cfa6-474f-9444-e1450f3f560e.jsonl.deleted.2026-06-06T04-53-15.935Z": {
+      "mtimeMs": 1778125686465,
+      "size": 2085,
+      "contentHash": "7515225b6b5585d542555bd7d57e6e415a27a7804c53a3979c03f0a86df62502",
+      "lineCount": 2,
+      "lastContentLine": 2
+    },
+    "research:sessions/research/90b3535e-33fb-4427-b28c-c453dfed8bd9.jsonl": {
+      "mtimeMs": 1777989365501,
+      "size": 1644,
+      "contentHash": "1f3b30fce15acabbf4d3d99b406e65b1dc56b19d42b9794fd0a5044aa7fb3667",
+      "lineCount": 2,
+      "lastContentLine": 2
+    },
+    "research:sessions/research/afbd417a-49c3-4202-bd54-863566666b28.jsonl": {
+      "mtimeMs": 1777989365202,
+      "size": 37614,
+      "contentHash": "3e7da458f899eb7459e9bbe63bc7f1366e35421f40471132e94991a95b11e9e2",
+      "lineCount": 12,
+      "lastContentLine": 12
+    },
+    "research:sessions/research/f07cab09-558e-4c0f-b05e-7f5d19fcbabd.jsonl": {
+      "mtimeMs": 1777989365598,
+      "size": 1818200,
+      "contentHash": "af09b7b030dc43756795b6dc0d902f0fd2f0e96c472c467a67b4bda3fdd779c3",
+      "lineCount": 50,
+      "lastContentLine": 50
+    }
+  },
+  "seenMessages": {
+    "research:0ed4b729-752d-4771-b09d-70f95167e9e2": [],
+    "research:4e74eb41-cfa6-474f-9444-e1450f3f560e": []
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 900px;
+  height: 383px;
+  overflow: hidden;
+  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+.cover {
+  width: 900px;
+  height: 383px;
+  background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 40%, #0d2137 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 网格背景 */
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* 装饰圆 */
+.circle1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,255,0.15) 0%, transparent 70%);
+  top: -100px;
+  right: -50px;
+}
+.circle2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(120,0,255,0.1) 0%, transparent 70%);
+  bottom: -50px;
+  left: -30px;
+}
+
+/* 终端窗口 */
+.terminal {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,200,255,0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #00ff88;
+  backdrop-filter: blur(10px);
+}
+.terminal .line { display: block; }
+.terminal .dim { color: #666; }
+.terminal .hl { color: #00ccff; }
+.terminal .cursor { 
+  display: inline-block;
+  width: 8px; height: 14px;
+  background: #00ff88;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* 左侧装饰线条 */
+.deco-line {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #00ccff, transparent);
+  border-radius: 2px;
+}
+
+/* 标题区域 */
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 0 60px;
+}
+.tag {
+  display: inline-block;
+  background: rgba(0,200,255,0.15);
+  border: 1px solid rgba(0,200,255,0.3);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 11px;
+  color: #00ccff;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.title .accent {
+  color: #00ff88;
+}
+.subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="deco-line"></div>
+  
+  <div class="content">
+    <div class="tag">🛠 运维实战</div>
+    <div class="title">电脑越用越慢？<br><span class="accent">一条命令</span>定位元凶</div>
+    <div class="subtitle">top / htop 命令详解</div>
+  </div>
+  
+  <div class="terminal">
+    <span class="line dim">$ top</span>
+    <span class="line"><span class="hl">PID</span> USER  CPU%  COMMAND</span>
+    <span class="line">2847 root   95.2  java</span>
+    <span class="line">1024 www    12.1  nginx</span>
+    <span class="line dim">$ <span class="cursor"></span></span>
+  </div>
+</div>
+</body>
+</html>

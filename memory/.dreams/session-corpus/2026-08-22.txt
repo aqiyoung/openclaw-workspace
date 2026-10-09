@@ -1,0 +1,5 @@
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L849] User: 🔐 每日安全审计完成 — OpenClaw: 3 个问题, Lynis: 35 个警告
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L852] Assistant: 已记录，感谢提醒。
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L4326] Assistant: **Token 通了！** 🎉 问题找到了：备份 skill 的 `config.json` 里存的是**旧 secret**（尾号 82ea），而 USER.md / `push_final3.py` 里的是**当前有效的 secret**（`08a93...d41b7`）。之前一直用错文件里的旧值。 现在继续推送流程。先确认要推的文章——查一下草稿：
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L4332] Assistant: Token 通了，但**草稿箱是空的（total: 0）**——之前说的 WPS 保存故障文章、麒麟 V10 草稿都不在公众号草稿箱里。 ## 当前状态 ✅ **已修复**：微信公众号 token 认证通了（用 USER.md 里的 secret `08a93...`，备份 skill config 里的是旧值） ❌ **卡点**：没有可推的文章内容。workspace 里能找到的候选： 1. **三页札记_麒麟V10装机踩坑.md**（7/26 写的，MEMORY 里也记着“待发布”） 2. drafts/ 里的 AI 主题文章（
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L4345] User: 检查一下上游有没有更新

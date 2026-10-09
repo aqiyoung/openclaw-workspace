@@ -1,0 +1,41 @@
+OK [Y77]
+OK [play/a02b/index]
+OK [play/a02e/index]
+OK [play/a02f/index]
+DEAD [play/a01/index] <!DOCTYPE html><html>  <head
+DEAD [play/a02/index] <!DOCTYPE html><html>  <head
+DEAD [play/a03/index] <!DOCTYPE html><html>  <head
+DEAD [play/a04/index] <!DOCTYPE html><html>  <head
+DEAD [play/a05/index] <!DOCTYPE html><html>  <head
+DEAD [play/a06/index] <!DOCTYPE html><html>  <head
+DEAD [play/a07/index] <!DOCTYPE html><html>  <head
+DEAD [play/a08/index] <!DOCTYPE html><html>  <head
+DEAD [play/a09/index] <!DOCTYPE html><html>  <head
+DEAD [play/a10/index] <!DOCTYPE html><html>  <head
+DEAD [play/a11/index] <!DOCTYPE html><html>  <head
+DEAD [play/a12/index] <!DOCTYPE html><html>  <head
+DEAD [play/a13/index] <!DOCTYPE html><html>  <head
+DEAD [play/a14/index] <!DOCTYPE html><html>  <head
+DEAD [play/a15/index] <!DOCTYPE html><html>  <head
+DEAD [play/a16/index] <!DOCTYPE html><html>  <head
+DEAD [play/a17/index] <!DOCTYPE html><html>  <head
+DEAD [play/a18/index] <!DOCTYPE html><html>  <head
+DEAD [play/a19/index] <!DOCTYPE html><html>  <head
+DEAD [play/a20/index] <!DOCTYPE html><html>  <head
+DEAD [CCTV-1/HLSv3-FTA/CCTV-1] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-2/HLSv3-FTA/CCTV-2] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-3/HLSv3-FTA/CCTV-3] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-4/HLSv3-FTA/CCTV-4] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-5/HLSv3-FTA/CCTV-5] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-6/HLSv3-FTA/CCTV-6] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-7/HLSv3-FTA/CCTV-7] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-8/HLSv3-FTA/CCTV-8] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-9/HLSv3-FTA/CCTV-9] <h1>404</h1>Publish point 'dis
+OK [CCTV-10/HLSv3-FTA/CCTV-10]
+DEAD [CCTV-11/HLSv3-FTA/CCTV-11] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-12/HLSv3-FTA/CCTV-12] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-13/HLSv3-FTA/CCTV-13] <h1>404</h1>Publish point 'dis
+OK [CCTV-14/HLSv3-FTA/CCTV-14]
+DEAD [CCTV-15/HLSv3-FTA/CCTV-15] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-16/HLSv3-FTA/CCTV-16] <h1>404</h1>Publish point 'dis
+DEAD [CCTV-17/HLSv3-FTA/CCTV-17] <h1>404</h1>Publish point 'dis

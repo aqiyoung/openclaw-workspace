@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>装完麒麟 V10 我踩了三个没人告诉你的坑</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.9;
+            color: #1a1a1a;
+            background: #ffffff;
+            padding: 40px 20px;
+        }
+        .article-container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .article-content h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 24px;
+            line-height: 1.3;
+            letter-spacing: -0.5px;
+        }
+        .article-content h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #000000;
+            margin: 32px 0 20px;
+            line-height: 1.4;
+            letter-spacing: -0.3px;
+        }
+        .article-content h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #000000;
+            margin: 28px 0 18px;
+            line-height: 1.5;
+        }
+        .article-content p {
+            margin: 0 0 50px 0;
+            font-size: 17px;
+            line-height: 1.9;
+            color: #374151;
+        }
+        .article-content strong {
+            font-weight: 700;
+            color: #000000;
+            font-size: 18px;
+        }
+        .article-content em {
+            font-style: italic;
+            color: #4b5563;
+        }
+        .article-content blockquote {
+            background: #f9fafb;
+            border-left: 4px solid #d1d5db;
+            padding: 16px 20px;
+            margin: 20px 0;
+            color: #4b5563;
+            border-radius: 0 8px 8px 0;
+        }
+        .article-content blockquote p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .article-content ul, .article-content ol {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+        .article-content li {
+            margin: 8px 0;
+            line-height: 1.8;
+            font-size: 17px;
+            color: #374151;
+        }
+        .article-content code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", monospace;
+            font-size: 14px;
+            color: #e11d48;
+        }
+        .article-content pre {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .article-content pre code {
+            background: none;
+            padding: 0;
+            color: #e5e7eb;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .article-content a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .article-content a:hover {
+            border-bottom-color: #2563eb;
+        }
+        .article-content hr {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 32px 0;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 24px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            body { padding: 20px 16px; }
+            .article-content h1 { font-size: 28px; }
+            .article-content h2 { font-size: 24px; }
+            .article-content h3 { font-size: 20px; }
+            .article-content p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <div class="article-content">
+            <h1>装完麒麟 V10 我踩了三个没人告诉你的坑</h1>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">那天下午两点，客户把电脑搬到了会议室。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">一台戴尔 OptiPlex 3080，i5-10500，8GB 内存，512G 固态。说是要装银河麒麟 V10 SP1，替换掉原来的 Windows 10。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">麒麟 V10 镜像 U 盘已经做好了，启动盘识别正常，安装界面也不报错。分区的时候我选了默认方案——一个根分区加一个 home 分区，简单省事。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我心想：稳了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">四十分钟后，系统装好了，重启进桌面，鼠标能动，背景是蓝色的沙漠壁纸，看起来还挺像回事。我正准备收工走人，发现——<strong>没声音</strong>。</p>
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+<h2>第一个坑：声卡驱动</h2>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">客户说：「放个音乐试试。」</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我打开浏览器，搜了一首歌，播放器转圈，没声。右下角音量图标也在，没显示静音。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">设备管理器里一看，显示 "Intel(R) Display Audio"，驱动也在。<code>aplay -l</code> 能识别声卡，<code>alsamixer</code> 看了一圈也没静音。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">那就奇了怪了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我先重启了一次，没用。重装驱动，没用。检查系统设置里的音频输出，选项都在，就是没声音。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">折腾了半小时，突然想到——<strong>BIOS</strong>。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">进 BIOS 一看，右下角有个 "Onboard Audio: Disabled"。客户之前为了排查另一个问题，把板载声卡关了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">改成 Enabled，保存重启。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">声音来了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我对着客户笑了笑，内心：……行，第一个坑，填上了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;"><strong>教训：装系统之前，先进 BIOS 看一遍。尤其是品牌机，不知道之前谁动过什么设置。</strong></p>
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+<h2>第二个坑：搜狗输入法乱码</h2>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">声音的问题刚解决，客户又说：「微信发个消息试试。」</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">打开微信，登录，打字。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">打出来的全是方块。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">不是那种"缺字体"的方块，是那种"编码不对"的乱码。有时候显示问号，有时候显示日文假名，就是不出汉字。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我心想：该不会是中文字体没装吧。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">检查了一下，系统自带字体里有 Noto Sans CJK，显示应该没问题。但搜狗输入法候选词那里就是乱码。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">搜了一圈，发现麒麟 V10 默认不装 <code>fonts-wqy-microhei</code>（文泉驿微米黑）。装完重启搜狗——</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">汉字出来了。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我当时就想，这系统装完了不装中文字体，搜狗官方也不提醒。得，第二个坑。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;"><strong>教训：装完系统第一件事，<code>sudo apt install fonts-wqy-microhei fonts-wqy-zenhei</code>，先把中文字体装上。</strong></p>
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+<h2>第三个坑：合盖不休眠</h2>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">客户说这是笔记本电脑，日常要带着走。我说行，测试一下合盖。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">合上盖子，等了三秒，打开——</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">黑屏。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">按电源键，没反应。按 Ctrl+Alt+F1，没反应。长按电源键强制关机，重新开机，正常。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">合盖，黑屏。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">再合盖，黑屏。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">我心想：这不是休眠失败的问题，是<strong>压根没设置休眠</strong>。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">查了 <code>/etc/systemd/logind.conf</code>，发现麒麟默认合盖行为是 <code>HandleLidSwitch=ignore</code>（忽略）。也就是说，合盖之后系统啥也不做，屏幕继续亮着，耗电耗到关机，或者散热不良直接卡死。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">改成 <code>HandleLidSwitch=suspend</code>，重启服务——</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">合盖，休眠。开屏，恢复。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">完美。</p>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;"><strong>教训：如果是笔记本电脑装麒麟，第一件事就改 <code>/etc/systemd/logind.conf</code>。改完 <code>HandleLidSwitch</code>，不然第二天开盖就是一块砖。</strong></p>
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+<h2>后来</h2>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;"><strong>后来我学聪明了，每次装麒麟之前，先列一个「必改清单」：</strong></p>
+<ul style="list-style:none;padding:0;margin:12px 0;">
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ BIOS 检查（声卡、硬盘模式、启动模式）</li>
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ 中文字体包</li>
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ 合盖行为</li>
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ 时区改成 Asia/Shanghai</li>
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ 更新源换成国内镜像（阿里云或清华）</li>
+<li style="padding:4px 0;font-size:17px;line-height:1.8;">✅ 常用软件：WPS、微信、搜狗、麒麟应用商店</li>
+</ul>
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;">拿着这个清单，现在装一台麒麟 V10 从开机到收工，不到一个小时。</p>
+<hr style="border:none;border-top:1px solid #eee;margin:24px 0;">
+<p style="margin:0 0 16px 0;font-size:17px;line-height:1.9;color:#374151;"><strong>关注我，下一篇写那次打印机罢工的事——整个楼层，同一时间，一台都打不了。</strong></p>
+        </div>
+    </div>
+</body>
+</html>

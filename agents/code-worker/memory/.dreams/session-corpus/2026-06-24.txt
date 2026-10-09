@@ -1,0 +1,2 @@
+[code-worker/sessions/code-worker/7df8c18a-490c-4cd4-9bca-3c45631b9ac7.jsonl#L6] Assistant: [assistant turn failed before producing content]
+[code-worker/sessions/code-worker/7df8c18a-490c-4cd4-9bca-3c45631b9ac7.jsonl#L8] Assistant: I see this is a heartbeat poll. Let me check if there's anything that needs attention.

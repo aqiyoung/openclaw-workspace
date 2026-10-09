@@ -1,0 +1,1 @@
+[research/sessions/research/e178ea06-9c8f-4d9e-86a1-1738d08b5b3a.jsonl#L27] Assistant: [assistant turn failed before producing content]

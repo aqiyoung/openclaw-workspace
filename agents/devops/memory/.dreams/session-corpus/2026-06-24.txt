@@ -1,0 +1,3 @@
+[devops/sessions/devops/6ab71729-1b2e-491c-863d-9b0ab9edf3b0.jsonl#L32] Assistant: [assistant turn failed before producing content]
+[devops/sessions/devops/6ab71729-1b2e-491c-863d-9b0ab9edf3b0.jsonl#L34] Assistant: This is a heartbeat poll. Let me check if there's anything that needs attention.
+[devops/sessions/devops/6ab71729-1b2e-491c-863d-9b0ab9edf3b0.jsonl#L36] Assistant: No active cron jobs. It's late (22:51), nothing urgent.

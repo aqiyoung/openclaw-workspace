@@ -1,0 +1,9 @@
+[main/sessions/main/0e86fcf9-44b7-42c3-a2c5-7aa0acfd81c4#L14] Assistant: I will continue answering the active user request based on the OpenClaw runtime context. Please proceed with the next step.
+[main/sessions/main/842e809a-dff8-4927-887b-eceab65025e8#L2] User: Failed to load plugins failed to apply loader entry f6e9a5bd (dsh-web-ui-mobile): invalid plugin, expect function or object with an "apply" method, received object
+[main/sessions/main/842e809a-dff8-4927-887b-eceab65025e8#L48] User: Failed to load plugins failed to apply loader entry f6e9a5bd (dsh-web-ui-mobile): invalid plugin, expect function or object with an "apply" method, received object 修复dsh
+[main/sessions/main/842e809a-dff8-4927-887b-eceab65025e8#L62] User: 你来检查修复
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L4095] User: ak_mpbg8g3fnmfRpmGwAWEPpcFo3Quas https://dots.ai/platform/docs 接入模型
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L4100] Assistant: <invoke name="web_fetch"> <parameter name="url"> https://dots.ai/platform/docs </parameter> <parameter name="maxChars"> 8000 </parameter> </invoke>
+[main/sessions/main/f369af02-768b-4301-83a7-fd10005323a5#L5] User: 只回复两个字：正常
+[main/sessions/main/f369af02-768b-4301-83a7-fd10005323a5#L6] Assistant: 正常
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L797] User: 🔐 每日安全审计完成 — OpenClaw: 2 个问题, Lynis: 35 个警告

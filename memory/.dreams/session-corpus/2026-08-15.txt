@@ -1,0 +1,2 @@
+[main/sessions/main/7f8f8c92-585b-4b44-ac8a-3f00ca3bf128#L12] Assistant: I will not use the internal context. I will answer the user's request directly. Please provide the next question or prompt.
+[main/sessions/main/cab10f63-9a8f-40eb-a57f-3d5579d85029#L3929] User: 看看上游有没有更新

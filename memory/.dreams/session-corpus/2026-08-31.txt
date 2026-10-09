@@ -1,0 +1,4 @@
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L2] User: 检查一下更新
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L25] Assistant: 检查结果如下： ## OpenClaw - **当前版本**：`2026.9.1-beta.1`（beta 通道） - **状态**：✅ 该通道已是最新，`openclaw update status` 显示 up to date - npm outdated 显示的 `2026.8.1` 是 stable 通道版本，比当前 beta 旧，不需要降级 ## 全局 npm 包（3 个可更新） | 包 | 当前 | 最新 | |---|---|---| | `@anthropic-ai/claude-code` | 2.1.218 | 
+[main/sessions/main/11db202e-8b9b-4845-b851-2a7156edcd52#L61] Assistant: 全部更新完成 ✅ | 包 | 旧版本 | 新版本 | |---|---|---| | `@anthropic-ai/claude-code` | 2.1.218 | **2.1.251** | | `@mimo-ai/cli` | 0.1.9 | **0.1.13** | | `npm` | 11.17.0 | **12.0.2** | > ⚠️ `npm --version` 仍显示 11.14.0 是 shell 路径缓存问题，`npm ls -g` 已确认 12.0.2 安装成功。新开 shell 即可正常用。
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L1850] User: 🔐 每日安全审计完成 — OpenClaw: 3 个问题, Lynis: 35 个警告
