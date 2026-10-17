@@ -35,7 +35,7 @@
 
 - **访问**：https://wiki.threel.site（SSL 正常）
 - **后端**：Node.js server.mjs，端口 3000，数据 /vol1/1000/dev-projects/synapse/data
-- **认证**：API Token = `535f740c4b4f1963bb19353654ed6dcdcd988fa64b51277ad4d142cdc75bc05e`
+- **认证**：API Token = `***`
 - **用途**：threely的私人知识库，小七维护 + threely也能写
 - **规则**：threely让搜集/处理/整理的东西 → 自动存到 wiki
 - **已同步**：23 篇历史工作日记

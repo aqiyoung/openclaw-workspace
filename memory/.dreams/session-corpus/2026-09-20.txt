@@ -8,7 +8,7 @@
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4239] User: 你看之前的key 还在吗
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4245] Assistant: <invoke name="secrets"> <parameter name="action"> list </parameter> </invoke>
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4248] Assistant: 不在了。 我把 `.env`、`.bashrc`、`openclaw.json` 全搜了一遍，`STEPFUN_API_KEY` 不存在。StepFun 插件虽然装好了（`@openclaw/stepfun-provider` v2026.9.5），但 `plugins.entries.stepfun.enabled` 是 `false`，而且没有 key 配上去。 **要启用的话：** 1. 去 [stepfun.ai](https://stepfun.ai) 注册一个 API key（国内走 `api.stepfun.com`，
-[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4249] User: eTd2rLCtrLNoZ70xemq1wrIHlptPcnSCJCeBwuzmlc7VtGJmj34vXg68zaZHuL0Y
+[main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4249] User: ***
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4363] Assistant: Gateway 恢复了 ✅ | 项目 | 状态 | |------|------| | Gateway | running (pid 1285429) | | 版本 | 2026.9.5 | | StepFun 模型 | 5 个已加载 ✅ | **但 StepFun key 有问题：** | 端点 | 结果 | |------|------| | `api.stepfun.com/v1` (标准) | ❌ `quota_exceeded` — 额度用完了 | | `api.stepfun.com/step_plan/v1` (免费)
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4364] User: https://github.com/aqiyoung/openclaw 看我们的项目 ios 上游有没有更新
 [main/sessions/main/b69baa52-4821-4ae4-8620-8f0ce21b02cc#L4401] Assistant: 查完了，情况如下： **你的 fork (`aqiyoung/openclaw`)** - 最新 commit：`80c770a`（今天 05:13 UTC）— `fix(ci): pin canonical GITHUB_REPOSITORY in release-state test` - 跟 upstream 基本同步，最近 commit 都是 CI/测试/协议同步类的，没有 iOS 专属改动 - 没有独立的 iOS 分支，iOS 跟随主分支走 **Upstream (`openclaw/openclaw`)** - 今天还在

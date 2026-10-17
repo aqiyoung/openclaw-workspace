@@ -17,7 +17,7 @@
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L2] User: longcat 的模型api 还在吗
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L28] User: LongCat-2.5-Preview 现已上线。 添加一下
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L96] Assistant: 查完了，现状如下： **LongCat 插件状态：** - 插件已安装（`@openclaw/longcat-provider@2026.9.5`），但 **处于 disabled 状态** - 最新 npm 版本是 `2026.9.6`，可以升级 - 插件模型目录里只有 **LongCat-2.0**，没有 2.5-Preview **API Key：** - 全环境都**没有** `LONGCAT_API_KEY`（env、`.env`、secrets store 都没有） - `~/.bashrc` 里有 `LONGCAT_B
-[main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L97] User: ak_2UM3sV0oi4MV7Z432422Z91q2vW7m
+[main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L97] User: ***
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L166] Assistant: 搞定了。做了这些事： **1. 升级插件** → `@openclaw/longcat-provider@2026.9.6`（从 2026.9.5 升上来的） **2. 启用插件** — `openclaw.json` 里 `plugins.entries.longcat.enabled` 改成 `true` **3. 添加模型 provider** — 在 `models.providers` 里加了 longcat 条目： - `LongCat-2.5-Preview`（1M context，max 262K tokens） -
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L167] User: 添加到模型列表里面，我需要的时候可以自己选。
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L236] User: [System] Your previous turn was interrupted by a gateway restart while OpenClaw was waiting on tool/model work. The restart did not cancel the user's task. Continue from the existing transcript: check the current state, recover interrupted work, and finish the task without 
@@ -41,7 +41,7 @@
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L446] User: longcat 模型怎么不能调用呢
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L517] User: [System] Your previous turn was interrupted by a gateway restart while OpenClaw was waiting on tool/model work. The restart did not cancel the user's task. Continue from the existing transcript: check the current state, recover interrupted work, and finish the task without 
 [main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L562] User: [System] Your previous turn was interrupted by a gateway restart while OpenClaw was waiting on tool/model work. The restart did not cancel the user's task. Continue from the existing transcript: check the current state, recover interrupted work, and finish the task without 
-[main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L577] Assistant: 找到原因了。 **问题：** `~/.openclaw/gateway.systemd.env` 里 `LONGCAT_API_KEY` 的值是字面量 `***`，不是真实 key。Gateway 进程读的就是这个文件，所以一直拿 `***` 去鉴权，API 当然拒绝。 **修好了：** 1. `gateway.systemd.env` 里的 key 已经换成真实的 `ak_2UM3sV0oi4MV7Z432422Z91q2vW7m` 2. systemd service 里加了 `LONGCAT_API_KEY` 到 `OPENC
+[main/sessions/main/f52e0744-57a3-4146-9024-e36d685d99bd#L577] Assistant: 找到原因了。 **问题：** `~/.openclaw/gateway.systemd.env` 里 `LONGCAT_API_KEY` 的值是字面量 `***`，不是真实 key。Gateway 进程读的就是这个文件，所以一直拿 `***` 去鉴权，API 当然拒绝。 **修好了：** 1. `gateway.systemd.env` 里的 key 已经换成真实的 `***` 2. systemd service 里加了 `LONGCAT_API_KEY` 到 `OPENC
 [main/sessions/main/b75c9f46-7164-4821-b381-c1f73b5aea91#L551] Assistant: CI 还在编译中，我继续等。
 [main/sessions/main/b75c9f46-7164-4821-b381-c1f73b5aea91#L560] Assistant: CI 还在跑。让我查一下具体进度。
 [main/sessions/main/b75c9f46-7164-4821-b381-c1f73b5aea91#L563] Assistant: CI 还在跑，我继续盯着。
