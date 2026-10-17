@@ -17,7 +17,8 @@ OPENCLAW_ISSUES=$(grep -ci "issue\|warning\|critical\|error\|risk" "$LOG_DIR/ope
 LYNIS_WARNINGS=$(grep -ci "Warning\|suggestion\|vulnerability" "$LOG_DIR/lynis-audit-$DATE.log" 2>/dev/null || echo 0)
 
 # 4. Notify via Telegram
-TOKEN="$(source /home/liyang/.openclaw/.env 2>/dev/null && echo "$TELEGRAM_BOT_TOKEN")"
+# 只取这一个键：整份 source .env 会把所有凭证塞进环境变量，子进程可能带出去
+TOKEN="$(sed -n 's/^TELEGRAM_BOT_TOKEN=//p' /home/liyang/.openclaw/.env 2>/dev/null | head -1 | tr -d "\"'")"
 CHAT_ID="460212872"
 MSG="🔐 每日安全审计完成
 ├─ OpenClaw: $OPENCLAW_ISSUES 个问题

@@ -174,7 +174,7 @@ MiSans 中英混合渲染效果极佳，无需 DroidSans + DejaVu 双字体方�
 {
   "wechat": {
     "app_id": "wx97bc84bb54232e27",
-    "app_secret": "31dd5e8ce9bf116d1b5ca3b81c2d82ea",
+    "app_secret": "***",
     "default_author": "三页札记",
     "ip_whitelist": "111.19.38.90"
   }

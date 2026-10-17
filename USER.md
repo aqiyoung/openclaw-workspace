@@ -11,7 +11,7 @@
 
 ### 微信公众号 API 凭证
 - AppID: wx97bc84bb54232e27
-- AppSecret: 08a9374b66f7d1ceca7553abd21d41b7
+- AppSecret: ***
 - IP 白名单: 111.19.6.200（公网 IP 可能变动）
 - 白名单错误码: 40164
 - **每次推送前必须先检测 IP，变了则通知threely更新白名单**

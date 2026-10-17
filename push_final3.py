@@ -1,7 +1,7 @@
 import urllib.request, json, os
 
 appid = 'wx97bc84bb54232e27'
-secret = '08a9374b66f7d1ceca7553abd21d41b7'
+secret = '***'
 
 url = 'https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=' + appid + '&secret=*** + secret
 req = urllib.request.Request(url)
